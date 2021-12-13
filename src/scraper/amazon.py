@@ -1,6 +1,6 @@
 from scraper.common import ScrapeResult, Scraper, ScraperFactory
 
-
+#继承ScrapeResult 并实现parse函数用于特定分析亚马逊网站
 class AmazonScrapeResult(ScrapeResult):
     def parse(self):
         alert_subject = 'In Stock'

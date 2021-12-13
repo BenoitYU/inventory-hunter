@@ -9,7 +9,7 @@ locale.setlocale(locale.LC_ALL, '')
 from abc import ABC, abstractmethod
 from bs4 import BeautifulSoup
 
-
+#ABC，Abstract Base Class（抽象基类），主要定义了基本类和最基本的抽象方法，可以为子类定义共有的API，不需要具体实现。
 class ScrapeResult(ABC):
     def __init__(self, logger, r, last_result):
         self.alert_subject = None
@@ -25,12 +25,13 @@ class ScrapeResult(ABC):
         self.soup = BeautifulSoup(r.text, 'lxml')
         self.content = self.soup.body.text.lower()  # lower for case-insensitive searches
         self.url = r.url
+        #如果返回的结果中status_code的值不是 403 则调用parse函数解析
         if not self.forbidden:
             self.parse()
 
     def __bool__(self):
         return bool(self.alert_content)
-
+    #判断phrase似乎否存在self.content中 self.content即为网页的soup.body.text.lower()形式内容
     def has_phrase(self, phrase):
         return phrase in self.content
 
@@ -59,20 +60,21 @@ class ScrapeResult(ABC):
             self.logger.warning(f'unable to convert "{price_str}" to float... caught exception: {e}')
 
         return price_str
-
+    #后续针对不同的网站 进行不同的内容解析函数定义
     @abstractmethod
     def parse(self):
         pass
 
-
+#此处是针对一般的网站的解析函数的实现
 class GenericScrapeResult(ScrapeResult):
     def parse(self):
         # not perfect but usually good enough
+        #通过判断'add to cart'或者'add to basket'是否可以从网页内容中找到来判定商品是否avaiable
         if self.has_phrase('add to cart') or self.has_phrase('add to basket'):
             self.alert_subject = 'In Stock'
             self.alert_content = self.url
 
-
+#监测爬虫的表现水平
 class ScraperStats:
     def __init__(self):
         self.reset()
@@ -102,7 +104,7 @@ class ScraperStats:
             f'({success_rate:.0f}% success rate)'
         )
 
-
+#用于爬取网站的类
 class Scraper(ABC):
     def __init__(self, drivers, url):
         self.driver = getattr(drivers, self.get_driver_type())
@@ -129,8 +131,9 @@ class Scraper(ABC):
         pass
 
     def scrape(self):
+        #调用scrape_impl进行网页爬取
         r = self.scrape_impl()
-
+        #如果成功获取网页内容 则算作成功爬取一次 否则记作失败
         if r is not None:
             self.stats.num_successful += 1
         else:
@@ -142,15 +145,17 @@ class Scraper(ABC):
             self.stats.reset()
 
         return r
-
+    #爬取网页内容 并根据result_type 创建ScrapeResult实例 可以是GenericScrapeResult 也可以是具体网站的结果类型 如AmazonScrapeResult
     def scrape_impl(self):
         try:
             self.logger.debug('starting new scrape')
+            #打开网页链接
             r = self.driver.get(self.url)
             if self.get_driver_type() != 'puppeteer':
                 with self.filename.open('w') as f:
                     f.write(r.text)
             result_type = self.get_result_type()
+            #根据返回的类型创建结果实例
             this_result = result_type(self.logger, r, self.last_result)
             self.last_result = this_result
             return this_result
@@ -173,7 +178,7 @@ class GenericScraper(Scraper):
     def get_result_type():
         return GenericScrapeResult
 
-
+#该类主要是根据url.netloc来确定网站的爬取方式应该是通用还是特殊 通用就用genericscrap 特殊的话 则采用指定scrape类型
 class ScraperFactory:
     registry = dict()
 

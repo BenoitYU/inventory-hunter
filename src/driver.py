@@ -35,8 +35,10 @@ class Driver(ABC):
 
 
 class SeleniumDriver(Driver):
+    #初始化webdriver.Chrome的地址并更改chrome配置
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
+        #返回selenium安装包的绝对地址 并默认chromedriver在子目录中
         self.selenium_path = pathlib.Path('selenium').resolve()
         self.selenium_path.mkdir(exist_ok=True)
         self.driver_path = self.selenium_path / 'chromedriver'
@@ -46,6 +48,7 @@ class SeleniumDriver(Driver):
         ]
         for driver_path in driver_paths:
             if os.path.exists(driver_path):
+                #此处代码主要是避免网站检测到chromedriver
                 # chromedriver needs to be patched to avoid detection, see:
                 # https://stackoverflow.com/questions/33225947/can-a-website-detect-when-you-are-using-selenium-with-chromedriver
                 shutil.copy(driver_path, self.driver_path)
@@ -75,6 +78,7 @@ class SeleniumDriver(Driver):
         self.options.add_argument('--window-position=0,0')
         self.options.add_argument('--window-size=1920,1080')
 
+    #返回网站的信息并保存一个截屏
     def get(self, url) -> HttpGetResponse:
         # headless chromium crashes somewhat regularly...
         # for now, we will start a fresh instance every time
@@ -122,6 +126,7 @@ class RequestsDriver(Driver):
 class LeanAndMeanDriver(Driver):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
+        #init_client函数定义在worker模块下的__init__初始化模块中
         self.client = worker.init_client('lean_and_mean')
 
     def get(self, url) -> HttpGetResponse:
@@ -136,14 +141,16 @@ class LeanAndMeanDriver(Driver):
 
 class DriverRepo:
     def __init__(self, timeout):
+        #resolve函数将路径中所有的省略符号都去除 例如“..”等 返回绝对的路径
         self.data_dir = pathlib.Path('data').resolve()
+        #mkdir函数新建data_dir目录
         self.data_dir.mkdir(exist_ok=True)
         self.requests = RequestsDriver(data_dir=self.data_dir, timeout=timeout)
         self.selenium = SeleniumDriver(data_dir=self.data_dir, timeout=timeout)
         self.puppeteer = PuppeteerDriver(data_dir=self.data_dir, timeout=timeout)
         self.lean_and_mean = LeanAndMeanDriver(data_dir=self.data_dir, timeout=timeout)
 
-
+#初始化每一个类型的driver
 def init_drivers(config):
     timeout = int(max(config.refresh_interval, 15))  # in seconds
     return DriverRepo(timeout)

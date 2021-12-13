@@ -3,7 +3,7 @@ import yaml
 
 from collections import Counter
 
-
+#根据链接生成URL实例 包含网页链接的别名 netloc path url
 class URL:
     def __init__(self, url):
         self.nickname = 'covfefe'
@@ -25,7 +25,7 @@ class Config:
         self.max_price = max_price
         self.urls = [URL(url) for url in urls]
 
-        # generating nicknames
+        # 生成网站链接的别名
         netloc_counter = Counter()
         for url in self.urls:
             netloc = url.netloc.lower()
@@ -41,7 +41,7 @@ class Config:
             nickname = f'{netloc}_{count}'
             url.nickname = nickname
 
-
+#该方法根据yaml文件内容生成Config类 每个类包含刷新区间 最高价 网站链接列表
 def parse_config(f):
     data = yaml.safe_load(f)
     refresh_interval = data['refresh_interval'] if 'refresh_interval' in data else 1
