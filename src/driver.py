@@ -122,7 +122,7 @@ class RequestsDriver(Driver):
             logging.debug(f'got response with status code {r.status_code} for {url}')
         return HttpGetResponse(r.text, r.url, status_code=r.status_code)
 
-
+# 该模块用了aiohttp模块 创建了一个服务器+客户端 使用谷歌的protobuf处理字节流 优点是更快速
 class LeanAndMeanDriver(Driver):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)

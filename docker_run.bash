@@ -102,6 +102,7 @@ volumes="-v $data_dir:/data -v $log_file:/log.txt -v $config:/config.yaml"
 
 (docker network inspect $network &> /dev/null) || docker network create $network
 
+# 此处定义docker的切入点
 entrypoint="--entrypoint=/src/run.bash"
 
 docker_run_cmd="docker run -d --rm $entrypoint --name $container_name --network $network $volumes $image --alerter $alerter"

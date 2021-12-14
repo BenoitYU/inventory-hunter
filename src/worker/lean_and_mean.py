@@ -1,4 +1,6 @@
 import logging
+# aiohttp是一个异步的 HTTP 客户端\服务端框架，基于 asyncio 的异步模块。可用于实现异步爬虫，更快于 requests 的同步爬虫
+# 该模块用了aiohttp模块 创建了一个服务器+客户端 使用谷歌的protobuf处理字节流 优点是更快速
 import aiohttp
 import urllib.parse
 
@@ -34,6 +36,7 @@ class LeanAndMeanServer(Server):
             timeout = request.timeout if request.timeout else 30
             async with session.get(request.url, timeout=timeout) as r:
                 data = await r.text()
+                # 将网页信息序列化存入writer
                 writer.write(self.encode_response(
                     response_id=request.id,
                     data=data,

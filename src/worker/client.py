@@ -22,17 +22,19 @@ class Client:
         return self._request.SerializeToString()
 
     async def get_impl(self, request_id: int, url: str, timeout: int) -> spec.Response:
+        #此处建立客户端与服务器的连接
         reader, writer = await asyncio.open_connection(self._endpoint.addr, self._endpoint.port)
+        #先序列化请求信息 写入请求
         serialized_request = self.encode_request(request_id, url, timeout)
         writer.write(serialized_request)
         writer.write_eof()
         await writer.drain()
-
+        #然后等待服务器发回反馈
         response = self.decode_response(await reader.read())
         logging.debug(f'got response with id {response.id}, status_code: {response.status_code}, data: <{len(response.data)} bytes>')
         writer.close()
         await writer.wait_closed()
-
+        #返回服务器的结果
         return response
 
     async def get_async(self, request_id: int, url: str, timeout: int) -> spec.Response:
