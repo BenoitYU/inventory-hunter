@@ -10,11 +10,11 @@ def parse_args():
 
 
 def main():
+    #设置log格式
     args = parse_args()
     log_format = '{{levelname:.1s}}{{asctime}} [{args.worker}] {{message}}'
     logging.basicConfig(level=logging.ERROR, format=log_format, style='{')
     
-    #设置log格式
     logger = logging.getLogger()
     handler = logging.FileHandler(f'/{args.worker}.txt')
     handler.setFormatter(logging.Formatter(log_format, style='{'))
