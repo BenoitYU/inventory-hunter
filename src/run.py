@@ -3,7 +3,8 @@ import logging
 import pathlib
 import sys
 
-
+# 对于可选参数动作，dest 的值通常取自选项字符串。 ArgumentParser 会通过接受第一个长选项字符串并去掉开头的 -- 字符串来生成 dest 的值。 
+# 如果没有提供长选项字符串，则 dest 将通过接受第一个短选项字符串并去掉开头的 - 字符来获得。 任何内部的 - 字符都将被转换为 _ 字符以确保字符串是有效的属性名称。
 def parse_args():
     parser = argparse.ArgumentParser()
 
@@ -32,6 +33,7 @@ if version_path.is_file():
         version = f.read().strip()
 
 
+#以下代码用来配置log
 # logging must be configured before the next few imports
 args = parse_args()
 log_format = '{levelname:.1s}{asctime} [{name}] {message}'

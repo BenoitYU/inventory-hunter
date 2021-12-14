@@ -25,17 +25,19 @@ class ScrapeResult(ABC):
         self.soup = BeautifulSoup(r.text, 'lxml')
         self.content = self.soup.body.text.lower()  # lower for case-insensitive searches
         self.url = r.url
-        #如果返回的结果中status_code的值不是 403 则调用parse函数解析
+        #如果返回的结果中status_code的值不是 403 则调用parse函数解析 从而更新alert_subject和alert_content的值
         if not self.forbidden:
             self.parse()
-
+    #此处ScrapeResult.__bool__可以直接省略为ScrapeResult 就是根据content变量中有无内容来返回bool的值
     def __bool__(self):
         return bool(self.alert_content)
     #判断phrase似乎否存在self.content中 self.content即为网页的soup.body.text.lower()形式内容
     def has_phrase(self, phrase):
         return phrase in self.content
-
+    #提取价格并转化为Float格式然后赋值给self.price
+    #如果有价格且成功从网页中提取出来并转换为float 则self.price不为空 其余情况全部为Non
     def set_price(self, tag):
+        #如果tage的内容为空 则直接退出 self.price保持Non
         if not tag:
             return
 
@@ -65,7 +67,7 @@ class ScrapeResult(ABC):
     def parse(self):
         pass
 
-#此处是针对一般的网站的解析函数的实现
+#此处是针对一般的网站的解析函数的实现 注意 在这个模式中并灭有对价格进行提取 所以其默认为Non
 class GenericScrapeResult(ScrapeResult):
     def parse(self):
         # not perfect but usually good enough
@@ -106,6 +108,7 @@ class ScraperStats:
 
 #用于爬取网站的类
 class Scraper(ABC):
+    #注意此处的url是后面定义的URL类的实例 不是单纯的链接
     def __init__(self, drivers, url):
         self.driver = getattr(drivers, self.get_driver_type())
         self.filename = drivers.data_dir / f'{url.nickname}.html'
@@ -139,6 +142,7 @@ class Scraper(ABC):
         else:
             self.stats.num_failed += 1
 
+        #每五分钟检查一下爬取的performance
         if datetime.datetime.now() - self.stats.since_time > datetime.timedelta(minutes=5):
             log_level = logging.WARN if self.stats.get_failure_rate() > 0 else logging.INFO
             self.logger.log(log_level, self.stats)
