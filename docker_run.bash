@@ -1,5 +1,11 @@
 #!/bin/bash
 
+# bash语法参考 https://wangdoc.com/bash/condition.html
+# [ -f file ]：如果 file 存在并且是一个普通文件，则为true
+# [ -e file ]：如果 file 存在，则为true
+# [ -z string ]：如果字符串string的长度为零，则判断为真
+# eval可读取一连串的参数，然后再依参数本身的特性来执行
+# eval第一次扫描进行了变量置换，第二次扫描执行了该字符串中所包含的命令
 set -e
 
 usage() {
@@ -16,11 +22,13 @@ usage() {
 
 [ $# -eq 0 ] && usage
 
+# 默认的推送消息方式的邮件
 alerter="email"
 default_image="ericjmarti/inventory-hunter:latest"
 image=$default_image
 network="inventory_hunter"
 
+# 提取输入参数变量的值到OPTARG 然后赋值
 while getopts a:c:d:e:i:n:q:r:w:t arg
 do
     case "${arg}" in
@@ -40,6 +48,7 @@ done
 [ -z "$config" ] && usage "missing config argument"
 [ ! -f "$config" ] && usage "$config does not exist or is not a regular file"
 
+# 检查必要的参数配置是否缺省
 if [ ! -z "$alerter_config" ]; then
     [ ! -f "$alerter_config" ] && usage "$alerter_config does not exist or is not a regular file"
 elif [ "$alerter" = "email" ]; then
@@ -51,7 +60,7 @@ else
         [ -z "$chat_id" ] && usage "missing telegram chat id argument"
     fi
 fi
-
+# 检查image是否存在
 if [ "$image" = "$default_image" ]; then
     docker pull "$image"
 else
@@ -97,6 +106,7 @@ entrypoint="--entrypoint=/src/run.bash"
 
 docker_run_cmd="docker run -d --rm $entrypoint --name $container_name --network $network $volumes $image --alerter $alerter"
 
+# 如果alerter_config不为空说明配置了多种推送提醒方式
 if [ ! -z "$alerter_config" ]; then
     docker_run_cmd="$docker_run_cmd --alerter-config /alerters.yaml"
 elif [ "$alerter" = "email" ]; then

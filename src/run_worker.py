@@ -21,6 +21,8 @@ def main():
     handler.setLevel(logging.DEBUG)
     logger.addHandler(handler)
 
+    #import_module只是简单地执行和import相同的步骤，但是返回生成的模块对象。你只需要将其存储在一个变量，然后像正常的模块一样使用
+    #主要是解决‘你想导入一个模块，但是模块的名字在字符串里。你想对字符串调用导入命令’ 也就是包名字是变量的问题 动态导入
     pkg = importlib.import_module(f'worker.{args.worker}')
     pkg.run()
 
