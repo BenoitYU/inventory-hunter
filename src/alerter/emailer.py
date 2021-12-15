@@ -42,6 +42,7 @@ class EmailAlerter(Alerter):
     # 为了将一个类实例当做函数调用，我们需要在类中实现__call__()方法。也就是我们要在类中实现如下方法：def __call__(self, *args)。这个方法接受一定数量的变量作为输入。
     # 假设x是X类的一个实例。那么调用x.__call__(1,2)等同于调用x(1,2)。这个实例本身在这里相当于一个函数一样被调用
     def __call__(self, **kwargs):
+        #设置邮箱信息内容
         msg = EmailMessage()
 
         set_subject = kwargs.get("subject").strip()
@@ -53,6 +54,7 @@ class EmailAlerter(Alerter):
             msg["Subject"] = set_subject
         msg["From"] = self.sender
         msg["To"] = ", ".join(self.recipients)
+        #发送邮件
         with smtplib.SMTP(self.relay) as s:
             logging.debug(f"sending email: subject: {set_subject}")
             if self.password:

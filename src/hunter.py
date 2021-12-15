@@ -33,7 +33,7 @@ class Engine:
             self.scheduler.enterabs(t, 1, Engine.tick, (self, s))
         else:
             self.scheduler.enter(time_delta, 1, Engine.tick, (self, s))
-
+    # 每执行一次任务 然后添加下个任务
     def tick(self, s):
         #返回的result是ScrapeResult类的实例
         result = s.scrape()

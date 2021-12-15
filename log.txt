@@ -1,0 +1,1330 @@
+I2021-12-15 15:37:28,863 [root] starting v0.0.1 with args: ./src/run.py -a email -c ./config/newegg_rtx_3070.yaml -q ./config/alerters.yaml -l ./log.txt
+I2021-12-15 15:37:29,600 [root] discord alerter initialized with kwargs: webhook_url=https://discord.com/api/webhooks/XXXXXXXXXXXX... mentions=['XXXXXXXXXXXXXXX', 'XXXXXXXXXXXXXXX']
+I2021-12-15 15:37:29,600 [root] telegram alerter initialized with kwargs: webhook_url=https://api.telegram.org/botXXXXXXXXXXXXXXXXXXXX/sendMessage chat_id=XXXXXXXX
+I2021-12-15 15:37:29,601 [root] email alerter initialized with kwargs: sender=yubenoit@email.com recipients=['xiao.ming.track@gmail.com', 'myfriendsemail@email.com'] relay=127.0.0.1 password=callmexiaoming!
+I2021-12-15 15:37:29,601 [root] slack alerter initialized with kwargs: webhook_url=https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX mentions=['XXXXXXXXXXXXXXX', 'XXXXXXXXXXXXXXX']
+E2021-12-15 15:37:29,605 [root] caught exception
+Traceback (most recent call last):
+  File "C:\Users\yubin001\Desktop\DevTest\GitProjects\inventory-hunter\src\run.py", line 61, in main
+    drivers = init_drivers(config)
+  File "C:\Users\yubin001\Desktop\DevTest\GitProjects\inventory-hunter\src\driver.py", line 156, in init_drivers
+    return DriverRepo(timeout)
+  File "C:\Users\yubin001\Desktop\DevTest\GitProjects\inventory-hunter\src\driver.py", line 149, in __init__
+    self.selenium = SeleniumDriver(data_dir=self.data_dir, timeout=timeout)
+  File "C:\Users\yubin001\Desktop\DevTest\GitProjects\inventory-hunter\src\driver.py", line 67, in __init__
+    raise Exception(f'Selenium Chrome driver not found at {" or ".join(driver_paths)}')
+Exception: Selenium Chrome driver not found at /usr/bin/chromedriver or /usr/local/bin/chromedriver
+I2021-12-15 15:41:57,762 [root] starting v0.0.1 with args: ./src/run.py -a email -c ./config/newegg_rtx_3070.yaml -q ./config/alerters.yaml -l ./log.txt
+I2021-12-15 15:41:58,266 [root] discord alerter initialized with kwargs: webhook_url=https://discord.com/api/webhooks/XXXXXXXXXXXX... mentions=['XXXXXXXXXXXXXXX', 'XXXXXXXXXXXXXXX']
+I2021-12-15 15:41:58,267 [root] telegram alerter initialized with kwargs: webhook_url=https://api.telegram.org/botXXXXXXXXXXXXXXXXXXXX/sendMessage chat_id=XXXXXXXX
+I2021-12-15 15:41:58,267 [root] email alerter initialized with kwargs: sender=yubenoit@email.com recipients=['xiao.ming.track@gmail.com', 'myfriendsemail@email.com'] relay=127.0.0.1 password=callmexiaoming!
+I2021-12-15 15:41:58,268 [root] slack alerter initialized with kwargs: webhook_url=https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX mentions=['XXXXXXXXXXXXXXX', 'XXXXXXXXXXXXXXX']
+E2021-12-15 15:41:58,272 [root] caught exception
+Traceback (most recent call last):
+  File "C:\Users\yubin001\Desktop\DevTest\GitProjects\inventory-hunter\src\run.py", line 61, in main
+    drivers = init_drivers(config)
+  File "C:\Users\yubin001\Desktop\DevTest\GitProjects\inventory-hunter\src\driver.py", line 157, in init_drivers
+    return DriverRepo(timeout)
+  File "C:\Users\yubin001\Desktop\DevTest\GitProjects\inventory-hunter\src\driver.py", line 150, in __init__
+    self.selenium = SeleniumDriver(data_dir=self.data_dir, timeout=timeout)
+  File "C:\Users\yubin001\Desktop\DevTest\GitProjects\inventory-hunter\src\driver.py", line 68, in __init__
+    raise Exception(f'Selenium Chrome driver not found at {" or ".join(driver_paths)}')
+Exception: Selenium Chrome driver not found at /usr/bin/chromedriver or /usr/local/bin/chromedriver or ./chromedriver
+I2021-12-15 15:44:48,303 [root] starting v0.0.1 with args: ./src/run.py -a email -c ./config/newegg_rtx_3070.yaml -q ./config/alerters.yaml -l ./log.txt
+I2021-12-15 15:44:48,788 [root] discord alerter initialized with kwargs: webhook_url=https://discord.com/api/webhooks/XXXXXXXXXXXX... mentions=['XXXXXXXXXXXXXXX', 'XXXXXXXXXXXXXXX']
+I2021-12-15 15:44:48,788 [root] telegram alerter initialized with kwargs: webhook_url=https://api.telegram.org/botXXXXXXXXXXXXXXXXXXXX/sendMessage chat_id=XXXXXXXX
+I2021-12-15 15:44:48,789 [root] email alerter initialized with kwargs: sender=yubenoit@email.com recipients=['xiao.ming.track@gmail.com', 'myfriendsemail@email.com'] relay=127.0.0.1 password=callmexiaoming!
+I2021-12-15 15:44:48,789 [root] slack alerter initialized with kwargs: webhook_url=https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX mentions=['XXXXXXXXXXXXXXX', 'XXXXXXXXXXXXXXX']
+E2021-12-15 15:44:48,861 [root] caught exception
+Traceback (most recent call last):
+  File "C:\Users\yubin001\Desktop\DevTest\GitProjects\inventory-hunter\src\run.py", line 61, in main
+    drivers = init_drivers(config)
+  File "C:\Users\yubin001\Desktop\DevTest\GitProjects\inventory-hunter\src\driver.py", line 157, in init_drivers
+    return DriverRepo(timeout)
+  File "C:\Users\yubin001\Desktop\DevTest\GitProjects\inventory-hunter\src\driver.py", line 150, in __init__
+    self.selenium = SeleniumDriver(data_dir=self.data_dir, timeout=timeout)
+  File "C:\Users\yubin001\Desktop\DevTest\GitProjects\inventory-hunter\src\driver.py", line 62, in __init__
+    r = subprocess.run(cmd, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, check=False, text=True)
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\subprocess.py", line 505, in run
+    with Popen(*popenargs, **kwargs) as process:
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\subprocess.py", line 951, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\subprocess.py", line 1420, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+FileNotFoundError: [WinError 2] The system cannot find the file specified
+I2021-12-15 15:49:24,389 [root] starting v0.0.1 with args: ./src/run.py -a email -c ./config/newegg_rtx_3070.yaml -q ./config/alerters.yaml -l ./log.txt
+I2021-12-15 15:49:24,855 [root] discord alerter initialized with kwargs: webhook_url=https://discord.com/api/webhooks/XXXXXXXXXXXX... mentions=['XXXXXXXXXXXXXXX', 'XXXXXXXXXXXXXXX']
+I2021-12-15 15:49:24,855 [root] telegram alerter initialized with kwargs: webhook_url=https://api.telegram.org/botXXXXXXXXXXXXXXXXXXXX/sendMessage chat_id=XXXXXXXX
+I2021-12-15 15:49:24,856 [root] email alerter initialized with kwargs: sender=yubenoit@email.com recipients=['xiao.ming.track@gmail.com', 'myfriendsemail@email.com'] relay=127.0.0.1 password=callmexiaoming!
+I2021-12-15 15:49:24,856 [root] slack alerter initialized with kwargs: webhook_url=https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX mentions=['XXXXXXXXXXXXXXX', 'XXXXXXXXXXXXXXX']
+E2021-12-15 15:49:24,860 [root] caught exception
+Traceback (most recent call last):
+  File "C:\Users\yubin001\Desktop\DevTest\GitProjects\inventory-hunter\src\run.py", line 61, in main
+    drivers = init_drivers(config)
+  File "C:\Users\yubin001\Desktop\DevTest\GitProjects\inventory-hunter\src\driver.py", line 160, in init_drivers
+    return DriverRepo(timeout)
+  File "C:\Users\yubin001\Desktop\DevTest\GitProjects\inventory-hunter\src\driver.py", line 153, in __init__
+    self.selenium = SeleniumDriver(data_dir=self.data_dir, timeout=timeout)
+  File "C:\Users\yubin001\Desktop\DevTest\GitProjects\inventory-hunter\src\driver.py", line 70, in __init__
+    if not self.driver_path.is_file():
+AttributeError: 'str' object has no attribute 'is_file'
+I2021-12-15 15:51:20,075 [root] starting v0.0.1 with args: ./src/run.py -a email -c ./config/newegg_rtx_3070.yaml -q ./config/alerters.yaml -l ./log.txt
+I2021-12-15 15:51:20,543 [root] discord alerter initialized with kwargs: webhook_url=https://discord.com/api/webhooks/XXXXXXXXXXXX... mentions=['XXXXXXXXXXXXXXX', 'XXXXXXXXXXXXXXX']
+I2021-12-15 15:51:20,543 [root] telegram alerter initialized with kwargs: webhook_url=https://api.telegram.org/botXXXXXXXXXXXXXXXXXXXX/sendMessage chat_id=XXXXXXXX
+I2021-12-15 15:51:20,544 [root] email alerter initialized with kwargs: sender=yubenoit@email.com recipients=['xiao.ming.track@gmail.com', 'myfriendsemail@email.com'] relay=127.0.0.1 password=callmexiaoming!
+I2021-12-15 15:51:20,545 [root] slack alerter initialized with kwargs: webhook_url=https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX mentions=['XXXXXXXXXXXXXXX', 'XXXXXXXXXXXXXXX']
+I2021-12-15 15:51:20,549 [nwgg_1] scraper initialized for https://www.newegg.com/asus-geforce-rtx-3070-dual-rtx3070-8g/p/N82E16814126460
+I2021-12-15 15:51:20,550 [nwgg_2] scraper initialized for https://www.newegg.com/asus-geforce-rtx-3070-rog-strix-rtx3070-o8g-gaming/p/N82E16814126458
+I2021-12-15 15:51:20,550 [nwgg_3] scraper initialized for https://www.newegg.com/asus-geforce-rtx-3070-tuf-rtx3070-o8g-gaming/p/N82E16814126461
+I2021-12-15 15:51:20,551 [nwgg_4] scraper initialized for https://www.newegg.com/evga-geforce-rtx-3070-08g-p5-3751-kr/p/N82E16814487528
+I2021-12-15 15:51:20,551 [nwgg_5] scraper initialized for https://www.newegg.com/evga-geforce-rtx-3070-08g-p5-3753-kr/p/N82E16814487529
+I2021-12-15 15:51:20,552 [nwgg_6] scraper initialized for https://www.newegg.com/evga-geforce-rtx-3070-08g-p5-3755-kr/p/N82E16814487530
+I2021-12-15 15:51:20,552 [nwgg_7] scraper initialized for https://www.newegg.com/evga-geforce-rtx-3070-08g-p5-3765-kr/p/N82E16814487531
+I2021-12-15 15:51:20,553 [nwgg_8] scraper initialized for https://www.newegg.com/evga-geforce-rtx-3070-08g-p5-3767-kr/p/N82E16814487532
+I2021-12-15 15:51:20,553 [nwgg_9] scraper initialized for https://www.newegg.com/gigabyte-geforce-rtx-2070-super-gv-n207swf3oc-8gd/p/N82E16814932213
+I2021-12-15 15:51:20,554 [nwgg_10] scraper initialized for https://www.newegg.com/gigabyte-geforce-rtx-3070-gv-n3070aorus-m-8gd/p/N82E16814932359
+I2021-12-15 15:51:20,554 [nwgg_11] scraper initialized for https://www.newegg.com/gigabyte-geforce-rtx-3070-gv-n3070eagle-8gd/p/N82E16814932344
+I2021-12-15 15:51:20,555 [nwgg_12] scraper initialized for https://www.newegg.com/gigabyte-geforce-rtx-3070-gv-n3070eagle-oc-8gd/p/N82E16814932343
+I2021-12-15 15:51:20,555 [nwgg_13] scraper initialized for https://www.newegg.com/gigabyte-geforce-rtx-3070-gv-n3070gaming-oc-8gd/p/N82E16814932342
+I2021-12-15 15:51:20,555 [nwgg_14] scraper initialized for https://www.newegg.com/gigabyte-geforce-rtx-3070-gv-n3070vision-oc-8gd/p/N82E16814932360
+I2021-12-15 15:51:20,556 [nwgg_15] scraper initialized for https://www.newegg.com/msi-geforce-rtx-3070-rtx-3070-gaming-x-trio/p/N82E16814137603
+I2021-12-15 15:51:20,557 [nwgg_16] scraper initialized for https://www.newegg.com/msi-geforce-rtx-3070-rtx-3070-ventus-2x-oc/p/N82E16814137602
+I2021-12-15 15:51:20,557 [nwgg_17] scraper initialized for https://www.newegg.com/msi-geforce-rtx-3070-rtx-3070-ventus-2x/p/N82E16814137605
+I2021-12-15 15:51:20,558 [nwgg_18] scraper initialized for https://www.newegg.com/msi-geforce-rtx-3070-rtx-3070-ventus-3x-oc/p/N82E16814137601
+I2021-12-15 15:51:23,537 [nwgg_1] not in stock
+W2021-12-15 15:51:25,401 [nwgg_2] unable to convert "$1,367.06" to float... caught exception: could not convert string to float: '1.367.06'
+I2021-12-15 15:51:25,402 [nwgg_2] now in stock!
+E2021-12-15 15:51:25,686 [root] There was an issue sending to discord due to an invalid status code back -> 405
+E2021-12-15 15:51:25,936 [root] There was an issue sending to Telegram due to an invalid request: 404 -> {"ok":false,"error_code":404,"description":"Not Found"}
+E2021-12-15 15:51:28,018 [root] email alerter failed to alert
+Traceback (most recent call last):
+  File "C:\Users\yubin001\Desktop\DevTest\GitProjects\inventory-hunter\src\alerter\common.py", line 55, in __call__
+    alerter(**kwargs)
+  File "C:\Users\yubin001\Desktop\DevTest\GitProjects\inventory-hunter\src\alerter\emailer.py", line 58, in __call__
+    with smtplib.SMTP(self.relay) as s:
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\smtplib.py", line 341, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\smtplib.py", line 312, in _get_socket
+    return socket.create_connection((host, port), timeout,
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\socket.py", line 843, in create_connection
+    raise err
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\socket.py", line 831, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+E2021-12-15 15:51:28,902 [root] Issue with sending webhook to slack. Traceback (most recent call last):
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\site-packages\urllib3\connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\site-packages\urllib3\connectionpool.py", line 382, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\site-packages\urllib3\connectionpool.py", line 1010, in _validate_conn
+    conn.connect()
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\site-packages\urllib3\connection.py", line 411, in connect
+    self.sock = ssl_wrap_socket(
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\site-packages\urllib3\util\ssl_.py", line 449, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\site-packages\urllib3\util\ssl_.py", line 493, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\ssl.py", line 500, in wrap_socket
+    return self.sslsocket_class._create(
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\ssl.py", line 1040, in _create
+    self.do_handshake()
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\ssl.py", line 1309, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self signed certificate in certificate chain (_ssl.c:1129)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\site-packages\requests\adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\site-packages\urllib3\connectionpool.py", line 755, in urlopen
+    retries = retries.increment(
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\site-packages\urllib3\util\retry.py", line 574, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='hooks.slack.com', port=443): Max retries exceeded with url: /services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self signed certificate in certificate chain (_ssl.c:1129)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\yubin001\Desktop\DevTest\GitProjects\inventory-hunter\src\alerter\slack.py", line 65, in __call__
+    send_request = requests.post(
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\site-packages\requests\api.py", line 119, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\site-packages\requests\api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\site-packages\requests\sessions.py", line 542, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\site-packages\requests\sessions.py", line 655, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\site-packages\requests\adapters.py", line 514, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='hooks.slack.com', port=443): Max retries exceeded with url: /services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self signed certificate in certificate chain (_ssl.c:1129)')))
+
+W2021-12-15 15:51:29,485 [nwgg_3] unable to convert "$1,199.88" to float... caught exception: could not convert string to float: '1.199.88'
+I2021-12-15 15:51:29,486 [nwgg_3] now in stock!
+E2021-12-15 15:51:30,068 [root] There was an issue sending to discord due to an invalid status code back -> 405
+E2021-12-15 15:51:30,149 [root] There was an issue sending to Telegram due to an invalid request: 404 -> {"ok":false,"error_code":404,"description":"Not Found"}
+E2021-12-15 15:51:32,195 [root] email alerter failed to alert
+Traceback (most recent call last):
+  File "C:\Users\yubin001\Desktop\DevTest\GitProjects\inventory-hunter\src\alerter\common.py", line 55, in __call__
+    alerter(**kwargs)
+  File "C:\Users\yubin001\Desktop\DevTest\GitProjects\inventory-hunter\src\alerter\emailer.py", line 58, in __call__
+    with smtplib.SMTP(self.relay) as s:
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\smtplib.py", line 341, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\smtplib.py", line 312, in _get_socket
+    return socket.create_connection((host, port), timeout,
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\socket.py", line 843, in create_connection
+    raise err
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\socket.py", line 831, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+E2021-12-15 15:51:32,237 [root] Issue with sending webhook to slack. Traceback (most recent call last):
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\site-packages\urllib3\connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\site-packages\urllib3\connectionpool.py", line 382, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\site-packages\urllib3\connectionpool.py", line 1010, in _validate_conn
+    conn.connect()
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\site-packages\urllib3\connection.py", line 411, in connect
+    self.sock = ssl_wrap_socket(
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\site-packages\urllib3\util\ssl_.py", line 449, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\site-packages\urllib3\util\ssl_.py", line 493, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\ssl.py", line 500, in wrap_socket
+    return self.sslsocket_class._create(
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\ssl.py", line 1040, in _create
+    self.do_handshake()
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\ssl.py", line 1309, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self signed certificate in certificate chain (_ssl.c:1129)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\site-packages\requests\adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\site-packages\urllib3\connectionpool.py", line 755, in urlopen
+    retries = retries.increment(
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\site-packages\urllib3\util\retry.py", line 574, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='hooks.slack.com', port=443): Max retries exceeded with url: /services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self signed certificate in certificate chain (_ssl.c:1129)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\yubin001\Desktop\DevTest\GitProjects\inventory-hunter\src\alerter\slack.py", line 65, in __call__
+    send_request = requests.post(
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\site-packages\requests\api.py", line 119, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\site-packages\requests\api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\site-packages\requests\sessions.py", line 542, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\site-packages\requests\sessions.py", line 655, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\site-packages\requests\adapters.py", line 514, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='hooks.slack.com', port=443): Max retries exceeded with url: /services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self signed certificate in certificate chain (_ssl.c:1129)')))
+
+I2021-12-15 15:51:32,782 [nwgg_4] not in stock
+W2021-12-15 15:51:33,297 [nwgg_5] missing price: https://www.newegg.com/evga-geforce-rtx-3070-08g-p5-3753-kr/p/N82E16814487529
+I2021-12-15 15:51:33,297 [nwgg_5] not in stock
+W2021-12-15 15:51:34,005 [nwgg_6] missing price: https://www.newegg.com/evga-geforce-rtx-3070-08g-p5-3755-kr/p/N82E16814487530
+I2021-12-15 15:51:34,006 [nwgg_6] not in stock
+W2021-12-15 15:51:36,374 [nwgg_7] missing price: https://www.newegg.com/evga-geforce-rtx-3070-08g-p5-3765-kr/p/N82E16814487531
+I2021-12-15 15:51:36,374 [nwgg_7] not in stock
+W2021-12-15 15:51:38,420 [nwgg_8] missing price: https://www.newegg.com/evga-geforce-rtx-3070-08g-p5-3767-kr/p/N82E16814487532
+I2021-12-15 15:51:38,421 [nwgg_8] not in stock
+W2021-12-15 15:51:40,949 [nwgg_9] unable to convert "$1,370.00" to float... caught exception: could not convert string to float: '1.370.00'
+I2021-12-15 15:51:40,950 [nwgg_9] now in stock!
+E2021-12-15 15:51:41,137 [root] There was an issue sending to discord due to an invalid status code back -> 405
+E2021-12-15 15:51:41,217 [root] There was an issue sending to Telegram due to an invalid request: 404 -> {"ok":false,"error_code":404,"description":"Not Found"}
+E2021-12-15 15:51:43,253 [root] email alerter failed to alert
+Traceback (most recent call last):
+  File "C:\Users\yubin001\Desktop\DevTest\GitProjects\inventory-hunter\src\alerter\common.py", line 55, in __call__
+    alerter(**kwargs)
+  File "C:\Users\yubin001\Desktop\DevTest\GitProjects\inventory-hunter\src\alerter\emailer.py", line 58, in __call__
+    with smtplib.SMTP(self.relay) as s:
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\smtplib.py", line 341, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\smtplib.py", line 312, in _get_socket
+    return socket.create_connection((host, port), timeout,
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\socket.py", line 843, in create_connection
+    raise err
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\socket.py", line 831, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+E2021-12-15 15:51:43,292 [root] Issue with sending webhook to slack. Traceback (most recent call last):
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\site-packages\urllib3\connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\site-packages\urllib3\connectionpool.py", line 382, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\site-packages\urllib3\connectionpool.py", line 1010, in _validate_conn
+    conn.connect()
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\site-packages\urllib3\connection.py", line 411, in connect
+    self.sock = ssl_wrap_socket(
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\site-packages\urllib3\util\ssl_.py", line 449, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\site-packages\urllib3\util\ssl_.py", line 493, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\ssl.py", line 500, in wrap_socket
+    return self.sslsocket_class._create(
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\ssl.py", line 1040, in _create
+    self.do_handshake()
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\ssl.py", line 1309, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self signed certificate in certificate chain (_ssl.c:1129)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\site-packages\requests\adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\site-packages\urllib3\connectionpool.py", line 755, in urlopen
+    retries = retries.increment(
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\site-packages\urllib3\util\retry.py", line 574, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='hooks.slack.com', port=443): Max retries exceeded with url: /services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self signed certificate in certificate chain (_ssl.c:1129)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\yubin001\Desktop\DevTest\GitProjects\inventory-hunter\src\alerter\slack.py", line 65, in __call__
+    send_request = requests.post(
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\site-packages\requests\api.py", line 119, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\site-packages\requests\api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\site-packages\requests\sessions.py", line 542, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\site-packages\requests\sessions.py", line 655, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\site-packages\requests\adapters.py", line 514, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='hooks.slack.com', port=443): Max retries exceeded with url: /services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self signed certificate in certificate chain (_ssl.c:1129)')))
+
+W2021-12-15 15:51:43,823 [nwgg_10] unable to convert "$1,233.43" to float... caught exception: could not convert string to float: '1.233.43'
+I2021-12-15 15:51:43,824 [nwgg_10] now in stock!
+E2021-12-15 15:51:43,962 [root] There was an issue sending to discord due to an invalid status code back -> 405
+E2021-12-15 15:51:44,026 [root] There was an issue sending to Telegram due to an invalid request: 404 -> {"ok":false,"error_code":404,"description":"Not Found"}
+E2021-12-15 15:51:46,063 [root] email alerter failed to alert
+Traceback (most recent call last):
+  File "C:\Users\yubin001\Desktop\DevTest\GitProjects\inventory-hunter\src\alerter\common.py", line 55, in __call__
+    alerter(**kwargs)
+  File "C:\Users\yubin001\Desktop\DevTest\GitProjects\inventory-hunter\src\alerter\emailer.py", line 58, in __call__
+    with smtplib.SMTP(self.relay) as s:
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\smtplib.py", line 341, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\smtplib.py", line 312, in _get_socket
+    return socket.create_connection((host, port), timeout,
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\socket.py", line 843, in create_connection
+    raise err
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\socket.py", line 831, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+E2021-12-15 15:51:46,102 [root] Issue with sending webhook to slack. Traceback (most recent call last):
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\site-packages\urllib3\connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\site-packages\urllib3\connectionpool.py", line 382, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\site-packages\urllib3\connectionpool.py", line 1010, in _validate_conn
+    conn.connect()
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\site-packages\urllib3\connection.py", line 411, in connect
+    self.sock = ssl_wrap_socket(
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\site-packages\urllib3\util\ssl_.py", line 449, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\site-packages\urllib3\util\ssl_.py", line 493, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\ssl.py", line 500, in wrap_socket
+    return self.sslsocket_class._create(
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\ssl.py", line 1040, in _create
+    self.do_handshake()
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\ssl.py", line 1309, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self signed certificate in certificate chain (_ssl.c:1129)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\site-packages\requests\adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\site-packages\urllib3\connectionpool.py", line 755, in urlopen
+    retries = retries.increment(
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\site-packages\urllib3\util\retry.py", line 574, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='hooks.slack.com', port=443): Max retries exceeded with url: /services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self signed certificate in certificate chain (_ssl.c:1129)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\yubin001\Desktop\DevTest\GitProjects\inventory-hunter\src\alerter\slack.py", line 65, in __call__
+    send_request = requests.post(
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\site-packages\requests\api.py", line 119, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\site-packages\requests\api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\site-packages\requests\sessions.py", line 542, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\site-packages\requests\sessions.py", line 655, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\site-packages\requests\adapters.py", line 514, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='hooks.slack.com', port=443): Max retries exceeded with url: /services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self signed certificate in certificate chain (_ssl.c:1129)')))
+
+I2021-12-15 15:51:46,463 [nwgg_11] not in stock
+W2021-12-15 15:51:47,190 [nwgg_12] unable to convert "$1,246.99" to float... caught exception: could not convert string to float: '1.246.99'
+I2021-12-15 15:51:47,191 [nwgg_12] now in stock!
+E2021-12-15 15:51:47,342 [root] There was an issue sending to discord due to an invalid status code back -> 405
+E2021-12-15 15:51:47,405 [root] There was an issue sending to Telegram due to an invalid request: 404 -> {"ok":false,"error_code":404,"description":"Not Found"}
+E2021-12-15 15:51:49,446 [root] email alerter failed to alert
+Traceback (most recent call last):
+  File "C:\Users\yubin001\Desktop\DevTest\GitProjects\inventory-hunter\src\alerter\common.py", line 55, in __call__
+    alerter(**kwargs)
+  File "C:\Users\yubin001\Desktop\DevTest\GitProjects\inventory-hunter\src\alerter\emailer.py", line 58, in __call__
+    with smtplib.SMTP(self.relay) as s:
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\smtplib.py", line 341, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\smtplib.py", line 312, in _get_socket
+    return socket.create_connection((host, port), timeout,
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\socket.py", line 843, in create_connection
+    raise err
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\socket.py", line 831, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+E2021-12-15 15:51:49,483 [root] Issue with sending webhook to slack. Traceback (most recent call last):
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\site-packages\urllib3\connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\site-packages\urllib3\connectionpool.py", line 382, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\site-packages\urllib3\connectionpool.py", line 1010, in _validate_conn
+    conn.connect()
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\site-packages\urllib3\connection.py", line 411, in connect
+    self.sock = ssl_wrap_socket(
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\site-packages\urllib3\util\ssl_.py", line 449, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\site-packages\urllib3\util\ssl_.py", line 493, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\ssl.py", line 500, in wrap_socket
+    return self.sslsocket_class._create(
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\ssl.py", line 1040, in _create
+    self.do_handshake()
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\ssl.py", line 1309, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self signed certificate in certificate chain (_ssl.c:1129)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\site-packages\requests\adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\site-packages\urllib3\connectionpool.py", line 755, in urlopen
+    retries = retries.increment(
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\site-packages\urllib3\util\retry.py", line 574, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='hooks.slack.com', port=443): Max retries exceeded with url: /services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self signed certificate in certificate chain (_ssl.c:1129)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\yubin001\Desktop\DevTest\GitProjects\inventory-hunter\src\alerter\slack.py", line 65, in __call__
+    send_request = requests.post(
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\site-packages\requests\api.py", line 119, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\site-packages\requests\api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\site-packages\requests\sessions.py", line 542, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\site-packages\requests\sessions.py", line 655, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\site-packages\requests\adapters.py", line 514, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='hooks.slack.com', port=443): Max retries exceeded with url: /services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self signed certificate in certificate chain (_ssl.c:1129)')))
+
+W2021-12-15 15:51:49,834 [nwgg_13] unable to convert "$1,166.50" to float... caught exception: could not convert string to float: '1.166.50'
+I2021-12-15 15:51:49,835 [nwgg_13] now in stock!
+E2021-12-15 15:51:49,992 [root] There was an issue sending to discord due to an invalid status code back -> 405
+E2021-12-15 15:51:50,053 [root] There was an issue sending to Telegram due to an invalid request: 404 -> {"ok":false,"error_code":404,"description":"Not Found"}
+E2021-12-15 15:51:52,091 [root] email alerter failed to alert
+Traceback (most recent call last):
+  File "C:\Users\yubin001\Desktop\DevTest\GitProjects\inventory-hunter\src\alerter\common.py", line 55, in __call__
+    alerter(**kwargs)
+  File "C:\Users\yubin001\Desktop\DevTest\GitProjects\inventory-hunter\src\alerter\emailer.py", line 58, in __call__
+    with smtplib.SMTP(self.relay) as s:
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\smtplib.py", line 341, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\smtplib.py", line 312, in _get_socket
+    return socket.create_connection((host, port), timeout,
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\socket.py", line 843, in create_connection
+    raise err
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\socket.py", line 831, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+E2021-12-15 15:51:52,134 [root] Issue with sending webhook to slack. Traceback (most recent call last):
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\site-packages\urllib3\connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\site-packages\urllib3\connectionpool.py", line 382, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\site-packages\urllib3\connectionpool.py", line 1010, in _validate_conn
+    conn.connect()
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\site-packages\urllib3\connection.py", line 411, in connect
+    self.sock = ssl_wrap_socket(
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\site-packages\urllib3\util\ssl_.py", line 449, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\site-packages\urllib3\util\ssl_.py", line 493, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\ssl.py", line 500, in wrap_socket
+    return self.sslsocket_class._create(
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\ssl.py", line 1040, in _create
+    self.do_handshake()
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\ssl.py", line 1309, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self signed certificate in certificate chain (_ssl.c:1129)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\site-packages\requests\adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\site-packages\urllib3\connectionpool.py", line 755, in urlopen
+    retries = retries.increment(
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\site-packages\urllib3\util\retry.py", line 574, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='hooks.slack.com', port=443): Max retries exceeded with url: /services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self signed certificate in certificate chain (_ssl.c:1129)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\yubin001\Desktop\DevTest\GitProjects\inventory-hunter\src\alerter\slack.py", line 65, in __call__
+    send_request = requests.post(
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\site-packages\requests\api.py", line 119, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\site-packages\requests\api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\site-packages\requests\sessions.py", line 542, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\site-packages\requests\sessions.py", line 655, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\site-packages\requests\adapters.py", line 514, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='hooks.slack.com', port=443): Max retries exceeded with url: /services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self signed certificate in certificate chain (_ssl.c:1129)')))
+
+W2021-12-15 15:51:52,495 [nwgg_14] unable to convert "$1,182.89" to float... caught exception: could not convert string to float: '1.182.89'
+I2021-12-15 15:51:52,496 [nwgg_14] now in stock!
+E2021-12-15 15:51:52,677 [root] There was an issue sending to discord due to an invalid status code back -> 405
+E2021-12-15 15:51:52,762 [root] There was an issue sending to Telegram due to an invalid request: 404 -> {"ok":false,"error_code":404,"description":"Not Found"}
+E2021-12-15 15:51:54,801 [root] email alerter failed to alert
+Traceback (most recent call last):
+  File "C:\Users\yubin001\Desktop\DevTest\GitProjects\inventory-hunter\src\alerter\common.py", line 55, in __call__
+    alerter(**kwargs)
+  File "C:\Users\yubin001\Desktop\DevTest\GitProjects\inventory-hunter\src\alerter\emailer.py", line 58, in __call__
+    with smtplib.SMTP(self.relay) as s:
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\smtplib.py", line 341, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\smtplib.py", line 312, in _get_socket
+    return socket.create_connection((host, port), timeout,
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\socket.py", line 843, in create_connection
+    raise err
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\socket.py", line 831, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+E2021-12-15 15:51:54,840 [root] Issue with sending webhook to slack. Traceback (most recent call last):
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\site-packages\urllib3\connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\site-packages\urllib3\connectionpool.py", line 382, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\site-packages\urllib3\connectionpool.py", line 1010, in _validate_conn
+    conn.connect()
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\site-packages\urllib3\connection.py", line 411, in connect
+    self.sock = ssl_wrap_socket(
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\site-packages\urllib3\util\ssl_.py", line 449, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\site-packages\urllib3\util\ssl_.py", line 493, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\ssl.py", line 500, in wrap_socket
+    return self.sslsocket_class._create(
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\ssl.py", line 1040, in _create
+    self.do_handshake()
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\ssl.py", line 1309, in do_handshake
+    self._sslobj.do_handshake()
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\site-packages\requests\adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\site-packages\urllib3\connectionpool.py", line 755, in urlopen
+    retries = retries.increment(
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\site-packages\urllib3\util\retry.py", line 532, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\site-packages\urllib3\packages\six.py", line 769, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\site-packages\urllib3\connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\site-packages\urllib3\connectionpool.py", line 382, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\site-packages\urllib3\connectionpool.py", line 1010, in _validate_conn
+    conn.connect()
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\site-packages\urllib3\connection.py", line 411, in connect
+    self.sock = ssl_wrap_socket(
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\site-packages\urllib3\util\ssl_.py", line 449, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\site-packages\urllib3\util\ssl_.py", line 493, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\ssl.py", line 500, in wrap_socket
+    return self.sslsocket_class._create(
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\ssl.py", line 1040, in _create
+    self.do_handshake()
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\ssl.py", line 1309, in do_handshake
+    self._sslobj.do_handshake()
+urllib3.exceptions.ProtocolError: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\yubin001\Desktop\DevTest\GitProjects\inventory-hunter\src\alerter\slack.py", line 65, in __call__
+    send_request = requests.post(
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\site-packages\requests\api.py", line 119, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\site-packages\requests\api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\site-packages\requests\sessions.py", line 542, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\site-packages\requests\sessions.py", line 655, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\site-packages\requests\adapters.py", line 498, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+
+W2021-12-15 15:51:55,215 [nwgg_15] missing price: https://www.newegg.com/msi-geforce-rtx-3070-rtx-3070-gaming-x-trio/p/N82E16814137603
+I2021-12-15 15:51:55,216 [nwgg_15] not in stock
+E2021-12-15 15:51:56,050 [nwgg_16] caught exception during request: 'charmap' codec can't encode character '\u2070' in position 71584: character maps to <undefined>
+E2021-12-15 15:51:56,051 [nwgg_16] scrape failed
+W2021-12-15 15:51:58,285 [nwgg_17] unable to convert "$1,426.99" to float... caught exception: could not convert string to float: '1.426.99'
+I2021-12-15 15:51:58,286 [nwgg_17] now in stock!
+E2021-12-15 15:51:58,435 [root] There was an issue sending to discord due to an invalid status code back -> 405
+E2021-12-15 15:51:58,507 [root] There was an issue sending to Telegram due to an invalid request: 404 -> {"ok":false,"error_code":404,"description":"Not Found"}
+E2021-12-15 15:52:00,560 [root] email alerter failed to alert
+Traceback (most recent call last):
+  File "C:\Users\yubin001\Desktop\DevTest\GitProjects\inventory-hunter\src\alerter\common.py", line 55, in __call__
+    alerter(**kwargs)
+  File "C:\Users\yubin001\Desktop\DevTest\GitProjects\inventory-hunter\src\alerter\emailer.py", line 58, in __call__
+    with smtplib.SMTP(self.relay) as s:
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\smtplib.py", line 341, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\smtplib.py", line 312, in _get_socket
+    return socket.create_connection((host, port), timeout,
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\socket.py", line 843, in create_connection
+    raise err
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\socket.py", line 831, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+E2021-12-15 15:52:00,602 [root] Issue with sending webhook to slack. Traceback (most recent call last):
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\site-packages\urllib3\connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\site-packages\urllib3\connectionpool.py", line 382, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\site-packages\urllib3\connectionpool.py", line 1010, in _validate_conn
+    conn.connect()
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\site-packages\urllib3\connection.py", line 411, in connect
+    self.sock = ssl_wrap_socket(
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\site-packages\urllib3\util\ssl_.py", line 449, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\site-packages\urllib3\util\ssl_.py", line 493, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\ssl.py", line 500, in wrap_socket
+    return self.sslsocket_class._create(
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\ssl.py", line 1040, in _create
+    self.do_handshake()
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\ssl.py", line 1309, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self signed certificate in certificate chain (_ssl.c:1129)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\site-packages\requests\adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\site-packages\urllib3\connectionpool.py", line 755, in urlopen
+    retries = retries.increment(
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\site-packages\urllib3\util\retry.py", line 574, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='hooks.slack.com', port=443): Max retries exceeded with url: /services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self signed certificate in certificate chain (_ssl.c:1129)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\yubin001\Desktop\DevTest\GitProjects\inventory-hunter\src\alerter\slack.py", line 65, in __call__
+    send_request = requests.post(
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\site-packages\requests\api.py", line 119, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\site-packages\requests\api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\site-packages\requests\sessions.py", line 542, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\site-packages\requests\sessions.py", line 655, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\yubin001\Miniconda3\envs\gitproject\lib\site-packages\requests\adapters.py", line 514, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='hooks.slack.com', port=443): Max retries exceeded with url: /services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self signed certificate in certificate chain (_ssl.c:1129)')))
+
+W2021-12-15 15:52:00,964 [nwgg_18] missing price: https://www.newegg.com/msi-geforce-rtx-3070-rtx-3070-ventus-3x-oc/p/N82E16814137601
+I2021-12-15 15:52:00,965 [nwgg_18] not in stock
+I2021-12-15 15:52:02,288 [nwgg_1] not in stock
+W2021-12-15 15:52:04,619 [nwgg_2] unable to convert "$1,367.06" to float... caught exception: could not convert string to float: '1.367.06'
+I2021-12-15 15:52:04,620 [nwgg_2] still in stock
+W2021-12-15 15:52:07,010 [nwgg_3] unable to convert "$1,199.88" to float... caught exception: could not convert string to float: '1.199.88'
+I2021-12-15 15:52:07,011 [nwgg_3] still in stock
+I2021-12-15 15:52:09,098 [nwgg_4] not in stock
+W2021-12-15 15:52:11,671 [nwgg_5] missing price: https://www.newegg.com/evga-geforce-rtx-3070-08g-p5-3753-kr/p/N82E16814487529
+I2021-12-15 15:52:11,672 [nwgg_5] not in stock
+W2021-12-15 15:52:13,694 [nwgg_6] missing price: https://www.newegg.com/evga-geforce-rtx-3070-08g-p5-3755-kr/p/N82E16814487530
+I2021-12-15 15:52:13,695 [nwgg_6] not in stock
+I2021-12-15 15:53:00,415 [root] starting v0.0.1 with args: ./src/run.py -a email -c ./config/newegg_rtx_3070.yaml -q ./config/alerters.yaml -l ./log.txt
+I2021-12-15 15:53:00,878 [root] discord alerter initialized with kwargs: webhook_url=https://discord.com/api/webhooks/XXXXXXXXXXXX... mentions=['XXXXXXXXXXXXXXX', 'XXXXXXXXXXXXXXX']
+I2021-12-15 15:53:00,879 [root] telegram alerter initialized with kwargs: webhook_url=https://api.telegram.org/botXXXXXXXXXXXXXXXXXXXX/sendMessage chat_id=XXXXXXXX
+I2021-12-15 15:53:00,879 [root] email alerter initialized with kwargs: sender=yubenoit@email.com recipients=['xiao.ming.track@gmail.com', 'myfriendsemail@email.com'] relay=127.0.0.1 password=callmexiaoming!
+I2021-12-15 15:53:00,879 [root] slack alerter initialized with kwargs: webhook_url=https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX mentions=['XXXXXXXXXXXXXXX', 'XXXXXXXXXXXXXXX']
+I2021-12-15 15:53:00,883 [nwgg_1] scraper initialized for https://www.newegg.com/asus-geforce-rtx-3070-dual-rtx3070-8g/p/N82E16814126460
+I2021-12-15 15:53:00,883 [nwgg_2] scraper initialized for https://www.newegg.com/asus-geforce-rtx-3070-rog-strix-rtx3070-o8g-gaming/p/N82E16814126458
+I2021-12-15 15:53:00,883 [nwgg_3] scraper initialized for https://www.newegg.com/asus-geforce-rtx-3070-tuf-rtx3070-o8g-gaming/p/N82E16814126461
+I2021-12-15 15:53:00,884 [nwgg_4] scraper initialized for https://www.newegg.com/evga-geforce-rtx-3070-08g-p5-3751-kr/p/N82E16814487528
+I2021-12-15 15:53:00,884 [nwgg_5] scraper initialized for https://www.newegg.com/evga-geforce-rtx-3070-08g-p5-3753-kr/p/N82E16814487529
+I2021-12-15 15:53:00,884 [nwgg_6] scraper initialized for https://www.newegg.com/evga-geforce-rtx-3070-08g-p5-3755-kr/p/N82E16814487530
+I2021-12-15 15:53:00,885 [nwgg_7] scraper initialized for https://www.newegg.com/evga-geforce-rtx-3070-08g-p5-3765-kr/p/N82E16814487531
+I2021-12-15 15:53:00,885 [nwgg_8] scraper initialized for https://www.newegg.com/evga-geforce-rtx-3070-08g-p5-3767-kr/p/N82E16814487532
+I2021-12-15 15:53:00,885 [nwgg_9] scraper initialized for https://www.newegg.com/gigabyte-geforce-rtx-2070-super-gv-n207swf3oc-8gd/p/N82E16814932213
+I2021-12-15 15:53:00,886 [nwgg_10] scraper initialized for https://www.newegg.com/gigabyte-geforce-rtx-3070-gv-n3070aorus-m-8gd/p/N82E16814932359
+I2021-12-15 15:53:00,886 [nwgg_11] scraper initialized for https://www.newegg.com/gigabyte-geforce-rtx-3070-gv-n3070eagle-8gd/p/N82E16814932344
+I2021-12-15 15:53:00,886 [nwgg_12] scraper initialized for https://www.newegg.com/gigabyte-geforce-rtx-3070-gv-n3070eagle-oc-8gd/p/N82E16814932343
+I2021-12-15 15:53:00,886 [nwgg_13] scraper initialized for https://www.newegg.com/gigabyte-geforce-rtx-3070-gv-n3070gaming-oc-8gd/p/N82E16814932342
+I2021-12-15 15:53:00,887 [nwgg_14] scraper initialized for https://www.newegg.com/gigabyte-geforce-rtx-3070-gv-n3070vision-oc-8gd/p/N82E16814932360
+I2021-12-15 15:53:00,887 [nwgg_15] scraper initialized for https://www.newegg.com/msi-geforce-rtx-3070-rtx-3070-gaming-x-trio/p/N82E16814137603
+I2021-12-15 15:53:00,887 [nwgg_16] scraper initialized for https://www.newegg.com/msi-geforce-rtx-3070-rtx-3070-ventus-2x-oc/p/N82E16814137602
+I2021-12-15 15:53:00,887 [nwgg_17] scraper initialized for https://www.newegg.com/msi-geforce-rtx-3070-rtx-3070-ventus-2x/p/N82E16814137605
+I2021-12-15 15:53:00,887 [nwgg_18] scraper initialized for https://www.newegg.com/msi-geforce-rtx-3070-rtx-3070-ventus-3x-oc/p/N82E16814137601
+I2021-12-15 15:56:36,631 [root] starting v0.0.1 with args: ./src/run.py -a email -c ./config/amazon_rtx_3070.yaml -q ./config/alerters.yaml -l ./log.txt
+I2021-12-15 15:56:37,122 [root] discord alerter initialized with kwargs: webhook_url=https://discord.com/api/webhooks/XXXXXXXXXXXX... mentions=['XXXXXXXXXXXXXXX', 'XXXXXXXXXXXXXXX']
+I2021-12-15 15:56:37,123 [root] telegram alerter initialized with kwargs: webhook_url=https://api.telegram.org/botXXXXXXXXXXXXXXXXXXXX/sendMessage chat_id=XXXXXXXX
+I2021-12-15 15:56:37,123 [root] email alerter initialized with kwargs: sender=xiao.ming.track@gmail.com recipients=['xiao.ming.track@gmail.com', 'yubenoit@email.com'] relay=127.0.0.1 password=callmexiaoming!
+I2021-12-15 15:56:37,123 [root] slack alerter initialized with kwargs: webhook_url=https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX mentions=['XXXXXXXXXXXXXXX', 'XXXXXXXXXXXXXXX']
+I2021-12-15 15:56:37,126 [mzn_1] scraper initialized for https://www.amazon.com/dp/B08HBF5L3K
+I2021-12-15 15:56:37,126 [mzn_2] scraper initialized for https://www.amazon.com/dp/B08HBJB7YD
+I2021-12-15 15:56:37,126 [mzn_3] scraper initialized for https://www.amazon.com/dp/B08KWLMZV4
+I2021-12-15 15:56:37,126 [mzn_4] scraper initialized for https://www.amazon.com/dp/B08KWN2LZG
+I2021-12-15 15:56:37,126 [mzn_5] scraper initialized for https://www.amazon.com/dp/B08KWPDXJZ
+I2021-12-15 15:56:37,126 [mzn_6] scraper initialized for https://www.amazon.com/dp/B08KXZV626
+I2021-12-15 15:56:37,126 [mzn_7] scraper initialized for https://www.amazon.com/dp/B08KY266MG
+I2021-12-15 15:56:37,126 [mzn_8] scraper initialized for https://www.amazon.com/dp/B08KY322TH
+I2021-12-15 15:56:37,127 [mzn_9] scraper initialized for https://www.amazon.com/dp/B08L8HPKR6
+I2021-12-15 15:56:37,127 [mzn_10] scraper initialized for https://www.amazon.com/dp/B08L8JNTXQ
+I2021-12-15 15:56:37,127 [mzn_11] scraper initialized for https://www.amazon.com/dp/B08L8KC1J7
+I2021-12-15 15:56:37,127 [mzn_12] scraper initialized for https://www.amazon.com/dp/B08L8L71SM
+I2021-12-15 15:56:37,127 [mzn_13] scraper initialized for https://www.amazon.com/dp/B08L8L9TCZ
+I2021-12-15 15:56:37,127 [mzn_14] scraper initialized for https://www.amazon.com/dp/B08L8LG4M3
+I2021-12-15 15:56:37,127 [mzn_15] scraper initialized for https://www.amazon.com/dp/B08LF1CWT2
+I2021-12-15 15:56:37,128 [mzn_16] scraper initialized for https://www.amazon.com/dp/B08LF32LJ6
+I2021-12-15 15:56:37,128 [mzn_17] scraper initialized for https://www.amazon.com/dp/B08LW46GH2
+W2021-12-15 15:56:39,504 [mzn_1] missing title: https://www.amazon.com/dp/B08HBF5L3K
+I2021-12-15 15:56:39,506 [mzn_1] not in stock
+W2021-12-15 15:56:41,513 [mzn_2] missing title: https://www.amazon.com/dp/B08HBJB7YD
+I2021-12-15 15:56:41,515 [mzn_2] not in stock
+W2021-12-15 15:56:43,733 [mzn_3] missing title: https://www.amazon.com/dp/B08KWLMZV4
+I2021-12-15 15:56:43,734 [mzn_3] not in stock
+E2021-12-15 15:56:47,848 [mzn_4] caught exception during request: 'charmap' codec can't encode characters in position 739467-739468: character maps to <undefined>
+E2021-12-15 15:56:47,849 [mzn_4] scrape failed
+W2021-12-15 15:56:48,264 [mzn_5] missing title: https://www.amazon.com/dp/B08KWPDXJZ
+I2021-12-15 15:56:48,265 [mzn_5] not in stock
+E2021-12-15 15:56:52,243 [mzn_6] caught exception during request: 'charmap' codec can't encode characters in position 740095-740096: character maps to <undefined>
+E2021-12-15 15:56:52,244 [mzn_6] scrape failed
+W2021-12-15 15:56:52,975 [mzn_7] missing title: https://www.amazon.com/dp/B08KY266MG
+I2021-12-15 15:56:52,976 [mzn_7] not in stock
+W2021-12-15 15:56:55,496 [mzn_8] missing title: https://www.amazon.com/dp/B08KY322TH
+I2021-12-15 15:56:55,498 [mzn_8] not in stock
+W2021-12-15 15:56:57,525 [mzn_9] missing title: https://www.amazon.com/dp/B08L8HPKR6
+I2021-12-15 15:56:57,526 [mzn_9] not in stock
+W2021-12-15 15:56:59,403 [mzn_10] missing title: https://www.amazon.com/dp/B08L8JNTXQ
+I2021-12-15 15:56:59,404 [mzn_10] not in stock
+W2021-12-15 15:57:01,465 [mzn_11] missing title: https://www.amazon.com/dp/B08L8KC1J7
+I2021-12-15 15:57:01,466 [mzn_11] not in stock
+W2021-12-15 15:57:03,625 [mzn_12] missing title: https://www.amazon.com/dp/B08L8L71SM
+I2021-12-15 15:57:03,626 [mzn_12] not in stock
+W2021-12-15 15:57:05,766 [mzn_13] missing title: https://www.amazon.com/dp/B08L8L9TCZ
+I2021-12-15 15:57:05,767 [mzn_13] not in stock
+W2021-12-15 15:57:08,160 [mzn_14] missing title: https://www.amazon.com/dp/B08L8LG4M3
+I2021-12-15 15:57:08,161 [mzn_14] not in stock
+W2021-12-15 15:57:10,400 [mzn_15] missing title: https://www.amazon.com/dp/B08LF1CWT2
+I2021-12-15 15:57:10,401 [mzn_15] not in stock
+W2021-12-15 15:57:12,593 [mzn_16] missing title: https://www.amazon.com/dp/B08LF32LJ6
+I2021-12-15 15:57:12,595 [mzn_16] not in stock
+E2021-12-15 15:57:17,275 [mzn_17] caught exception during request: 'charmap' codec can't encode characters in position 740144-740145: character maps to <undefined>
+E2021-12-15 15:57:17,275 [mzn_17] scrape failed
+W2021-12-15 15:57:17,442 [mzn_1] missing title: https://www.amazon.com/dp/B08HBF5L3K
+I2021-12-15 15:57:17,443 [mzn_1] not in stock
+W2021-12-15 15:57:19,232 [mzn_2] missing title: https://www.amazon.com/dp/B08HBJB7YD
+I2021-12-15 15:57:19,233 [mzn_2] not in stock
+E2021-12-15 15:57:23,085 [mzn_3] caught exception during request: 'charmap' codec can't encode characters in position 726667-726668: character maps to <undefined>
+E2021-12-15 15:57:23,086 [mzn_3] scrape failed
+W2021-12-15 15:57:23,534 [mzn_4] missing title: https://www.amazon.com/dp/B08KWN2LZG
+I2021-12-15 15:57:23,536 [mzn_4] not in stock
+W2021-12-15 15:57:25,660 [mzn_5] missing title: https://www.amazon.com/dp/B08KWPDXJZ
+I2021-12-15 15:57:25,662 [mzn_5] not in stock
+W2021-12-15 15:57:28,068 [mzn_6] missing title: https://www.amazon.com/dp/B08KXZV626
+I2021-12-15 15:57:28,070 [mzn_6] not in stock
+W2021-12-15 15:57:30,241 [mzn_7] missing title: https://www.amazon.com/dp/B08KY266MG
+I2021-12-15 15:57:30,243 [mzn_7] not in stock
+E2021-12-15 15:57:34,000 [mzn_8] caught exception during request: 'charmap' codec can't encode characters in position 739077-739078: character maps to <undefined>
+E2021-12-15 15:57:34,000 [mzn_8] scrape failed
+W2021-12-15 15:57:34,464 [mzn_9] missing title: https://www.amazon.com/dp/B08L8HPKR6
+I2021-12-15 15:57:34,466 [mzn_9] not in stock
+W2021-12-15 15:57:36,579 [mzn_10] missing title: https://www.amazon.com/dp/B08L8JNTXQ
+I2021-12-15 15:57:36,581 [mzn_10] not in stock
+W2021-12-15 15:57:38,790 [mzn_11] missing title: https://www.amazon.com/dp/B08L8KC1J7
+I2021-12-15 15:57:38,791 [mzn_11] not in stock
+E2021-12-15 15:57:42,478 [mzn_12] caught exception during request: 'charmap' codec can't encode characters in position 738446-738447: character maps to <undefined>
+E2021-12-15 15:57:42,479 [mzn_12] scrape failed
+W2021-12-15 15:57:43,263 [mzn_13] missing title: https://www.amazon.com/dp/B08L8L9TCZ
+I2021-12-15 15:57:43,263 [mzn_13] not in stock
+W2021-12-15 15:57:45,568 [mzn_14] missing title: https://www.amazon.com/dp/B08L8LG4M3
+I2021-12-15 15:57:45,570 [mzn_14] not in stock
+W2021-12-15 15:57:47,716 [mzn_15] missing title: https://www.amazon.com/dp/B08LF1CWT2
+I2021-12-15 15:57:47,718 [mzn_15] not in stock
+W2021-12-15 15:57:49,890 [mzn_16] missing title: https://www.amazon.com/dp/B08LF32LJ6
+I2021-12-15 15:57:49,892 [mzn_16] not in stock
+W2021-12-15 15:57:51,848 [mzn_17] missing title: https://www.amazon.com/dp/B08LW46GH2
+I2021-12-15 15:57:51,850 [mzn_17] not in stock
+W2021-12-15 15:57:54,030 [mzn_1] missing title: https://www.amazon.com/dp/B08HBF5L3K
+I2021-12-15 15:57:54,032 [mzn_1] not in stock
+W2021-12-15 15:57:56,204 [mzn_2] missing title: https://www.amazon.com/dp/B08HBJB7YD
+I2021-12-15 15:57:56,206 [mzn_2] not in stock
+W2021-12-15 15:57:58,512 [mzn_3] missing title: https://www.amazon.com/dp/B08KWLMZV4
+I2021-12-15 15:57:58,513 [mzn_3] not in stock
+W2021-12-15 15:58:00,682 [mzn_4] missing title: https://www.amazon.com/dp/B08KWN2LZG
+I2021-12-15 15:58:00,684 [mzn_4] not in stock
+W2021-12-15 15:58:02,839 [mzn_5] missing title: https://www.amazon.com/dp/B08KWPDXJZ
+I2021-12-15 15:58:02,841 [mzn_5] not in stock
+W2021-12-15 15:58:04,852 [mzn_6] missing title: https://www.amazon.com/dp/B08KXZV626
+I2021-12-15 15:58:04,854 [mzn_6] not in stock
+W2021-12-15 15:58:06,870 [mzn_7] missing title: https://www.amazon.com/dp/B08KY266MG
+I2021-12-15 15:58:06,871 [mzn_7] not in stock
+W2021-12-15 15:58:08,935 [mzn_8] missing title: https://www.amazon.com/dp/B08KY322TH
+I2021-12-15 15:58:08,936 [mzn_8] not in stock
+W2021-12-15 15:58:11,358 [mzn_9] missing title: https://www.amazon.com/dp/B08L8HPKR6
+I2021-12-15 15:58:11,359 [mzn_9] not in stock
+W2021-12-15 15:58:13,377 [mzn_10] missing title: https://www.amazon.com/dp/B08L8JNTXQ
+I2021-12-15 15:58:13,378 [mzn_10] not in stock
+W2021-12-15 15:58:15,313 [mzn_11] missing title: https://www.amazon.com/dp/B08L8KC1J7
+I2021-12-15 15:58:15,316 [mzn_11] not in stock
+W2021-12-15 15:58:17,700 [mzn_12] missing title: https://www.amazon.com/dp/B08L8L71SM
+I2021-12-15 15:58:17,702 [mzn_12] not in stock
+W2021-12-15 15:58:19,949 [mzn_13] missing title: https://www.amazon.com/dp/B08L8L9TCZ
+I2021-12-15 15:58:19,950 [mzn_13] not in stock
+W2021-12-15 15:58:22,541 [mzn_14] missing title: https://www.amazon.com/dp/B08L8LG4M3
+I2021-12-15 15:58:22,542 [mzn_14] not in stock
+E2021-12-15 15:58:26,316 [mzn_15] caught exception during request: 'charmap' codec can't encode characters in position 740108-740109: character maps to <undefined>
+E2021-12-15 15:58:26,317 [mzn_15] scrape failed
+W2021-12-15 15:58:26,782 [mzn_16] missing title: https://www.amazon.com/dp/B08LF32LJ6
+I2021-12-15 15:58:26,783 [mzn_16] not in stock
+W2021-12-15 15:58:29,102 [mzn_17] missing title: https://www.amazon.com/dp/B08LW46GH2
+I2021-12-15 15:58:29,104 [mzn_17] not in stock
+W2021-12-15 15:58:31,467 [mzn_1] missing title: https://www.amazon.com/dp/B08HBF5L3K
+I2021-12-15 15:58:31,468 [mzn_1] not in stock
+E2021-12-15 15:58:34,744 [mzn_2] caught exception during request: 'charmap' codec can't encode characters in position 739489-739490: character maps to <undefined>
+E2021-12-15 15:58:34,746 [mzn_2] scrape failed
+W2021-12-15 15:58:35,755 [mzn_3] missing title: https://www.amazon.com/dp/B08KWLMZV4
+I2021-12-15 15:58:35,757 [mzn_3] not in stock
+W2021-12-15 15:58:37,770 [mzn_4] missing title: https://www.amazon.com/dp/B08KWN2LZG
+I2021-12-15 15:58:37,772 [mzn_4] not in stock
+W2021-12-15 15:58:39,963 [mzn_5] missing title: https://www.amazon.com/dp/B08KWPDXJZ
+I2021-12-15 15:58:39,965 [mzn_5] not in stock
+W2021-12-15 15:58:42,119 [mzn_6] missing title: https://www.amazon.com/dp/B08KXZV626
+I2021-12-15 15:58:42,122 [mzn_6] not in stock
+W2021-12-15 15:58:44,401 [mzn_7] missing title: https://www.amazon.com/dp/B08KY266MG
+I2021-12-15 15:58:44,402 [mzn_7] not in stock
+W2021-12-15 15:58:46,385 [mzn_8] missing title: https://www.amazon.com/dp/B08KY322TH
+I2021-12-15 15:58:46,386 [mzn_8] not in stock
+W2021-12-15 15:58:48,773 [mzn_9] missing title: https://www.amazon.com/dp/B08L8HPKR6
+I2021-12-15 15:58:48,774 [mzn_9] not in stock
+W2021-12-15 15:58:51,230 [mzn_10] missing title: https://www.amazon.com/dp/B08L8JNTXQ
+I2021-12-15 15:58:51,232 [mzn_10] not in stock
+W2021-12-15 15:58:53,181 [mzn_11] missing title: https://www.amazon.com/dp/B08L8KC1J7
+I2021-12-15 15:58:53,182 [mzn_11] not in stock
+W2021-12-15 15:58:55,519 [mzn_12] missing title: https://www.amazon.com/dp/B08L8L71SM
+I2021-12-15 15:58:55,521 [mzn_12] not in stock
+W2021-12-15 15:58:57,548 [mzn_13] missing title: https://www.amazon.com/dp/B08L8L9TCZ
+I2021-12-15 15:58:57,550 [mzn_13] not in stock
+W2021-12-15 15:58:59,815 [mzn_14] missing title: https://www.amazon.com/dp/B08L8LG4M3
+I2021-12-15 15:58:59,816 [mzn_14] not in stock
+W2021-12-15 15:59:01,983 [mzn_15] missing title: https://www.amazon.com/dp/B08LF1CWT2
+I2021-12-15 15:59:01,985 [mzn_15] not in stock
+W2021-12-15 15:59:03,962 [mzn_16] missing title: https://www.amazon.com/dp/B08LF32LJ6
+I2021-12-15 15:59:03,964 [mzn_16] not in stock
+W2021-12-15 15:59:06,050 [mzn_17] missing title: https://www.amazon.com/dp/B08LW46GH2
+I2021-12-15 15:59:06,052 [mzn_17] not in stock
+W2021-12-15 15:59:08,221 [mzn_1] missing title: https://www.amazon.com/dp/B08HBF5L3K
+I2021-12-15 15:59:08,225 [mzn_1] not in stock
+W2021-12-15 15:59:10,502 [mzn_2] missing title: https://www.amazon.com/dp/B08HBJB7YD
+I2021-12-15 15:59:10,503 [mzn_2] not in stock
+W2021-12-15 15:59:12,699 [mzn_3] missing title: https://www.amazon.com/dp/B08KWLMZV4
+I2021-12-15 15:59:12,701 [mzn_3] not in stock
+W2021-12-15 15:59:14,953 [mzn_4] missing title: https://www.amazon.com/dp/B08KWN2LZG
+I2021-12-15 15:59:14,956 [mzn_4] not in stock
+W2021-12-15 15:59:17,503 [mzn_5] missing title: https://www.amazon.com/dp/B08KWPDXJZ
+I2021-12-15 15:59:17,505 [mzn_5] not in stock
+W2021-12-15 15:59:19,413 [mzn_6] missing title: https://www.amazon.com/dp/B08KXZV626
+I2021-12-15 15:59:19,414 [mzn_6] not in stock
+W2021-12-15 15:59:21,740 [mzn_7] missing title: https://www.amazon.com/dp/B08KY266MG
+I2021-12-15 15:59:21,742 [mzn_7] not in stock
+W2021-12-15 15:59:23,734 [mzn_8] missing title: https://www.amazon.com/dp/B08KY322TH
+I2021-12-15 15:59:23,735 [mzn_8] not in stock
+W2021-12-15 15:59:26,034 [mzn_9] missing title: https://www.amazon.com/dp/B08L8HPKR6
+I2021-12-15 15:59:26,035 [mzn_9] not in stock
+W2021-12-15 15:59:28,314 [mzn_10] missing title: https://www.amazon.com/dp/B08L8JNTXQ
+I2021-12-15 15:59:28,316 [mzn_10] not in stock
+W2021-12-15 15:59:30,474 [mzn_11] missing title: https://www.amazon.com/dp/B08L8KC1J7
+I2021-12-15 15:59:30,477 [mzn_11] not in stock
+W2021-12-15 15:59:33,593 [mzn_12] missing title: https://www.amazon.com/dp/B08L8L71SM
+I2021-12-15 15:59:33,595 [mzn_12] not in stock
+W2021-12-15 15:59:34,754 [mzn_13] missing title: https://www.amazon.com/dp/B08L8L9TCZ
+I2021-12-15 15:59:34,756 [mzn_13] not in stock
+W2021-12-15 15:59:36,990 [mzn_14] missing title: https://www.amazon.com/dp/B08L8LG4M3
+I2021-12-15 15:59:36,991 [mzn_14] not in stock
+W2021-12-15 15:59:39,199 [mzn_15] missing title: https://www.amazon.com/dp/B08LF1CWT2
+I2021-12-15 15:59:39,201 [mzn_15] not in stock
+W2021-12-15 15:59:41,335 [mzn_16] missing title: https://www.amazon.com/dp/B08LF32LJ6
+I2021-12-15 15:59:41,336 [mzn_16] not in stock
+W2021-12-15 15:59:43,539 [mzn_17] missing title: https://www.amazon.com/dp/B08LW46GH2
+I2021-12-15 15:59:43,542 [mzn_17] not in stock
+E2021-12-15 15:59:45,458 [mzn_1] caught exception during request: 'NoneType' object has no attribute 'text'
+E2021-12-15 15:59:45,459 [mzn_1] scrape failed
+E2021-12-15 15:59:49,407 [mzn_2] caught exception during request: 'charmap' codec can't encode characters in position 739096-739097: character maps to <undefined>
+E2021-12-15 15:59:49,408 [mzn_2] scrape failed
+W2021-12-15 15:59:49,773 [mzn_3] missing title: https://www.amazon.com/dp/B08KWLMZV4
+I2021-12-15 15:59:49,774 [mzn_3] not in stock
+W2021-12-15 15:59:52,019 [mzn_4] missing title: https://www.amazon.com/dp/B08KWN2LZG
+I2021-12-15 15:59:52,020 [mzn_4] not in stock
+W2021-12-15 15:59:54,363 [mzn_5] missing title: https://www.amazon.com/dp/B08KWPDXJZ
+I2021-12-15 15:59:54,364 [mzn_5] not in stock
+W2021-12-15 15:59:56,759 [mzn_6] missing title: https://www.amazon.com/dp/B08KXZV626
+I2021-12-15 15:59:56,761 [mzn_6] not in stock
+W2021-12-15 15:59:58,927 [mzn_7] missing title: https://www.amazon.com/dp/B08KY266MG
+I2021-12-15 15:59:58,928 [mzn_7] not in stock
+E2021-12-15 16:00:01,025 [mzn_8] caught exception during request: 'NoneType' object has no attribute 'text'
+E2021-12-15 16:00:01,025 [mzn_8] scrape failed
+W2021-12-15 16:00:03,514 [mzn_9] missing title: https://www.amazon.com/dp/B08L8HPKR6
+I2021-12-15 16:00:03,516 [mzn_9] not in stock
+W2021-12-15 16:00:05,766 [mzn_10] missing title: https://www.amazon.com/dp/B08L8JNTXQ
+I2021-12-15 16:00:05,768 [mzn_10] not in stock
+W2021-12-15 16:00:07,950 [mzn_11] missing title: https://www.amazon.com/dp/B08L8KC1J7
+I2021-12-15 16:00:07,951 [mzn_11] not in stock
+W2021-12-15 16:00:10,183 [mzn_12] missing title: https://www.amazon.com/dp/B08L8L71SM
+I2021-12-15 16:00:10,185 [mzn_12] not in stock
+I2021-12-15 16:01:13,881 [root] starting v0.0.1 with args: ./src/run.py -a email -c ./config/amazon_rtx_3070.yaml -q ./config/alerters.yaml -l ./log.txt
+I2021-12-15 16:01:14,340 [root] discord alerter initialized with kwargs: webhook_url=https://discord.com/api/webhooks/XXXXXXXXXXXX... mentions=['XXXXXXXXXXXXXXX', 'XXXXXXXXXXXXXXX']
+I2021-12-15 16:01:14,340 [root] telegram alerter initialized with kwargs: webhook_url=https://api.telegram.org/botXXXXXXXXXXXXXXXXXXXX/sendMessage chat_id=XXXXXXXX
+I2021-12-15 16:01:14,340 [root] email alerter initialized with kwargs: sender=xiao.ming.track@gmail.com recipients=['xiao.ming.track@gmail.com', 'yubenoit@email.com'] relay=127.0.0.1 password=callmexiaoming!
+I2021-12-15 16:01:14,341 [root] slack alerter initialized with kwargs: webhook_url=https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX mentions=['XXXXXXXXXXXXXXX', 'XXXXXXXXXXXXXXX']
+I2021-12-15 16:01:14,344 [mzn_1] scraper initialized for https://www.amazon.com/dp/B08HBF5L3K
+I2021-12-15 16:01:14,344 [mzn_2] scraper initialized for https://www.amazon.com/dp/B08HBJB7YD
+I2021-12-15 16:01:14,345 [mzn_3] scraper initialized for https://www.amazon.com/dp/B08KWLMZV4
+I2021-12-15 16:01:14,345 [mzn_4] scraper initialized for https://www.amazon.com/dp/B08KWN2LZG
+I2021-12-15 16:01:14,346 [mzn_5] scraper initialized for https://www.amazon.com/dp/B08KWPDXJZ
+I2021-12-15 16:01:14,347 [mzn_6] scraper initialized for https://www.amazon.com/dp/B08KXZV626
+I2021-12-15 16:01:14,347 [mzn_7] scraper initialized for https://www.amazon.com/dp/B08KY266MG
+I2021-12-15 16:01:14,348 [mzn_8] scraper initialized for https://www.amazon.com/dp/B08KY322TH
+I2021-12-15 16:01:14,348 [mzn_9] scraper initialized for https://www.amazon.com/dp/B08L8HPKR6
+I2021-12-15 16:01:14,348 [mzn_10] scraper initialized for https://www.amazon.com/dp/B08L8JNTXQ
+I2021-12-15 16:01:14,349 [mzn_11] scraper initialized for https://www.amazon.com/dp/B08L8KC1J7
+I2021-12-15 16:01:14,349 [mzn_12] scraper initialized for https://www.amazon.com/dp/B08L8L71SM
+I2021-12-15 16:01:14,350 [mzn_13] scraper initialized for https://www.amazon.com/dp/B08L8L9TCZ
+I2021-12-15 16:01:14,350 [mzn_14] scraper initialized for https://www.amazon.com/dp/B08L8LG4M3
+I2021-12-15 16:01:14,350 [mzn_15] scraper initialized for https://www.amazon.com/dp/B08LF1CWT2
+I2021-12-15 16:01:14,350 [mzn_16] scraper initialized for https://www.amazon.com/dp/B08LF32LJ6
+I2021-12-15 16:01:14,351 [mzn_17] scraper initialized for https://www.amazon.com/dp/B08LW46GH2
+W2021-12-15 16:01:16,685 [mzn_1] missing title: https://www.amazon.com/dp/B08HBF5L3K
+I2021-12-15 16:01:16,688 [mzn_1] not in stock
+W2021-12-15 16:01:18,556 [mzn_2] missing title: https://www.amazon.com/dp/B08HBJB7YD
+I2021-12-15 16:01:18,558 [mzn_2] not in stock
+W2021-12-15 16:01:20,659 [mzn_3] missing title: https://www.amazon.com/dp/B08KWLMZV4
+I2021-12-15 16:01:20,661 [mzn_3] not in stock
+W2021-12-15 16:01:22,736 [mzn_4] missing title: https://www.amazon.com/dp/B08KWN2LZG
+I2021-12-15 16:01:22,737 [mzn_4] not in stock
+W2021-12-15 16:01:25,026 [mzn_5] missing title: https://www.amazon.com/dp/B08KWPDXJZ
+I2021-12-15 16:01:25,028 [mzn_5] not in stock
+W2021-12-15 16:01:27,014 [mzn_6] missing title: https://www.amazon.com/dp/B08KXZV626
+I2021-12-15 16:01:27,015 [mzn_6] not in stock
+W2021-12-15 16:01:29,074 [mzn_7] missing title: https://www.amazon.com/dp/B08KY266MG
+I2021-12-15 16:01:29,076 [mzn_7] not in stock
+E2021-12-15 16:01:33,120 [mzn_8] caught exception during request: 'charmap' codec can't encode characters in position 726030-726031: character maps to <undefined>
+E2021-12-15 16:01:33,120 [mzn_8] scrape failed
+W2021-12-15 16:01:33,553 [mzn_9] missing title: https://www.amazon.com/dp/B08L8HPKR6
+I2021-12-15 16:01:33,556 [mzn_9] not in stock
+W2021-12-15 16:01:35,723 [mzn_10] missing title: https://www.amazon.com/dp/B08L8JNTXQ
+I2021-12-15 16:01:35,724 [mzn_10] not in stock
+W2021-12-15 16:01:37,989 [mzn_11] missing title: https://www.amazon.com/dp/B08L8KC1J7
+I2021-12-15 16:01:37,991 [mzn_11] not in stock
+W2021-12-15 16:01:40,371 [mzn_12] missing title: https://www.amazon.com/dp/B08L8L71SM
+I2021-12-15 16:01:40,373 [mzn_12] not in stock
+W2021-12-15 16:01:42,478 [mzn_13] missing title: https://www.amazon.com/dp/B08L8L9TCZ
+I2021-12-15 16:01:42,479 [mzn_13] not in stock
+W2021-12-15 16:01:45,870 [mzn_14] missing title: https://www.amazon.com/dp/B08L8LG4M3
+I2021-12-15 16:01:45,872 [mzn_14] not in stock
+W2021-12-15 16:01:47,588 [mzn_15] missing title: https://www.amazon.com/dp/B08LF1CWT2
+I2021-12-15 16:01:47,589 [mzn_15] not in stock
+W2021-12-15 16:01:49,060 [mzn_16] missing title: https://www.amazon.com/dp/B08LF32LJ6
+I2021-12-15 16:01:49,062 [mzn_16] not in stock
+W2021-12-15 16:01:51,419 [mzn_17] missing title: https://www.amazon.com/dp/B08LW46GH2
+I2021-12-15 16:01:51,421 [mzn_17] not in stock
+E2021-12-15 16:01:55,445 [mzn_1] caught exception during request: 'charmap' codec can't encode characters in position 726192-726193: character maps to <undefined>
+E2021-12-15 16:01:55,447 [mzn_1] scrape failed
+W2021-12-15 16:01:55,877 [mzn_2] missing title: https://www.amazon.com/dp/B08HBJB7YD
+I2021-12-15 16:01:55,878 [mzn_2] not in stock
+W2021-12-15 16:01:58,088 [mzn_3] missing title: https://www.amazon.com/dp/B08KWLMZV4
+I2021-12-15 16:01:58,089 [mzn_3] not in stock
+E2021-12-15 16:02:01,825 [mzn_4] caught exception during request: 'charmap' codec can't encode characters in position 739974-739975: character maps to <undefined>
+E2021-12-15 16:02:01,826 [mzn_4] scrape failed
+W2021-12-15 16:02:02,633 [mzn_5] missing title: https://www.amazon.com/dp/B08KWPDXJZ
+I2021-12-15 16:02:02,635 [mzn_5] not in stock
+W2021-12-15 16:02:04,907 [mzn_6] missing title: https://www.amazon.com/dp/B08KXZV626
+I2021-12-15 16:02:04,910 [mzn_6] not in stock
+W2021-12-15 16:02:07,273 [mzn_7] missing title: https://www.amazon.com/dp/B08KY266MG
+I2021-12-15 16:02:07,275 [mzn_7] not in stock
+W2021-12-15 16:02:09,765 [mzn_8] missing title: https://www.amazon.com/dp/B08KY322TH
+I2021-12-15 16:02:09,767 [mzn_8] not in stock
+W2021-12-15 16:02:11,800 [mzn_9] missing title: https://www.amazon.com/dp/B08L8HPKR6
+I2021-12-15 16:02:11,801 [mzn_9] not in stock
+W2021-12-15 16:02:14,091 [mzn_10] missing title: https://www.amazon.com/dp/B08L8JNTXQ
+I2021-12-15 16:02:14,093 [mzn_10] not in stock
+W2021-12-15 16:02:16,203 [mzn_11] missing title: https://www.amazon.com/dp/B08L8KC1J7
+I2021-12-15 16:02:16,205 [mzn_11] not in stock
+W2021-12-15 16:02:18,594 [mzn_12] missing title: https://www.amazon.com/dp/B08L8L71SM
+I2021-12-15 16:02:18,595 [mzn_12] not in stock
+W2021-12-15 16:02:20,841 [mzn_13] missing title: https://www.amazon.com/dp/B08L8L9TCZ
+I2021-12-15 16:02:20,842 [mzn_13] not in stock
+W2021-12-15 16:02:23,039 [mzn_14] missing title: https://www.amazon.com/dp/B08L8LG4M3
+I2021-12-15 16:02:23,040 [mzn_14] not in stock
+W2021-12-15 16:02:25,171 [mzn_15] missing title: https://www.amazon.com/dp/B08LF1CWT2
+I2021-12-15 16:02:25,173 [mzn_15] not in stock
+W2021-12-15 16:02:27,276 [mzn_16] missing title: https://www.amazon.com/dp/B08LF32LJ6
+I2021-12-15 16:02:27,278 [mzn_16] not in stock
+E2021-12-15 16:02:31,246 [mzn_17] caught exception during request: 'charmap' codec can't encode characters in position 739495-739496: character maps to <undefined>
+E2021-12-15 16:02:31,247 [mzn_17] scrape failed
+W2021-12-15 16:02:31,781 [mzn_1] missing title: https://www.amazon.com/dp/B08HBF5L3K
+I2021-12-15 16:02:31,784 [mzn_1] not in stock
+W2021-12-15 16:02:33,613 [mzn_2] missing title: https://www.amazon.com/dp/B08HBJB7YD
+I2021-12-15 16:02:33,615 [mzn_2] not in stock
+W2021-12-15 16:02:35,968 [mzn_3] missing title: https://www.amazon.com/dp/B08KWLMZV4
+I2021-12-15 16:02:35,969 [mzn_3] not in stock
+W2021-12-15 16:02:38,067 [mzn_4] missing title: https://www.amazon.com/dp/B08KWN2LZG
+I2021-12-15 16:02:38,069 [mzn_4] not in stock
+W2021-12-15 16:02:40,265 [mzn_5] missing title: https://www.amazon.com/dp/B08KWPDXJZ
+I2021-12-15 16:02:40,266 [mzn_5] not in stock
+W2021-12-15 16:02:42,109 [mzn_6] missing title: https://www.amazon.com/dp/B08KXZV626
+I2021-12-15 16:02:42,110 [mzn_6] not in stock
+W2021-12-15 16:02:44,364 [mzn_7] missing title: https://www.amazon.com/dp/B08KY266MG
+I2021-12-15 16:02:44,366 [mzn_7] not in stock
+W2021-12-15 16:02:46,528 [mzn_8] missing title: https://www.amazon.com/dp/B08KY322TH
+I2021-12-15 16:02:46,530 [mzn_8] not in stock
+W2021-12-15 16:02:48,649 [mzn_9] missing title: https://www.amazon.com/dp/B08L8HPKR6
+I2021-12-15 16:02:48,651 [mzn_9] not in stock
+W2021-12-15 16:02:50,726 [mzn_10] missing title: https://www.amazon.com/dp/B08L8JNTXQ
+I2021-12-15 16:02:50,728 [mzn_10] not in stock
+W2021-12-15 16:02:52,821 [mzn_11] missing title: https://www.amazon.com/dp/B08L8KC1J7
+I2021-12-15 16:02:52,822 [mzn_11] not in stock
+W2021-12-15 16:02:54,888 [mzn_12] missing title: https://www.amazon.com/dp/B08L8L71SM
+I2021-12-15 16:02:54,889 [mzn_12] not in stock
+E2021-12-15 16:02:56,713 [mzn_13] caught exception during request: 'NoneType' object has no attribute 'text'
+E2021-12-15 16:02:56,713 [mzn_13] scrape failed
+W2021-12-15 16:02:59,098 [mzn_14] missing title: https://www.amazon.com/dp/B08L8LG4M3
+I2021-12-15 16:02:59,100 [mzn_14] not in stock
+W2021-12-15 16:03:01,131 [mzn_15] missing title: https://www.amazon.com/dp/B08LF1CWT2
+I2021-12-15 16:03:01,133 [mzn_15] not in stock
+E2021-12-15 16:03:05,225 [mzn_16] caught exception during request: 'charmap' codec can't encode characters in position 728804-728805: character maps to <undefined>
+E2021-12-15 16:03:05,225 [mzn_16] scrape failed
+W2021-12-15 16:03:05,891 [mzn_17] missing title: https://www.amazon.com/dp/B08LW46GH2
+I2021-12-15 16:03:05,893 [mzn_17] not in stock
+W2021-12-15 16:03:08,104 [mzn_1] missing title: https://www.amazon.com/dp/B08HBF5L3K
+I2021-12-15 16:03:08,106 [mzn_1] not in stock
+E2021-12-15 16:03:10,164 [mzn_2] caught exception during request: 'NoneType' object has no attribute 'text'
+E2021-12-15 16:03:10,165 [mzn_2] scrape failed
+E2021-12-15 16:03:12,405 [mzn_3] caught exception during request: 'NoneType' object has no attribute 'text'
+E2021-12-15 16:03:12,405 [mzn_3] scrape failed
+W2021-12-15 16:03:14,974 [mzn_4] missing title: https://www.amazon.com/dp/B08KWN2LZG
+I2021-12-15 16:03:14,975 [mzn_4] not in stock
+W2021-12-15 16:03:17,300 [mzn_5] missing title: https://www.amazon.com/dp/B08KWPDXJZ
+I2021-12-15 16:03:17,301 [mzn_5] not in stock
+W2021-12-15 16:03:19,331 [mzn_6] missing title: https://www.amazon.com/dp/B08KXZV626
+I2021-12-15 16:03:19,332 [mzn_6] not in stock
+W2021-12-15 16:03:21,479 [mzn_7] missing title: https://www.amazon.com/dp/B08KY266MG
+I2021-12-15 16:03:21,480 [mzn_7] not in stock
+W2021-12-15 16:03:23,751 [mzn_8] missing title: https://www.amazon.com/dp/B08KY322TH
+I2021-12-15 16:03:23,753 [mzn_8] not in stock
+W2021-12-15 16:03:26,047 [mzn_9] missing title: https://www.amazon.com/dp/B08L8HPKR6
+I2021-12-15 16:03:26,048 [mzn_9] not in stock
+E2021-12-15 16:03:29,618 [mzn_10] caught exception during request: 'charmap' codec can't encode characters in position 739046-739047: character maps to <undefined>
+E2021-12-15 16:03:29,618 [mzn_10] scrape failed
+W2021-12-15 16:03:30,304 [mzn_11] missing title: https://www.amazon.com/dp/B08L8KC1J7
+I2021-12-15 16:03:30,306 [mzn_11] not in stock
+E2021-12-15 16:03:32,249 [mzn_12] caught exception during request: 'NoneType' object has no attribute 'text'
+E2021-12-15 16:03:32,249 [mzn_12] scrape failed
+W2021-12-15 16:03:34,732 [mzn_13] missing title: https://www.amazon.com/dp/B08L8L9TCZ
+I2021-12-15 16:03:34,734 [mzn_13] not in stock
+W2021-12-15 16:03:36,823 [mzn_14] missing title: https://www.amazon.com/dp/B08L8LG4M3
+I2021-12-15 16:03:36,824 [mzn_14] not in stock
+W2021-12-15 16:03:39,200 [mzn_15] missing title: https://www.amazon.com/dp/B08LF1CWT2
+I2021-12-15 16:03:39,201 [mzn_15] not in stock
+W2021-12-15 16:03:41,201 [mzn_16] missing title: https://www.amazon.com/dp/B08LF32LJ6
+I2021-12-15 16:03:41,202 [mzn_16] not in stock
+I2021-12-15 16:05:03,965 [root] starting v0.0.1 with args: ./src/run.py -a email -c ./config/amazon_rtx_3070.yaml -q ./config/alerters.yaml -l ./log.txt
+I2021-12-15 16:05:04,432 [root] discord alerter initialized with kwargs: webhook_url=https://discord.com/api/webhooks/XXXXXXXXXXXX... mentions=['XXXXXXXXXXXXXXX', 'XXXXXXXXXXXXXXX']
+I2021-12-15 16:05:04,432 [root] telegram alerter initialized with kwargs: webhook_url=https://api.telegram.org/botXXXXXXXXXXXXXXXXXXXX/sendMessage chat_id=XXXXXXXX
+I2021-12-15 16:05:04,432 [root] email alerter initialized with kwargs: sender=xiao.ming.track@gmail.com recipients=['xiao.ming.track@gmail.com', 'yubenoit@email.com'] relay=127.0.0.1 password=callmexiaoming!
+I2021-12-15 16:05:04,433 [root] slack alerter initialized with kwargs: webhook_url=https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX mentions=['XXXXXXXXXXXXXXX', 'XXXXXXXXXXXXXXX']
+I2021-12-15 16:05:04,436 [mzn_1] scraper initialized for https://www.amazon.com/dp/B08HBF5L3K
+I2021-12-15 16:05:04,437 [mzn_2] scraper initialized for https://www.amazon.com/dp/B08HBJB7YD
+I2021-12-15 16:05:04,437 [mzn_3] scraper initialized for https://www.amazon.com/dp/B08KWLMZV4
+I2021-12-15 16:05:04,438 [mzn_4] scraper initialized for https://www.amazon.com/dp/B08KWN2LZG
+I2021-12-15 16:05:04,438 [mzn_5] scraper initialized for https://www.amazon.com/dp/B08KWPDXJZ
+I2021-12-15 16:05:04,438 [mzn_6] scraper initialized for https://www.amazon.com/dp/B08KXZV626
+I2021-12-15 16:05:04,439 [mzn_7] scraper initialized for https://www.amazon.com/dp/B08KY266MG
+I2021-12-15 16:05:04,439 [mzn_8] scraper initialized for https://www.amazon.com/dp/B08KY322TH
+I2021-12-15 16:05:04,440 [mzn_9] scraper initialized for https://www.amazon.com/dp/B08L8HPKR6
+I2021-12-15 16:05:04,440 [mzn_10] scraper initialized for https://www.amazon.com/dp/B08L8JNTXQ
+I2021-12-15 16:05:04,441 [mzn_11] scraper initialized for https://www.amazon.com/dp/B08L8KC1J7
+I2021-12-15 16:05:04,441 [mzn_12] scraper initialized for https://www.amazon.com/dp/B08L8L71SM
+I2021-12-15 16:05:04,441 [mzn_13] scraper initialized for https://www.amazon.com/dp/B08L8L9TCZ
+I2021-12-15 16:05:04,442 [mzn_14] scraper initialized for https://www.amazon.com/dp/B08L8LG4M3
+I2021-12-15 16:05:04,442 [mzn_15] scraper initialized for https://www.amazon.com/dp/B08LF1CWT2
+I2021-12-15 16:05:04,443 [mzn_16] scraper initialized for https://www.amazon.com/dp/B08LF32LJ6
+I2021-12-15 16:05:04,443 [mzn_17] scraper initialized for https://www.amazon.com/dp/B08LW46GH2
+E2021-12-15 16:05:13,682 [mzn_1] caught exception during request: 'charmap' codec can't encode characters in position 758043-758044: character maps to <undefined>
+E2021-12-15 16:05:13,683 [mzn_1] scrape failed
+E2021-12-15 16:05:19,847 [mzn_2] caught exception during request: 'charmap' codec can't encode character '\u2713' in position 136574: character maps to <undefined>
+E2021-12-15 16:05:19,848 [mzn_2] scrape failed
+E2021-12-15 16:05:26,288 [mzn_3] caught exception during request: 'charmap' codec can't encode character '\u2713' in position 136589: character maps to <undefined>
+E2021-12-15 16:05:26,289 [mzn_3] scrape failed
+I2021-12-15 16:06:26,600 [root] starting v0.0.1 with args: ./src/run.py -a email -c ./config/amazon_rtx_3070.yaml -q ./config/alerters.yaml -l ./log.txt
+I2021-12-15 16:06:27,053 [root] discord alerter initialized with kwargs: webhook_url=https://discord.com/api/webhooks/XXXXXXXXXXXX... mentions=['XXXXXXXXXXXXXXX', 'XXXXXXXXXXXXXXX']
+I2021-12-15 16:06:27,054 [root] telegram alerter initialized with kwargs: webhook_url=https://api.telegram.org/botXXXXXXXXXXXXXXXXXXXX/sendMessage chat_id=XXXXXXXX
+I2021-12-15 16:06:27,054 [root] email alerter initialized with kwargs: sender=xiao.ming.track@gmail.com recipients=['xiao.ming.track@gmail.com', 'yubenoit@email.com'] relay=127.0.0.1 password=callmexiaoming!
+I2021-12-15 16:06:27,054 [root] slack alerter initialized with kwargs: webhook_url=https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX mentions=['XXXXXXXXXXXXXXX', 'XXXXXXXXXXXXXXX']
+I2021-12-15 16:06:27,059 [mzn_1] scraper initialized for https://www.amazon.com/dp/B08HBF5L3K
+I2021-12-15 16:06:27,060 [mzn_2] scraper initialized for https://www.amazon.com/dp/B08HBJB7YD
+I2021-12-15 16:06:27,060 [mzn_3] scraper initialized for https://www.amazon.com/dp/B08KWLMZV4
+I2021-12-15 16:06:27,060 [mzn_4] scraper initialized for https://www.amazon.com/dp/B08KWN2LZG
+I2021-12-15 16:06:27,061 [mzn_5] scraper initialized for https://www.amazon.com/dp/B08KWPDXJZ
+I2021-12-15 16:06:27,062 [mzn_6] scraper initialized for https://www.amazon.com/dp/B08KXZV626
+I2021-12-15 16:06:27,062 [mzn_7] scraper initialized for https://www.amazon.com/dp/B08KY266MG
+I2021-12-15 16:06:27,062 [mzn_8] scraper initialized for https://www.amazon.com/dp/B08KY322TH
+I2021-12-15 16:06:27,063 [mzn_9] scraper initialized for https://www.amazon.com/dp/B08L8HPKR6
+I2021-12-15 16:06:27,063 [mzn_10] scraper initialized for https://www.amazon.com/dp/B08L8JNTXQ
+I2021-12-15 16:06:27,064 [mzn_11] scraper initialized for https://www.amazon.com/dp/B08L8KC1J7
+I2021-12-15 16:06:27,064 [mzn_12] scraper initialized for https://www.amazon.com/dp/B08L8L71SM
+I2021-12-15 16:06:27,064 [mzn_13] scraper initialized for https://www.amazon.com/dp/B08L8L9TCZ
+I2021-12-15 16:06:27,065 [mzn_14] scraper initialized for https://www.amazon.com/dp/B08L8LG4M3
+I2021-12-15 16:06:27,065 [mzn_15] scraper initialized for https://www.amazon.com/dp/B08LF1CWT2
+I2021-12-15 16:06:27,065 [mzn_16] scraper initialized for https://www.amazon.com/dp/B08LF32LJ6
+I2021-12-15 16:06:27,066 [mzn_17] scraper initialized for https://www.amazon.com/dp/B08LW46GH2
+E2021-12-15 16:06:36,514 [mzn_1] caught exception during request: 'charmap' codec can't encode character '\u2713' in position 137567: character maps to <undefined>
+E2021-12-15 16:06:36,515 [mzn_1] scrape failed
+E2021-12-15 16:06:43,234 [mzn_2] caught exception during request: 'charmap' codec can't encode character '\u2713' in position 136570: character maps to <undefined>
+E2021-12-15 16:06:43,235 [mzn_2] scrape failed
+I2021-12-15 16:06:51,571 [root] starting v0.0.1 with args: ./src/run.py -a email -c ./config/amazon_rtx_3070.yaml -q ./config/alerters.yaml -l ./log.txt
+I2021-12-15 16:06:52,014 [root] discord alerter initialized with kwargs: webhook_url=https://discord.com/api/webhooks/XXXXXXXXXXXX... mentions=['XXXXXXXXXXXXXXX', 'XXXXXXXXXXXXXXX']
+I2021-12-15 16:06:52,015 [root] telegram alerter initialized with kwargs: webhook_url=https://api.telegram.org/botXXXXXXXXXXXXXXXXXXXX/sendMessage chat_id=XXXXXXXX
+I2021-12-15 16:06:52,015 [root] email alerter initialized with kwargs: sender=xiao.ming.track@gmail.com recipients=['xiao.ming.track@gmail.com', 'yubenoit@email.com'] relay=127.0.0.1 password=callmexiaoming!
+I2021-12-15 16:06:52,015 [root] slack alerter initialized with kwargs: webhook_url=https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX mentions=['XXXXXXXXXXXXXXX', 'XXXXXXXXXXXXXXX']
+I2021-12-15 16:06:52,018 [mzn_1] scraper initialized for https://www.amazon.com/dp/B08HBF5L3K
+I2021-12-15 16:06:52,018 [mzn_2] scraper initialized for https://www.amazon.com/dp/B08HBJB7YD
+I2021-12-15 16:06:52,018 [mzn_3] scraper initialized for https://www.amazon.com/dp/B08KWLMZV4
+I2021-12-15 16:06:52,018 [mzn_4] scraper initialized for https://www.amazon.com/dp/B08KWN2LZG
+I2021-12-15 16:06:52,019 [mzn_5] scraper initialized for https://www.amazon.com/dp/B08KWPDXJZ
+I2021-12-15 16:06:52,019 [mzn_6] scraper initialized for https://www.amazon.com/dp/B08KXZV626
+I2021-12-15 16:06:52,019 [mzn_7] scraper initialized for https://www.amazon.com/dp/B08KY266MG
+I2021-12-15 16:06:52,019 [mzn_8] scraper initialized for https://www.amazon.com/dp/B08KY322TH
+I2021-12-15 16:06:52,019 [mzn_9] scraper initialized for https://www.amazon.com/dp/B08L8HPKR6
+I2021-12-15 16:06:52,019 [mzn_10] scraper initialized for https://www.amazon.com/dp/B08L8JNTXQ
+I2021-12-15 16:06:52,020 [mzn_11] scraper initialized for https://www.amazon.com/dp/B08L8KC1J7
+I2021-12-15 16:06:52,020 [mzn_12] scraper initialized for https://www.amazon.com/dp/B08L8L71SM
+I2021-12-15 16:06:52,020 [mzn_13] scraper initialized for https://www.amazon.com/dp/B08L8L9TCZ
+I2021-12-15 16:06:52,020 [mzn_14] scraper initialized for https://www.amazon.com/dp/B08L8LG4M3
+I2021-12-15 16:06:52,020 [mzn_15] scraper initialized for https://www.amazon.com/dp/B08LF1CWT2
+I2021-12-15 16:06:52,021 [mzn_16] scraper initialized for https://www.amazon.com/dp/B08LF32LJ6
+I2021-12-15 16:06:52,021 [mzn_17] scraper initialized for https://www.amazon.com/dp/B08LW46GH2
+E2021-12-15 16:07:00,547 [mzn_1] caught exception during request: 'charmap' codec can't encode character '\u2713' in position 136557: character maps to <undefined>
+E2021-12-15 16:07:00,547 [mzn_1] scrape failed
+E2021-12-15 16:07:06,377 [mzn_2] caught exception during request: 'charmap' codec can't encode character '\u2713' in position 137547: character maps to <undefined>
+E2021-12-15 16:07:06,378 [mzn_2] scrape failed
+E2021-12-15 16:07:13,123 [mzn_3] caught exception during request: 'charmap' codec can't encode character '\u2713' in position 135568: character maps to <undefined>
+E2021-12-15 16:07:13,124 [mzn_3] scrape failed
+I2021-12-15 16:14:01,176 [root] starting v0.0.1 with args: ./src/run.py -a email -c ./config/amazon_rtx_3070.yaml -q ./config/alerters.yaml -l ./log.txt
+I2021-12-15 16:14:01,680 [root] discord alerter initialized with kwargs: webhook_url=https://discord.com/api/webhooks/XXXXXXXXXXXX... mentions=['XXXXXXXXXXXXXXX', 'XXXXXXXXXXXXXXX']
+I2021-12-15 16:14:01,680 [root] telegram alerter initialized with kwargs: webhook_url=https://api.telegram.org/botXXXXXXXXXXXXXXXXXXXX/sendMessage chat_id=XXXXXXXX
+I2021-12-15 16:14:01,680 [root] email alerter initialized with kwargs: sender=xiao.ming.track@gmail.com recipients=['xiao.ming.track@gmail.com', 'yubenoit@email.com'] relay=127.0.0.1 password=callmexiaoming!
+I2021-12-15 16:14:01,681 [root] slack alerter initialized with kwargs: webhook_url=https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX mentions=['XXXXXXXXXXXXXXX', 'XXXXXXXXXXXXXXX']
+I2021-12-15 16:14:01,684 [mzn_1] scraper initialized for https://www.amazon.com/dp/B08HBF5L3K
+I2021-12-15 16:14:01,684 [mzn_2] scraper initialized for https://www.amazon.com/dp/B08HBJB7YD
+I2021-12-15 16:14:01,684 [mzn_3] scraper initialized for https://www.amazon.com/dp/B08KWLMZV4
+I2021-12-15 16:14:01,685 [mzn_4] scraper initialized for https://www.amazon.com/dp/B08KWN2LZG
+I2021-12-15 16:14:01,685 [mzn_5] scraper initialized for https://www.amazon.com/dp/B08KWPDXJZ
+I2021-12-15 16:14:01,685 [mzn_6] scraper initialized for https://www.amazon.com/dp/B08KXZV626
+I2021-12-15 16:14:01,685 [mzn_7] scraper initialized for https://www.amazon.com/dp/B08KY266MG
+I2021-12-15 16:14:01,685 [mzn_8] scraper initialized for https://www.amazon.com/dp/B08KY322TH
+I2021-12-15 16:14:01,685 [mzn_9] scraper initialized for https://www.amazon.com/dp/B08L8HPKR6
+I2021-12-15 16:14:01,686 [mzn_10] scraper initialized for https://www.amazon.com/dp/B08L8JNTXQ
+I2021-12-15 16:14:01,686 [mzn_11] scraper initialized for https://www.amazon.com/dp/B08L8KC1J7
+I2021-12-15 16:14:01,686 [mzn_12] scraper initialized for https://www.amazon.com/dp/B08L8L71SM
+I2021-12-15 16:14:01,686 [mzn_13] scraper initialized for https://www.amazon.com/dp/B08L8L9TCZ
+I2021-12-15 16:14:01,686 [mzn_14] scraper initialized for https://www.amazon.com/dp/B08L8LG4M3
+I2021-12-15 16:14:01,686 [mzn_15] scraper initialized for https://www.amazon.com/dp/B08LF1CWT2
+I2021-12-15 16:14:01,686 [mzn_16] scraper initialized for https://www.amazon.com/dp/B08LF32LJ6
+I2021-12-15 16:14:01,687 [mzn_17] scraper initialized for https://www.amazon.com/dp/B08LW46GH2
+E2021-12-15 16:14:10,514 [mzn_1] caught exception during request: 'charmap' codec can't encode character '\u2713' in position 136577: character maps to <undefined>
+E2021-12-15 16:14:10,516 [mzn_1] scrape failed
+E2021-12-15 16:14:16,461 [mzn_2] caught exception during request: 'charmap' codec can't encode character '\u2713' in position 136551: character maps to <undefined>
+E2021-12-15 16:14:16,462 [mzn_2] scrape failed
+I2021-12-15 16:18:59,616 [root] starting v0.0.1 with args: ./src/run.py -a email -c ./config/bestbuy_rtx_3060_ti.yaml -q ./config/alerters.yaml -l ./log.txt
+I2021-12-15 16:19:00,075 [root] discord alerter initialized with kwargs: webhook_url=https://discord.com/api/webhooks/XXXXXXXXXXXX... mentions=['XXXXXXXXXXXXXXX', 'XXXXXXXXXXXXXXX']
+I2021-12-15 16:19:00,076 [root] telegram alerter initialized with kwargs: webhook_url=https://api.telegram.org/botXXXXXXXXXXXXXXXXXXXX/sendMessage chat_id=XXXXXXXX
+I2021-12-15 16:19:00,076 [root] email alerter initialized with kwargs: sender=xiao.ming.track@gmail.com recipients=['xiao.ming.track@gmail.com', 'yubenoit@email.com'] relay=127.0.0.1 password=callmexiaoming!
+I2021-12-15 16:19:00,076 [root] slack alerter initialized with kwargs: webhook_url=https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX mentions=['XXXXXXXXXXXXXXX', 'XXXXXXXXXXXXXXX']
+I2021-12-15 16:19:00,079 [bstby_1] scraper initialized for https://www.bestbuy.com/site/gigabyte-nvidia-geforce-rtx-3060-ti-eagle-oc-8g-gddr6-pci-express-4-0-graphics-card-black/6442485.p?skuId=6442485
+I2021-12-15 16:19:00,079 [bstby_2] scraper initialized for https://www.bestbuy.com/site/gigabyte-nvidia-geforce-rtx-3060-ti-gaming-oc-8g-gddr6-pci-express-4-0-graphics-card-black/6442484.p?skuId=6442484
+I2021-12-15 16:19:00,079 [bstby_3] scraper initialized for https://www.bestbuy.com/site/msi-geforce-rtx-3060-ti-ventus-2x-oc-bv-8gb-gddr6-pci-express-4-0-graphics-card-black-black/6441172.p?skuId=6441172
+I2021-12-15 16:19:00,080 [bstby_4] scraper initialized for https://www.bestbuy.com/site/nvidia-geforce-rtx-3060-ti-8gb-gddr6-pci-express-4-0-graphics-card-steel-and-black/6439402.p?skuId=6439402
+E2021-12-15 16:19:04,175 [bstby_1] caught exception during request: [WinError 1225] The remote computer refused the network connection
+E2021-12-15 16:19:04,175 [bstby_1] scrape failed
+E2021-12-15 16:19:06,242 [bstby_2] caught exception during request: [WinError 1225] The remote computer refused the network connection
+E2021-12-15 16:19:06,243 [bstby_2] scrape failed
+E2021-12-15 16:19:08,474 [bstby_3] caught exception during request: [WinError 1225] The remote computer refused the network connection
+E2021-12-15 16:19:08,474 [bstby_3] scrape failed
+E2021-12-15 16:19:10,616 [bstby_4] caught exception during request: [WinError 1225] The remote computer refused the network connection
+E2021-12-15 16:19:10,616 [bstby_4] scrape failed
+E2021-12-15 16:19:12,732 [bstby_1] caught exception during request: [WinError 1225] The remote computer refused the network connection
+E2021-12-15 16:19:12,732 [bstby_1] scrape failed
+E2021-12-15 16:19:15,043 [bstby_2] caught exception during request: [WinError 1225] The remote computer refused the network connection
+E2021-12-15 16:19:15,044 [bstby_2] scrape failed
+E2021-12-15 16:19:17,413 [bstby_3] caught exception during request: [WinError 1225] The remote computer refused the network connection
+E2021-12-15 16:19:17,414 [bstby_3] scrape failed
+E2021-12-15 16:19:19,715 [bstby_4] caught exception during request: [WinError 1225] The remote computer refused the network connection
+E2021-12-15 16:19:19,716 [bstby_4] scrape failed
+E2021-12-15 16:19:21,823 [bstby_1] caught exception during request: [WinError 1225] The remote computer refused the network connection
+E2021-12-15 16:19:21,824 [bstby_1] scrape failed
+E2021-12-15 16:19:23,970 [bstby_2] caught exception during request: [WinError 1225] The remote computer refused the network connection
+E2021-12-15 16:19:23,971 [bstby_2] scrape failed
+I2021-12-15 16:20:07,125 [root] starting v0.0.1 with args: ./src/run.py -a email -c ./config/bestbuy_rtx_3060_ti.yaml -q ./config/alerters.yaml -l ./log.txt
+I2021-12-15 16:20:07,593 [root] discord alerter initialized with kwargs: webhook_url=https://discord.com/api/webhooks/XXXXXXXXXXXX... mentions=['XXXXXXXXXXXXXXX', 'XXXXXXXXXXXXXXX']
+I2021-12-15 16:20:07,593 [root] telegram alerter initialized with kwargs: webhook_url=https://api.telegram.org/botXXXXXXXXXXXXXXXXXXXX/sendMessage chat_id=XXXXXXXX
+I2021-12-15 16:20:07,594 [root] email alerter initialized with kwargs: sender=xiao.ming.track@gmail.com recipients=['xiao.ming.track@gmail.com', 'yubenoit@email.com'] relay=127.0.0.1 password=callmexiaoming!
+I2021-12-15 16:20:07,594 [root] slack alerter initialized with kwargs: webhook_url=https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX mentions=['XXXXXXXXXXXXXXX', 'XXXXXXXXXXXXXXX']
+I2021-12-15 16:20:07,596 [bstby_1] scraper initialized for https://www.bestbuy.com/site/gigabyte-nvidia-geforce-rtx-3060-ti-eagle-oc-8g-gddr6-pci-express-4-0-graphics-card-black/6442485.p?skuId=6442485
+I2021-12-15 16:20:07,596 [bstby_2] scraper initialized for https://www.bestbuy.com/site/gigabyte-nvidia-geforce-rtx-3060-ti-gaming-oc-8g-gddr6-pci-express-4-0-graphics-card-black/6442484.p?skuId=6442484
+I2021-12-15 16:20:07,596 [bstby_3] scraper initialized for https://www.bestbuy.com/site/msi-geforce-rtx-3060-ti-ventus-2x-oc-bv-8gb-gddr6-pci-express-4-0-graphics-card-black-black/6441172.p?skuId=6441172
+I2021-12-15 16:20:07,596 [bstby_4] scraper initialized for https://www.bestbuy.com/site/nvidia-geforce-rtx-3060-ti-8gb-gddr6-pci-express-4-0-graphics-card-steel-and-black/6439402.p?skuId=6439402
+E2021-12-15 16:20:15,079 [bstby_1] caught exception during request: 'charmap' codec can't encode character '\u279e' in position 6089: character maps to <undefined>
+E2021-12-15 16:20:15,080 [bstby_1] scrape failed
+I2021-12-15 16:22:51,459 [root] starting v0.0.1 with args: ./src/run.py -a email -c ./config/bestbuy_rtx_3060_ti.yaml -q ./config/alerters.yaml -l ./log.txt
+I2021-12-15 16:22:51,911 [root] discord alerter initialized with kwargs: webhook_url=https://discord.com/api/webhooks/XXXXXXXXXXXX... mentions=['XXXXXXXXXXXXXXX', 'XXXXXXXXXXXXXXX']
+I2021-12-15 16:22:51,911 [root] telegram alerter initialized with kwargs: webhook_url=https://api.telegram.org/botXXXXXXXXXXXXXXXXXXXX/sendMessage chat_id=XXXXXXXX
+I2021-12-15 16:22:51,911 [root] email alerter initialized with kwargs: sender=xiao.ming.track@gmail.com recipients=['xiao.ming.track@gmail.com', 'yubenoit@email.com'] relay=127.0.0.1 password=callmexiaoming!
+I2021-12-15 16:22:51,912 [root] slack alerter initialized with kwargs: webhook_url=https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX mentions=['XXXXXXXXXXXXXXX', 'XXXXXXXXXXXXXXX']
+I2021-12-15 16:22:51,914 [bstby_1] scraper initialized for https://www.bestbuy.com/site/gigabyte-nvidia-geforce-rtx-3060-ti-eagle-oc-8g-gddr6-pci-express-4-0-graphics-card-black/6442485.p?skuId=6442485
+I2021-12-15 16:22:51,914 [bstby_2] scraper initialized for https://www.bestbuy.com/site/gigabyte-nvidia-geforce-rtx-3060-ti-gaming-oc-8g-gddr6-pci-express-4-0-graphics-card-black/6442484.p?skuId=6442484
+I2021-12-15 16:22:51,914 [bstby_3] scraper initialized for https://www.bestbuy.com/site/msi-geforce-rtx-3060-ti-ventus-2x-oc-bv-8gb-gddr6-pci-express-4-0-graphics-card-black-black/6441172.p?skuId=6441172
+I2021-12-15 16:22:51,914 [bstby_4] scraper initialized for https://www.bestbuy.com/site/nvidia-geforce-rtx-3060-ti-8gb-gddr6-pci-express-4-0-graphics-card-steel-and-black/6439402.p?skuId=6439402
+I2021-12-15 16:24:23,625 [root] starting v0.0.1 with args: ./src/run.py -a email -c ./config/amazon_rtx_3080.yaml -q ./config/alerters.yaml -l ./log.txt
+I2021-12-15 16:24:24,083 [root] discord alerter initialized with kwargs: webhook_url=https://discord.com/api/webhooks/XXXXXXXXXXXX... mentions=['XXXXXXXXXXXXXXX', 'XXXXXXXXXXXXXXX']
+I2021-12-15 16:24:24,083 [root] telegram alerter initialized with kwargs: webhook_url=https://api.telegram.org/botXXXXXXXXXXXXXXXXXXXX/sendMessage chat_id=XXXXXXXX
+I2021-12-15 16:24:24,083 [root] email alerter initialized with kwargs: sender=xiao.ming.track@gmail.com recipients=['xiao.ming.track@gmail.com', 'yubenoit@email.com'] relay=127.0.0.1 password=callmexiaoming!
+I2021-12-15 16:24:24,084 [root] slack alerter initialized with kwargs: webhook_url=https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX mentions=['XXXXXXXXXXXXXXX', 'XXXXXXXXXXXXXXX']
+I2021-12-15 16:24:24,087 [mzn_1] scraper initialized for https://www.amazon.com/ASUS-Graphics-DisplayPort-Military-Grade-Certification/dp/B08HH5WF97
+I2021-12-15 16:24:24,087 [mzn_2] scraper initialized for https://www.amazon.com/GeForce-Gaming-Graphics-Technology-Backplate/dp/B08NWBG14N
+I2021-12-15 16:24:24,087 [mzn_3] scraper initialized for https://www.amazon.com/MSI-GeForce-RTX-3080-10G/dp/B08HR7SV3M
+I2021-12-15 16:24:24,087 [mzn_4] scraper initialized for https://www.amazon.com/MSI-RTX-2080-GAMING-TRIO/dp/B07GHXQTGZ
+I2021-12-15 16:24:24,088 [mzn_5] scraper initialized for https://www.amazon.com/NVIDIA-GeForce-Graphics-DisplayPort-Bearings/dp/B08NQ78BCN
+E2021-12-15 16:24:27,230 [mzn_1] caught exception during request: [WinError 1225] The remote computer refused the network connection
+E2021-12-15 16:24:27,230 [mzn_1] scrape failed
+E2021-12-15 16:24:29,261 [mzn_2] caught exception during request: [WinError 1225] The remote computer refused the network connection
+E2021-12-15 16:24:29,261 [mzn_2] scrape failed
+E2021-12-15 16:24:31,297 [mzn_3] caught exception during request: [WinError 1225] The remote computer refused the network connection
+E2021-12-15 16:24:31,297 [mzn_3] scrape failed
+E2021-12-15 16:24:33,325 [mzn_4] caught exception during request: [WinError 1225] The remote computer refused the network connection
+E2021-12-15 16:24:33,325 [mzn_4] scrape failed
+E2021-12-15 16:24:35,366 [mzn_5] caught exception during request: [WinError 1225] The remote computer refused the network connection
+E2021-12-15 16:24:35,367 [mzn_5] scrape failed
+E2021-12-15 16:24:37,398 [mzn_1] caught exception during request: [WinError 1225] The remote computer refused the network connection
+E2021-12-15 16:24:37,398 [mzn_1] scrape failed
+E2021-12-15 16:24:39,439 [mzn_2] caught exception during request: [WinError 1225] The remote computer refused the network connection
+E2021-12-15 16:24:39,439 [mzn_2] scrape failed
+E2021-12-15 16:24:41,469 [mzn_3] caught exception during request: [WinError 1225] The remote computer refused the network connection
+E2021-12-15 16:24:41,469 [mzn_3] scrape failed
+E2021-12-15 16:24:43,523 [mzn_4] caught exception during request: [WinError 1225] The remote computer refused the network connection
+E2021-12-15 16:24:43,524 [mzn_4] scrape failed
+E2021-12-15 16:24:45,565 [mzn_5] caught exception during request: [WinError 1225] The remote computer refused the network connection
+E2021-12-15 16:24:45,566 [mzn_5] scrape failed
+E2021-12-15 16:24:47,609 [mzn_1] caught exception during request: [WinError 1225] The remote computer refused the network connection
+E2021-12-15 16:24:47,609 [mzn_1] scrape failed
+E2021-12-15 16:24:49,659 [mzn_2] caught exception during request: [WinError 1225] The remote computer refused the network connection
+E2021-12-15 16:24:49,659 [mzn_2] scrape failed
+E2021-12-15 16:24:51,681 [mzn_3] caught exception during request: [WinError 1225] The remote computer refused the network connection
+E2021-12-15 16:24:51,681 [mzn_3] scrape failed
+E2021-12-15 16:24:53,727 [mzn_4] caught exception during request: [WinError 1225] The remote computer refused the network connection
+E2021-12-15 16:24:53,728 [mzn_4] scrape failed
+E2021-12-15 16:24:55,772 [mzn_5] caught exception during request: [WinError 1225] The remote computer refused the network connection
+E2021-12-15 16:24:55,772 [mzn_5] scrape failed
+E2021-12-15 16:24:57,825 [mzn_1] caught exception during request: [WinError 1225] The remote computer refused the network connection
+E2021-12-15 16:24:57,826 [mzn_1] scrape failed
+I2021-12-15 16:37:29,217 [root] starting v0.0.1 with args: ./src/run.py -a email -c ./config/amazon_rtx_3080.yaml -q ./config/alerters.yaml -l ./log.txt
+I2021-12-15 16:37:29,707 [root] discord alerter initialized with kwargs: webhook_url=https://discord.com/api/webhooks/XXXXXXXXXXXX... mentions=['XXXXXXXXXXXXXXX', 'XXXXXXXXXXXXXXX']
+I2021-12-15 16:37:29,707 [root] telegram alerter initialized with kwargs: webhook_url=https://api.telegram.org/botXXXXXXXXXXXXXXXXXXXX/sendMessage chat_id=XXXXXXXX
+I2021-12-15 16:37:29,708 [root] email alerter initialized with kwargs: sender=xiao.ming.track@gmail.com recipients=['xiao.ming.track@gmail.com', 'yubenoit@email.com'] relay=127.0.0.1 password=callmexiaoming!
+I2021-12-15 16:37:29,708 [root] slack alerter initialized with kwargs: webhook_url=https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX mentions=['XXXXXXXXXXXXXXX', 'XXXXXXXXXXXXXXX']
+I2021-12-15 16:37:29,711 [mzn_1] scraper initialized for https://www.amazon.com/ASUS-Graphics-DisplayPort-Military-Grade-Certification/dp/B08HH5WF97
+I2021-12-15 16:37:29,712 [mzn_2] scraper initialized for https://www.amazon.com/GeForce-Gaming-Graphics-Technology-Backplate/dp/B08NWBG14N
+I2021-12-15 16:37:29,712 [mzn_3] scraper initialized for https://www.amazon.com/MSI-GeForce-RTX-3080-10G/dp/B08HR7SV3M
+I2021-12-15 16:37:29,713 [mzn_4] scraper initialized for https://www.amazon.com/MSI-RTX-2080-GAMING-TRIO/dp/B07GHXQTGZ
+I2021-12-15 16:37:29,713 [mzn_5] scraper initialized for https://www.amazon.com/NVIDIA-GeForce-Graphics-DisplayPort-Bearings/dp/B08NQ78BCN
+E2021-12-15 16:37:37,031 [mzn_1] caught exception during request: 'charmap' codec can't encode character '\u2713' in position 136029: character maps to <undefined>
+E2021-12-15 16:37:37,032 [mzn_1] scrape failed
+W2021-12-15 16:37:40,819 [mzn_2] missing title: https://www.amazon.com/GeForce-Gaming-Graphics-Technology-Backplate/dp/B08NWBG14N
+I2021-12-15 16:37:40,820 [mzn_2] not in stock
+E2021-12-15 16:37:47,519 [mzn_3] caught exception during request: 'charmap' codec can't encode character '\u2713' in position 135432: character maps to <undefined>
+E2021-12-15 16:37:47,519 [mzn_3] scrape failed
+E2021-12-15 16:37:54,481 [mzn_4] caught exception during request: 'charmap' codec can't encode character '\u2713' in position 137269: character maps to <undefined>
+E2021-12-15 16:37:54,482 [mzn_4] scrape failed
+W2021-12-15 16:37:58,323 [mzn_5] missing title: https://www.amazon.com/NVIDIA-GeForce-Graphics-DisplayPort-Bearings/dp/B08NQ78BCN
+I2021-12-15 16:37:58,324 [mzn_5] not in stock
+E2021-12-15 16:38:05,556 [mzn_1] caught exception during request: 'charmap' codec can't encode character '\u2713' in position 136005: character maps to <undefined>
+E2021-12-15 16:38:05,557 [mzn_1] scrape failed
+W2021-12-15 16:38:09,373 [mzn_2] missing title: https://www.amazon.com/GeForce-Gaming-Graphics-Technology-Backplate/dp/B08NWBG14N
+I2021-12-15 16:38:09,374 [mzn_2] not in stock
+E2021-12-15 16:38:15,656 [mzn_3] caught exception during request: 'charmap' codec can't encode character '\u2713' in position 135445: character maps to <undefined>
+E2021-12-15 16:38:15,657 [mzn_3] scrape failed
+E2021-12-15 16:38:22,253 [mzn_4] caught exception during request: 'charmap' codec can't encode character '\u2713' in position 137282: character maps to <undefined>
+E2021-12-15 16:38:22,254 [mzn_4] scrape failed
+W2021-12-15 16:38:26,652 [mzn_5] missing title: https://www.amazon.com/NVIDIA-GeForce-Graphics-DisplayPort-Bearings/dp/B08NQ78BCN
+I2021-12-15 16:38:26,653 [mzn_5] not in stock
+E2021-12-15 16:38:32,411 [mzn_1] caught exception during request: 'charmap' codec can't encode character '\u2713' in position 136020: character maps to <undefined>
+E2021-12-15 16:38:32,412 [mzn_1] scrape failed
+W2021-12-15 16:38:36,776 [mzn_2] missing title: https://www.amazon.com/GeForce-Gaming-Graphics-Technology-Backplate/dp/B08NWBG14N
+I2021-12-15 16:38:36,776 [mzn_2] not in stock
+E2021-12-15 16:38:42,922 [mzn_3] caught exception during request: 'charmap' codec can't encode character '\u2713' in position 135412: character maps to <undefined>
+E2021-12-15 16:38:42,923 [mzn_3] scrape failed

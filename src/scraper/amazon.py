@@ -36,7 +36,8 @@ class AmazonScraper(Scraper):
 
     @staticmethod
     def get_driver_type():
-        return 'lean_and_mean'
+        #return 'lean_and_mean'
+        return 'selenium'
 
     @staticmethod
     def get_result_type():

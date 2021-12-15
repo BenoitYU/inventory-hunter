@@ -1,0 +1,23 @@
+---
+alerters:
+  discord:
+    webhook_url: https://discord.com/api/webhooks/XXXXXXXXXXXX...
+    mentions:
+      - XXXXXXXXXXXXXXX
+      - XXXXXXXXXXXXXXX
+  telegram:
+    webhook_url: https://api.telegram.org/botXXXXXXXXXXXXXXXXXXXX/sendMessage
+    chat_id: XXXXXXXX
+  email:
+    sender: xiao.ming.track@gmail.com
+    recipients:
+      - xiao.ming.track@gmail.com
+      - yubenoit@email.com
+    relay: 127.0.0.1
+    password: callmexiaoming!   # optional
+  slack:
+    webhook_url: https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX
+    mentions:
+      - XXXXXXXXXXXXXXX
+      - XXXXXXXXXXXXXXX
+...
