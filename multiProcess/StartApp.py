@@ -1,26 +1,7 @@
-# import subprocess
-
-# #conda env list
-# a= subprocess.run("python ./src/ThreadTest1.py", stdout=subprocess.PIPE)    # 捕获输出
-# print(a.stdout.decode("GBK"))
-
-# b= subprocess.run("python ./src/ThreadTest2.py", stdout=subprocess.PIPE)    # 捕获输出
-# print(b.stdout.decode("GBK"))
-
+#注意 python运行的根目录实在INVENTORY-HUNTER 即便是文件都在MultiProcess里面 调用的时候也需要输入从根目录出发的相对地址
 import multiprocessing
 import time, datetime
 import os
-
-
-def function1():
-    for i in range(5):
-        time.sleep(2)
-        print(f'this is in thread 1, the cycle number is {i} \n')
-
-def function2():
-    for i in range(5):
-        time.sleep(2)
-        print(f'this is in thread 2, the cycle number is {i} \n')
 
 def execCmd(cmd):
     try:
@@ -32,15 +13,17 @@ def execCmd(cmd):
     except Exception as e :       
         print('命令%s\t 运行失败,失败原因\r\n%s' % (cmd,e))
 
-
 def main():
     processes = []
+    cmdCommande1='python ./multiProcess/ThreadTest1.py'
+    cmdCommande2='python ./multiProcess/ThreadTest2.py'
 
-    process1 = multiprocessing.Process(target=execCmd,args=('python ./src/ThreadTest1.py',))
+
+    process1 = multiprocessing.Process(target=execCmd,args=(cmdCommande1,))
     processes.append(process1)
     process1.start()
 
-    process2 = multiprocessing.Process(target=execCmd,args=('python ./src/ThreadTest2.py',))
+    process2 = multiprocessing.Process(target=execCmd,args=(cmdCommande2,))
     processes.append(process1)
     process2.start()
 

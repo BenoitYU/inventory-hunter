@@ -10,7 +10,7 @@ def execCmd(cmd):
         print("命令%s开始运行%s" % (cmd, datetime.datetime.now() ))
         os.system(cmd)
         print("命令%s结束运行%s" % (cmd, datetime.datetime.now()))
-    except :       #异常处理,此处声明.没有刻意计划异常处理,(只确保我执行的linux命令键入正确即可),[所以有报错也不会打印如下异常])
+    except Exception as e:       #异常处理,此处声明.没有刻意计划异常处理,(只确保我执行的linux命令键入正确即可),[所以有报错也不会打印如下异常])
         print('命令%s\t 运行失败,失败原因\r\n%s' % (cmd,e))
 
 
