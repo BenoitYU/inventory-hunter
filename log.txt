@@ -1328,3 +1328,115 @@ W2021-12-15 16:38:36,776 [mzn_2] missing title: https://www.amazon.com/GeForce-G
 I2021-12-15 16:38:36,776 [mzn_2] not in stock
 E2021-12-15 16:38:42,922 [mzn_3] caught exception during request: 'charmap' codec can't encode character '\u2713' in position 135412: character maps to <undefined>
 E2021-12-15 16:38:42,923 [mzn_3] scrape failed
+I2021-12-15 17:12:15,405 [root] starting v0.0.1 with args: ./src/run.py -a email -c ./config/amazon_rtx_3080.yaml -q ./config/alerters.yaml -l ./log.txt
+I2021-12-15 17:12:15,872 [root] discord alerter initialized with kwargs: webhook_url=https://discord.com/api/webhooks/XXXXXXXXXXXX... mentions=['XXXXXXXXXXXXXXX', 'XXXXXXXXXXXXXXX']
+I2021-12-15 17:12:15,872 [root] telegram alerter initialized with kwargs: webhook_url=https://api.telegram.org/botXXXXXXXXXXXXXXXXXXXX/sendMessage chat_id=XXXXXXXX
+I2021-12-15 17:12:15,872 [root] email alerter initialized with kwargs: sender=xiao.ming.track@gmail.com recipients=['xiao.ming.track@gmail.com', 'yubenoit@email.com'] relay=127.0.0.1 password=callmexiaoming!
+I2021-12-15 17:12:15,873 [root] slack alerter initialized with kwargs: webhook_url=https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX mentions=['XXXXXXXXXXXXXXX', 'XXXXXXXXXXXXXXX']
+E2021-12-15 17:12:15,875 [root] caught exception
+Traceback (most recent call last):
+  File "C:\Users\yubin001\Desktop\DevTest\GitProjects\inventory-hunter\src\run.py", line 61, in main
+    drivers = init_drivers(config)
+  File "C:\Users\yubin001\Desktop\DevTest\GitProjects\inventory-hunter\src\driver.py", line 160, in init_drivers
+    return DriverRepo(timeout)
+  File "C:\Users\yubin001\Desktop\DevTest\GitProjects\inventory-hunter\src\driver.py", line 153, in __init__
+    self.selenium = SeleniumDriver(data_dir=self.data_dir, timeout=timeout)
+  File "C:\Users\yubin001\Desktop\DevTest\GitProjects\inventory-hunter\src\driver.py", line 71, in __init__
+    raise Exception(f'Selenium Chrome driver not found at {" or ".join(driver_paths)}')
+NameError: name 'driver_paths' is not defined
+I2021-12-15 17:13:24,198 [root] starting v0.0.1 with args: ./src/run.py -a email -c ./config/amazon_rtx_3080.yaml -q ./config/alerters.yaml -l ./log.txt
+I2021-12-15 17:13:24,656 [root] discord alerter initialized with kwargs: webhook_url=https://discord.com/api/webhooks/XXXXXXXXXXXX... mentions=['XXXXXXXXXXXXXXX', 'XXXXXXXXXXXXXXX']
+I2021-12-15 17:13:24,656 [root] telegram alerter initialized with kwargs: webhook_url=https://api.telegram.org/botXXXXXXXXXXXXXXXXXXXX/sendMessage chat_id=XXXXXXXX
+I2021-12-15 17:13:24,656 [root] email alerter initialized with kwargs: sender=xiao.ming.track@gmail.com recipients=['xiao.ming.track@gmail.com', 'yubenoit@email.com'] relay=127.0.0.1 password=callmexiaoming!
+I2021-12-15 17:13:24,657 [root] slack alerter initialized with kwargs: webhook_url=https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX mentions=['XXXXXXXXXXXXXXX', 'XXXXXXXXXXXXXXX']
+E2021-12-15 17:13:24,659 [root] caught exception
+Traceback (most recent call last):
+  File "C:\Users\yubin001\Desktop\DevTest\GitProjects\inventory-hunter\src\run.py", line 61, in main
+    drivers = init_drivers(config)
+  File "C:\Users\yubin001\Desktop\DevTest\GitProjects\inventory-hunter\src\driver.py", line 160, in init_drivers
+    return DriverRepo(timeout)
+  File "C:\Users\yubin001\Desktop\DevTest\GitProjects\inventory-hunter\src\driver.py", line 153, in __init__
+    self.selenium = SeleniumDriver(data_dir=self.data_dir, timeout=timeout)
+  File "C:\Users\yubin001\Desktop\DevTest\GitProjects\inventory-hunter\src\driver.py", line 71, in __init__
+    raise Exception(f'Selenium Chrome driver not found at {" or ".join(driver_paths)}')
+NameError: name 'driver_paths' is not defined
+I2021-12-15 17:14:50,933 [root] starting v0.0.1 with args: ./src/run.py -a email -c ./config/amazon_rtx_3080.yaml -q ./config/alerters.yaml -l ./log.txt
+I2021-12-15 17:14:51,427 [root] discord alerter initialized with kwargs: webhook_url=https://discord.com/api/webhooks/XXXXXXXXXXXX... mentions=['XXXXXXXXXXXXXXX', 'XXXXXXXXXXXXXXX']
+I2021-12-15 17:14:51,428 [root] telegram alerter initialized with kwargs: webhook_url=https://api.telegram.org/botXXXXXXXXXXXXXXXXXXXX/sendMessage chat_id=XXXXXXXX
+I2021-12-15 17:14:51,428 [root] email alerter initialized with kwargs: sender=xiao.ming.track@gmail.com recipients=['xiao.ming.track@gmail.com', 'yubenoit@email.com'] relay=127.0.0.1 password=callmexiaoming!
+I2021-12-15 17:14:51,429 [root] slack alerter initialized with kwargs: webhook_url=https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX mentions=['XXXXXXXXXXXXXXX', 'XXXXXXXXXXXXXXX']
+E2021-12-15 17:14:51,432 [root] caught exception
+Traceback (most recent call last):
+  File "C:\Users\yubin001\Desktop\DevTest\GitProjects\inventory-hunter\src\run.py", line 61, in main
+    drivers = init_drivers(config)
+  File "C:\Users\yubin001\Desktop\DevTest\GitProjects\inventory-hunter\src\driver.py", line 161, in init_drivers
+    return DriverRepo(timeout)
+  File "C:\Users\yubin001\Desktop\DevTest\GitProjects\inventory-hunter\src\driver.py", line 154, in __init__
+    self.selenium = SeleniumDriver(data_dir=self.data_dir, timeout=timeout)
+  File "C:\Users\yubin001\Desktop\DevTest\GitProjects\inventory-hunter\src\driver.py", line 72, in __init__
+    raise Exception(f'Selenium Chrome driver not found at {" or ".join(driver_paths)}')
+Exception: Selenium Chrome driver not found at . or / or c or h or r or o or m or e or d or r or i or v or e or r or . or e or x or e
+I2021-12-15 17:15:03,311 [root] starting v0.0.1 with args: ./src/run.py -a email -c ./config/amazon_rtx_3080.yaml -q ./config/alerters.yaml -l ./log.txt
+I2021-12-15 17:15:03,784 [root] discord alerter initialized with kwargs: webhook_url=https://discord.com/api/webhooks/XXXXXXXXXXXX... mentions=['XXXXXXXXXXXXXXX', 'XXXXXXXXXXXXXXX']
+I2021-12-15 17:15:03,784 [root] telegram alerter initialized with kwargs: webhook_url=https://api.telegram.org/botXXXXXXXXXXXXXXXXXXXX/sendMessage chat_id=XXXXXXXX
+I2021-12-15 17:15:03,784 [root] email alerter initialized with kwargs: sender=xiao.ming.track@gmail.com recipients=['xiao.ming.track@gmail.com', 'yubenoit@email.com'] relay=127.0.0.1 password=callmexiaoming!
+I2021-12-15 17:15:03,785 [root] slack alerter initialized with kwargs: webhook_url=https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX mentions=['XXXXXXXXXXXXXXX', 'XXXXXXXXXXXXXXX']
+E2021-12-15 17:15:03,787 [root] caught exception
+Traceback (most recent call last):
+  File "C:\Users\yubin001\Desktop\DevTest\GitProjects\inventory-hunter\src\run.py", line 61, in main
+    drivers = init_drivers(config)
+  File "C:\Users\yubin001\Desktop\DevTest\GitProjects\inventory-hunter\src\driver.py", line 161, in init_drivers
+    return DriverRepo(timeout)
+  File "C:\Users\yubin001\Desktop\DevTest\GitProjects\inventory-hunter\src\driver.py", line 154, in __init__
+    self.selenium = SeleniumDriver(data_dir=self.data_dir, timeout=timeout)
+  File "C:\Users\yubin001\Desktop\DevTest\GitProjects\inventory-hunter\src\driver.py", line 72, in __init__
+    raise Exception(f'Selenium Chrome driver not found at {" or ".join(driver_paths)}')
+Exception: Selenium Chrome driver not found at . or / or c or h or r or o or m or e or d or r or i or v or e or r or . or e or x or e
+I2021-12-15 17:15:46,235 [root] starting v0.0.1 with args: ./src/run.py -a email -c ./config/amazon_rtx_3080.yaml -q ./config/alerters.yaml -l ./log.txt
+I2021-12-15 17:15:46,702 [root] discord alerter initialized with kwargs: webhook_url=https://discord.com/api/webhooks/XXXXXXXXXXXX... mentions=['XXXXXXXXXXXXXXX', 'XXXXXXXXXXXXXXX']
+I2021-12-15 17:15:46,703 [root] telegram alerter initialized with kwargs: webhook_url=https://api.telegram.org/botXXXXXXXXXXXXXXXXXXXX/sendMessage chat_id=XXXXXXXX
+I2021-12-15 17:15:46,703 [root] email alerter initialized with kwargs: sender=xiao.ming.track@gmail.com recipients=['xiao.ming.track@gmail.com', 'yubenoit@email.com'] relay=127.0.0.1 password=callmexiaoming!
+I2021-12-15 17:15:46,704 [root] slack alerter initialized with kwargs: webhook_url=https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX mentions=['XXXXXXXXXXXXXXX', 'XXXXXXXXXXXXXXX']
+E2021-12-15 17:15:46,706 [root] caught exception
+Traceback (most recent call last):
+  File "C:\Users\yubin001\Desktop\DevTest\GitProjects\inventory-hunter\src\run.py", line 61, in main
+    drivers = init_drivers(config)
+  File "C:\Users\yubin001\Desktop\DevTest\GitProjects\inventory-hunter\src\driver.py", line 161, in init_drivers
+    return DriverRepo(timeout)
+  File "C:\Users\yubin001\Desktop\DevTest\GitProjects\inventory-hunter\src\driver.py", line 154, in __init__
+    self.selenium = SeleniumDriver(data_dir=self.data_dir, timeout=timeout)
+  File "C:\Users\yubin001\Desktop\DevTest\GitProjects\inventory-hunter\src\driver.py", line 72, in __init__
+    raise Exception(f'Selenium Chrome driver not found at {" or ".join(driver_paths)}')
+Exception: Selenium Chrome driver not found at . or / or c or h or r or o or m or e or d or r or i or v or e or r or . or e or x or e
+I2021-12-15 17:17:24,564 [root] starting v0.0.1 with args: ./src/run.py -a email -c ./config/amazon_rtx_3080.yaml -q ./config/alerters.yaml -l ./log.txt
+I2021-12-15 17:17:26,573 [root] discord alerter initialized with kwargs: webhook_url=https://discord.com/api/webhooks/XXXXXXXXXXXX... mentions=['XXXXXXXXXXXXXXX', 'XXXXXXXXXXXXXXX']
+I2021-12-15 17:17:26,574 [root] telegram alerter initialized with kwargs: webhook_url=https://api.telegram.org/botXXXXXXXXXXXXXXXXXXXX/sendMessage chat_id=XXXXXXXX
+I2021-12-15 17:17:26,574 [root] email alerter initialized with kwargs: sender=xiao.ming.track@gmail.com recipients=['xiao.ming.track@gmail.com', 'yubenoit@email.com'] relay=127.0.0.1 password=callmexiaoming!
+I2021-12-15 17:17:26,575 [root] slack alerter initialized with kwargs: webhook_url=https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX mentions=['XXXXXXXXXXXXXXX', 'XXXXXXXXXXXXXXX']
+E2021-12-15 17:17:26,578 [root] caught exception
+Traceback (most recent call last):
+  File "C:\Users\yubin001\Desktop\DevTest\GitProjects\inventory-hunter\src\run.py", line 61, in main
+    drivers = init_drivers(config)
+  File "C:\Users\yubin001\Desktop\DevTest\GitProjects\inventory-hunter\src\driver.py", line 161, in init_drivers
+    return DriverRepo(timeout)
+  File "C:\Users\yubin001\Desktop\DevTest\GitProjects\inventory-hunter\src\driver.py", line 154, in __init__
+    self.selenium = SeleniumDriver(data_dir=self.data_dir, timeout=timeout)
+  File "C:\Users\yubin001\Desktop\DevTest\GitProjects\inventory-hunter\src\driver.py", line 72, in __init__
+    raise Exception(f'Selenium Chrome driver not found at {" or ".join(driver_paths)}')
+Exception: Selenium Chrome driver not found at . or / or c or h or r or o or m or e or d or r or i or v or e or r or . or e or x or e
+I2021-12-15 17:17:52,588 [root] starting v0.0.1 with args: ./src/run.py -a email -c ./config/amazon_rtx_3080.yaml -q ./config/alerters.yaml -l ./log.txt
+I2021-12-15 17:17:53,080 [root] discord alerter initialized with kwargs: webhook_url=https://discord.com/api/webhooks/XXXXXXXXXXXX... mentions=['XXXXXXXXXXXXXXX', 'XXXXXXXXXXXXXXX']
+I2021-12-15 17:17:53,082 [root] telegram alerter initialized with kwargs: webhook_url=https://api.telegram.org/botXXXXXXXXXXXXXXXXXXXX/sendMessage chat_id=XXXXXXXX
+I2021-12-15 17:17:53,082 [root] email alerter initialized with kwargs: sender=xiao.ming.track@gmail.com recipients=['xiao.ming.track@gmail.com', 'yubenoit@email.com'] relay=127.0.0.1 password=callmexiaoming!
+I2021-12-15 17:17:53,083 [root] slack alerter initialized with kwargs: webhook_url=https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX mentions=['XXXXXXXXXXXXXXX', 'XXXXXXXXXXXXXXX']
+I2021-12-15 17:17:53,086 [mzn_1] scraper initialized for https://www.amazon.com/ASUS-Graphics-DisplayPort-Military-Grade-Certification/dp/B08HH5WF97
+I2021-12-15 17:17:53,086 [mzn_2] scraper initialized for https://www.amazon.com/GeForce-Gaming-Graphics-Technology-Backplate/dp/B08NWBG14N
+I2021-12-15 17:17:53,087 [mzn_3] scraper initialized for https://www.amazon.com/MSI-GeForce-RTX-3080-10G/dp/B08HR7SV3M
+I2021-12-15 17:17:53,087 [mzn_4] scraper initialized for https://www.amazon.com/MSI-RTX-2080-GAMING-TRIO/dp/B07GHXQTGZ
+I2021-12-15 17:17:53,088 [mzn_5] scraper initialized for https://www.amazon.com/NVIDIA-GeForce-Graphics-DisplayPort-Bearings/dp/B08NQ78BCN
+E2021-12-15 17:18:00,818 [mzn_1] caught exception during request: 'charmap' codec can't encode characters in position 760356-760357: character maps to <undefined>
+E2021-12-15 17:18:00,819 [mzn_1] scrape failed
+W2021-12-15 17:18:05,140 [mzn_2] missing title: https://www.amazon.com/GeForce-Gaming-Graphics-Technology-Backplate/dp/B08NWBG14N
+I2021-12-15 17:18:05,141 [mzn_2] not in stock
+E2021-12-15 17:18:11,020 [mzn_3] caught exception during request: 'charmap' codec can't encode character '\u2713' in position 138979: character maps to <undefined>
+E2021-12-15 17:18:11,021 [mzn_3] scrape failed

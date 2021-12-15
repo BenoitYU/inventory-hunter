@@ -42,7 +42,8 @@ class SeleniumDriver(Driver):
         self.selenium_path = pathlib.Path('selenium').resolve()
         self.selenium_path.mkdir(exist_ok=True)
         print(self.selenium_path / 'chromedriver')
-        self.driver_path = self.selenium_path / 'chromedriver'
+        self.driver_path = self.selenium_path / 'chromedriver.exe'
+        driver_paths ='./chromedriver.exe'
         # ###
         # self.driver_path = self.selenium_path / 'chromedriver'
         # driver_paths = [
