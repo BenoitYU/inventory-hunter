@@ -9,13 +9,12 @@ def execCmd(cmd):
         os.system(cmd)
         print("命令%s结束运行%s" % (cmd, datetime.datetime.now()))
 
-    #异常处理,此处声明.没有刻意计划异常处理,(只确保我执行的linux命令键入正确即可),[所以有报错也不会打印如下异常])
     except Exception as e :       
         print('命令%s\t 运行失败,失败原因\r\n%s' % (cmd,e))
 
 def main():
     processes = []
-    cmdCommande1='python ./multiProcess/ThreadTest1.py'
+    cmdCommande1='python ./src/run_worker.py lean_and_mean'
     cmdCommande2='python ./multiProcess/ThreadTest2.py'
 
 
