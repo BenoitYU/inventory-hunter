@@ -1,4 +1,5 @@
 import logging
+# 注意可能会遇到已安装ppyaml但还是无法找到yaml包的问题 解决方法是直接在vscode中的终端执行pip install pyyaml 即可
 import yaml
 
 from abc import ABC, abstractmethod

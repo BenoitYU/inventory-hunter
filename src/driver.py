@@ -114,7 +114,7 @@ class PuppeteerDriver(Driver):
         if r.returncode != 0:
             logging.warning(f'puppeteer scrape failed: {r.stdout}')
         else:
-            with open(html_file, 'r') as f:
+            with open(html_file, 'r',encoding='utf-8') as f:
                 content = f.read()
                 return HttpGetResponse(content, url)
 

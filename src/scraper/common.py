@@ -154,10 +154,11 @@ class Scraper(ABC):
     def scrape_impl(self):
         try:
             self.logger.debug('starting new scrape')
-            #打开网页链接
+            #打开网页链接 并保存到data文件夹中
             r = self.driver.get(self.url)
             if self.get_driver_type() != 'puppeteer':
-                with self.filename.open('w') as f:
+                #注意此处要规定编码方式 默认会报‘gbk’ codec can’t encode characte错误
+                with self.filename.open('w',encoding='utf-8') as f:
                     f.write(r.text)
             result_type = self.get_result_type()
             #根据返回的类型创建结果实例

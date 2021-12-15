@@ -1,12 +1,3 @@
-# import subprocess
-
-# #conda env list
-# a= subprocess.run("python ./src/ThreadTest1.py", stdout=subprocess.PIPE)    # 捕获输出
-# print(a.stdout.decode("GBK"))
-
-# b= subprocess.run("python ./src/ThreadTest2.py", stdout=subprocess.PIPE)    # 捕获输出
-# print(b.stdout.decode("GBK"))
-
 import multiprocessing
 import time, datetime
 import os

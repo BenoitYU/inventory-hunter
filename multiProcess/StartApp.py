@@ -16,12 +16,11 @@ def main():
     processes = []
     cmdCommande1='python ./src/run_worker.py lean_and_mean'
     #./multiProcess/ThreadTest2.py
-    cmdCommande2='python ./src/run.py -a email -c ./config/amazon_rtx_3080.yaml -q ./config/alerters.yaml -l ./log.txt'
+    cmdCommande2='python ./src/run.py -a email -c ./config/ps5.yaml -q ./config/alerters.yaml -l ./log.txt'
 
-
-    # process1 = multiprocessing.Process(target=execCmd,args=(cmdCommande1,))
-    # processes.append(process1)
-    # process1.start()
+    process1 = multiprocessing.Process(target=execCmd,args=(cmdCommande1,))
+    processes.append(process1)
+    process1.start()
 
     process2 = multiprocessing.Process(target=execCmd,args=(cmdCommande2,))
     processes.append(process2)
