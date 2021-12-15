@@ -5,7 +5,8 @@ import sys
 
 random.seed()
 
-
+# scrapers 表示的是对应的config文件中的所有的链接爬取 每一个爬取任务就是一个scraper类实例 然后这个实例会被加入到scheduler中一直循环调用 
+# 需要注意的是 一个config文件对应着一件商品 一个上平对应着多个网站 每一个网站对应着一个爬取任务 每个爬取任务会被无休止循环执行
 class Engine:
     def __init__(self, alerters, config, scrapers):
         self.alerters = alerters
@@ -34,14 +35,14 @@ class Engine:
             self.scheduler.enter(time_delta, 1, Engine.tick, (self, s))
 
     def tick(self, s):
-        #返回的是ScrapeResult类的实例
+        #返回的result是ScrapeResult类的实例
         result = s.scrape()
 
         if result is None:
             s.logger.error('scrape failed')
         else:
             self.process_scrape_result(s, result)
-        #此处返回任务的编排 继续进行任务导入
+        #结束对网站的一次爬取后 把新的爬取任务加入时间轴 等待下一次爬取 所以一旦开启engine后 不会自己停止
         return self.schedule(s)
 
     def process_scrape_result(self, s, result):

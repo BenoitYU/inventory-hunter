@@ -27,7 +27,7 @@ class AmazonScrapeResult(ScrapeResult):
             self.alert_subject = alert_subject
             self.alert_content = f'{alert_content.strip()}\n{self.url}'
 
-
+# 此处引用修饰符来记录已经创建模板的网站 这样子就可以避免采用通用模板了
 @ScraperFactory.register
 class AmazonScraper(Scraper):
     @staticmethod

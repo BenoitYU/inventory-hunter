@@ -110,6 +110,7 @@ class ScraperStats:
 class Scraper(ABC):
     #注意此处的url是后面定义的URL类的实例 不是单纯的链接
     def __init__(self, drivers, url):
+        #此处选择在drivers中的self.get_driver_type()属性 从而决定哪一个driver
         self.driver = getattr(drivers, self.get_driver_type())
         self.filename = drivers.data_dir / f'{url.nickname}.html'
         self.logger = logging.getLogger(url.nickname)
@@ -188,12 +189,13 @@ class ScraperFactory:
 
     @classmethod
     def create(cls, drivers, url):
+        #对于字典中每一个注册的domain scraper 对，如果在链接的netloc值中找到domain信息 则说明该url有特定模板 不用通用模板
         for domain, scraper_type in cls.registry.items():
             if domain in url.netloc:
                 return scraper_type(drivers, url)
         logging.warning(f'warning: using generic scraper for url: {url}')
         return GenericScraper(drivers, url)
-
+    # 此处获取所有的已经有具体模板的网站
     @classmethod
     def register(cls, scraper_type):
         domain = scraper_type.get_domain()

@@ -56,7 +56,7 @@ class AlertEngine:
             except Exception:
                 logging.exception(f'{alerter.get_alerter_type()} alerter failed to alert')
 
-
+#根据传进来的是具体参数还是文本来分情况
 class AlerterFactory:
     registry = dict()
 

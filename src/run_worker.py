@@ -16,7 +16,8 @@ def main():
     logging.basicConfig(level=logging.ERROR, format=log_format, style='{')
     
     logger = logging.getLogger()
-    handler = logging.FileHandler(f'/{args.worker}.txt')
+    #在项目根目录创建模块log文件
+    handler = logging.FileHandler(f'./{args.worker}.txt')
     handler.setFormatter(logging.Formatter(log_format, style='{'))
     handler.setLevel(logging.DEBUG)
     logger.addHandler(handler)
