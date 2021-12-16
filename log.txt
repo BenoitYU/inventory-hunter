@@ -634,3 +634,1116 @@ W2021-12-15 21:58:21,518 [nwgg_3] missing price: https://www.newegg.com/p/N82E16
 I2021-12-15 21:58:21,518 [nwgg_3] not in stock
 I2021-12-15 21:58:23,906 [trgt_1] not in stock
 I2021-12-15 21:58:26,198 [trgt_2] not in stock
+I2021-12-15 22:10:46,996 [root] starting v0.0.1 with args: ./src/run.py -a email -c ./config/ps5.yaml -q ./config/alerters.yaml -l ./log.txt
+I2021-12-15 22:10:47,604 [root] discord alerter initialized with kwargs: webhook_url=https://discord.com/api/webhooks/XXXXXXXXXXXX... mentions=['XXXXXXXXXXXXXXX', 'XXXXXXXXXXXXXXX']
+I2021-12-15 22:10:47,604 [root] telegram alerter initialized with kwargs: webhook_url=https://api.telegram.org/botXXXXXXXXXXXXXXXXXXXX/sendMessage chat_id=XXXXXXXX
+I2021-12-15 22:10:47,604 [root] email alerter initialized with kwargs: sender=xiao.ming.track@gmail.com recipients=['xiao.ming.track@gmail.com', 'yubenoit@email.com'] relay=127.0.0.1 password=callmexiaoming!
+I2021-12-15 22:10:47,604 [root] slack alerter initialized with kwargs: webhook_url=https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX mentions=['XXXXXXXXXXXXXXX', 'XXXXXXXXXXXXXXX']
+I2021-12-15 22:10:47,613 [mzn_1] scraper initialized for https://www.amazon.com/PlayStation-5-Console/dp/B08FC5L3RG
+I2021-12-15 22:10:47,613 [bstby_1] scraper initialized for https://www.bestbuy.com/site/sony-playstation-5-console/6426149.p?skuId=6426149
+I2021-12-15 22:10:47,614 [bstby_2] scraper initialized for https://www.bestbuy.com/site/sony-playstation-5-digital-edition-console/6430161.p?skuId=6430161
+I2021-12-15 22:10:47,614 [nwgg_1] scraper initialized for https://www.newegg.com/p/N82E16868110291
+I2021-12-15 22:10:47,615 [nwgg_2] scraper initialized for https://www.newegg.com/p/N82E16868110292
+I2021-12-15 22:10:47,615 [nwgg_3] scraper initialized for https://www.newegg.com/p/N82E16868110293
+W2021-12-15 22:10:47,615 [root] warning: using generic scraper for url: https://www.target.com/p/playstation-5-console/-/A-81114595
+I2021-12-15 22:10:47,616 [trgt_1] scraper initialized for https://www.target.com/p/playstation-5-console/-/A-81114595
+W2021-12-15 22:10:47,616 [root] warning: using generic scraper for url: https://www.target.com/p/playstation-5-digital-edition-console/-/A-81114596
+I2021-12-15 22:10:47,617 [trgt_2] scraper initialized for https://www.target.com/p/playstation-5-digital-edition-console/-/A-81114596
+I2021-12-15 22:10:47,617 [wlmrt_1] scraper initialized for https://www.walmart.com/ip/PlayStation-5-Console/363472942
+E2021-12-15 22:10:50,003 [mzn_1] caught exception during request: [WinError 193] %1 不是有效的 Win32 应用程序。
+E2021-12-15 22:10:50,003 [mzn_1] scrape failed
+E2021-12-15 22:10:51,983 [bstby_1] caught exception during request: [WinError 193] %1 不是有效的 Win32 应用程序。
+E2021-12-15 22:10:51,983 [bstby_1] scrape failed
+E2021-12-15 22:10:54,288 [bstby_2] caught exception during request: [WinError 193] %1 不是有效的 Win32 应用程序。
+E2021-12-15 22:10:54,288 [bstby_2] scrape failed
+W2021-12-15 22:10:56,849 [nwgg_1] missing price: https://www.newegg.com/p/N82E16868110291
+I2021-12-15 22:10:56,849 [nwgg_1] not in stock
+I2021-12-15 22:10:58,853 [nwgg_2] now in stock at 1005.0... too expensive
+I2021-12-15 22:12:25,820 [root] starting v0.0.1 with args: ./src/run.py -a email -c ./config/ps5.yaml -q ./config/alerters.yaml -l ./log.txt
+I2021-12-15 22:12:26,222 [root] discord alerter initialized with kwargs: webhook_url=https://discord.com/api/webhooks/XXXXXXXXXXXX... mentions=['XXXXXXXXXXXXXXX', 'XXXXXXXXXXXXXXX']
+I2021-12-15 22:12:26,222 [root] telegram alerter initialized with kwargs: webhook_url=https://api.telegram.org/botXXXXXXXXXXXXXXXXXXXX/sendMessage chat_id=XXXXXXXX
+I2021-12-15 22:12:26,222 [root] email alerter initialized with kwargs: sender=xiao.ming.track@gmail.com recipients=['xiao.ming.track@gmail.com', 'yubenoit@email.com'] relay=127.0.0.1 password=callmexiaoming!
+I2021-12-15 22:12:26,222 [root] slack alerter initialized with kwargs: webhook_url=https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX mentions=['XXXXXXXXXXXXXXX', 'XXXXXXXXXXXXXXX']
+I2021-12-15 22:12:26,234 [mzn_1] scraper initialized for https://www.amazon.com/PlayStation-5-Console/dp/B08FC5L3RG
+I2021-12-15 22:12:26,234 [bstby_1] scraper initialized for https://www.bestbuy.com/site/sony-playstation-5-console/6426149.p?skuId=6426149
+I2021-12-15 22:12:26,234 [bstby_2] scraper initialized for https://www.bestbuy.com/site/sony-playstation-5-digital-edition-console/6430161.p?skuId=6430161
+I2021-12-15 22:12:26,235 [nwgg_1] scraper initialized for https://www.newegg.com/p/N82E16868110291
+I2021-12-15 22:12:26,235 [nwgg_2] scraper initialized for https://www.newegg.com/p/N82E16868110292
+I2021-12-15 22:12:26,235 [nwgg_3] scraper initialized for https://www.newegg.com/p/N82E16868110293
+W2021-12-15 22:12:26,236 [root] warning: using generic scraper for url: https://www.target.com/p/playstation-5-console/-/A-81114595
+I2021-12-15 22:12:26,236 [trgt_1] scraper initialized for https://www.target.com/p/playstation-5-console/-/A-81114595
+W2021-12-15 22:12:26,236 [root] warning: using generic scraper for url: https://www.target.com/p/playstation-5-digital-edition-console/-/A-81114596
+I2021-12-15 22:12:26,237 [trgt_2] scraper initialized for https://www.target.com/p/playstation-5-digital-edition-console/-/A-81114596
+I2021-12-15 22:12:26,237 [wlmrt_1] scraper initialized for https://www.walmart.com/ip/PlayStation-5-Console/363472942
+E2021-12-15 22:12:28,431 [mzn_1] caught exception during request: [WinError 193] %1 不是有效的 Win32 应用程序。
+E2021-12-15 22:12:28,431 [mzn_1] scrape failed
+E2021-12-15 22:12:30,718 [bstby_1] caught exception during request: [WinError 193] %1 不是有效的 Win32 应用程序。
+E2021-12-15 22:12:30,718 [bstby_1] scrape failed
+E2021-12-15 22:12:32,798 [bstby_2] caught exception during request: [WinError 193] %1 不是有效的 Win32 应用程序。
+E2021-12-15 22:12:32,798 [bstby_2] scrape failed
+W2021-12-15 22:12:35,631 [nwgg_1] missing price: https://www.newegg.com/p/N82E16868110291
+I2021-12-15 22:12:35,631 [nwgg_1] not in stock
+I2021-12-15 22:12:38,345 [nwgg_2] now in stock at 1005.0... too expensive
+W2021-12-15 22:12:40,288 [nwgg_3] missing price: https://www.newegg.com/p/N82E16868110293
+I2021-12-15 22:12:40,288 [nwgg_3] not in stock
+I2021-12-15 22:12:42,626 [trgt_1] not in stock
+I2021-12-15 22:16:47,972 [root] starting v0.0.1 with args: ./src/run.py -a email -c ./config/ps5.yaml -q ./config/alerters.yaml -l ./log.txt
+I2021-12-15 22:16:48,359 [root] discord alerter initialized with kwargs: webhook_url=https://discord.com/api/webhooks/XXXXXXXXXXXX... mentions=['XXXXXXXXXXXXXXX', 'XXXXXXXXXXXXXXX']
+I2021-12-15 22:16:48,359 [root] telegram alerter initialized with kwargs: webhook_url=https://api.telegram.org/botXXXXXXXXXXXXXXXXXXXX/sendMessage chat_id=XXXXXXXX
+I2021-12-15 22:16:48,359 [root] email alerter initialized with kwargs: sender=xiao.ming.track@gmail.com recipients=['xiao.ming.track@gmail.com', 'yubenoit@email.com'] relay=127.0.0.1 password=callmexiaoming!
+I2021-12-15 22:16:48,375 [root] slack alerter initialized with kwargs: webhook_url=https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX mentions=['XXXXXXXXXXXXXXX', 'XXXXXXXXXXXXXXX']
+I2021-12-15 22:16:48,378 [mzn_1] scraper initialized for https://www.amazon.com/PlayStation-5-Console/dp/B08FC5L3RG
+I2021-12-15 22:16:48,379 [bstby_1] scraper initialized for https://www.bestbuy.com/site/sony-playstation-5-console/6426149.p?skuId=6426149
+I2021-12-15 22:16:48,379 [bstby_2] scraper initialized for https://www.bestbuy.com/site/sony-playstation-5-digital-edition-console/6430161.p?skuId=6430161
+I2021-12-15 22:16:48,379 [nwgg_1] scraper initialized for https://www.newegg.com/p/N82E16868110291
+I2021-12-15 22:16:48,380 [nwgg_2] scraper initialized for https://www.newegg.com/p/N82E16868110292
+I2021-12-15 22:16:48,380 [nwgg_3] scraper initialized for https://www.newegg.com/p/N82E16868110293
+W2021-12-15 22:16:48,380 [root] warning: using generic scraper for url: https://www.target.com/p/playstation-5-console/-/A-81114595
+I2021-12-15 22:16:48,381 [trgt_1] scraper initialized for https://www.target.com/p/playstation-5-console/-/A-81114595
+W2021-12-15 22:16:48,381 [root] warning: using generic scraper for url: https://www.target.com/p/playstation-5-digital-edition-console/-/A-81114596
+I2021-12-15 22:16:48,381 [trgt_2] scraper initialized for https://www.target.com/p/playstation-5-digital-edition-console/-/A-81114596
+I2021-12-15 22:16:48,382 [wlmrt_1] scraper initialized for https://www.walmart.com/ip/PlayStation-5-Console/363472942
+I2021-12-15 22:17:00,594 [mzn_1] not in stock
+W2021-12-15 22:17:05,338 [bstby_1] missing title: https://www.bestbuy.com/site/sony-playstation-5-console/6426149.p?skuId=6426149
+W2021-12-15 22:17:05,339 [bstby_1] missing price: https://www.bestbuy.com/site/sony-playstation-5-console/6426149.p?skuId=6426149
+I2021-12-15 22:17:05,340 [bstby_1] not in stock
+I2021-12-15 22:41:45,152 [root] starting v0.0.1 with args: ./src/run.py -a email -c ./config/amazon_rtx_3080.yaml -q ./config/alerters.yaml -l ./log.txt
+I2021-12-15 22:41:45,588 [root] discord alerter initialized with kwargs: webhook_url=https://discord.com/api/webhooks/XXXXXXXXXXXX... mentions=['XXXXXXXXXXXXXXX', 'XXXXXXXXXXXXXXX']
+I2021-12-15 22:41:45,588 [root] telegram alerter initialized with kwargs: webhook_url=https://api.telegram.org/botXXXXXXXXXXXXXXXXXXXX/sendMessage chat_id=XXXXXXXX
+I2021-12-15 22:41:45,589 [root] email alerter initialized with kwargs: sender=xiao.ming.track@gmail.com recipients=['xiao.ming.track@gmail.com', 'yubenoit@email.com'] relay=127.0.0.1 password=callmexiaoming!
+I2021-12-15 22:41:45,589 [root] slack alerter initialized with kwargs: webhook_url=https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX mentions=['XXXXXXXXXXXXXXX', 'XXXXXXXXXXXXXXX']
+I2021-12-15 22:41:45,591 [mzn_1] scraper initialized for https://www.amazon.com/ASUS-Graphics-DisplayPort-Military-Grade-Certification/dp/B08HH5WF97
+I2021-12-15 22:41:45,591 [mzn_2] scraper initialized for https://www.amazon.com/GeForce-Gaming-Graphics-Technology-Backplate/dp/B08NWBG14N
+I2021-12-15 22:41:45,591 [mzn_3] scraper initialized for https://www.amazon.com/MSI-GeForce-RTX-3080-10G/dp/B08HR7SV3M
+I2021-12-15 22:41:45,591 [mzn_4] scraper initialized for https://www.amazon.com/MSI-RTX-2080-GAMING-TRIO/dp/B07GHXQTGZ
+I2021-12-15 22:41:45,591 [mzn_5] scraper initialized for https://www.amazon.com/NVIDIA-GeForce-Graphics-DisplayPort-Bearings/dp/B08NQ78BCN
+I2021-12-15 22:42:07,433 [root] starting v0.0.1 with args: ./src/run.py -a email -c ./config/amazon_rtx_3080.yaml -q ./config/alerters.yaml -l ./log.txt
+I2021-12-15 22:42:07,827 [root] discord alerter initialized with kwargs: webhook_url=https://discord.com/api/webhooks/XXXXXXXXXXXX... mentions=['XXXXXXXXXXXXXXX', 'XXXXXXXXXXXXXXX']
+I2021-12-15 22:42:07,827 [root] telegram alerter initialized with kwargs: webhook_url=https://api.telegram.org/botXXXXXXXXXXXXXXXXXXXX/sendMessage chat_id=XXXXXXXX
+I2021-12-15 22:42:07,827 [root] email alerter initialized with kwargs: sender=xiao.ming.track@gmail.com recipients=['xiao.ming.track@gmail.com', 'yubenoit@email.com'] relay=127.0.0.1 password=callmexiaoming!
+I2021-12-15 22:42:07,827 [root] slack alerter initialized with kwargs: webhook_url=https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX mentions=['XXXXXXXXXXXXXXX', 'XXXXXXXXXXXXXXX']
+I2021-12-15 22:42:07,834 [mzn_1] scraper initialized for https://www.amazon.com/ASUS-Graphics-DisplayPort-Military-Grade-Certification/dp/B08HH5WF97
+I2021-12-15 22:42:07,834 [mzn_2] scraper initialized for https://www.amazon.com/GeForce-Gaming-Graphics-Technology-Backplate/dp/B08NWBG14N
+I2021-12-15 22:42:07,835 [mzn_3] scraper initialized for https://www.amazon.com/MSI-GeForce-RTX-3080-10G/dp/B08HR7SV3M
+I2021-12-15 22:42:07,835 [mzn_4] scraper initialized for https://www.amazon.com/MSI-RTX-2080-GAMING-TRIO/dp/B07GHXQTGZ
+I2021-12-15 22:42:07,835 [mzn_5] scraper initialized for https://www.amazon.com/NVIDIA-GeForce-Graphics-DisplayPort-Bearings/dp/B08NQ78BCN
+I2021-12-15 22:42:14,857 [mzn_1] not in stock
+W2021-12-15 22:42:18,550 [mzn_2] missing title: https://www.amazon.com/GeForce-Gaming-Graphics-Technology-Backplate/dp/B08NWBG14N
+I2021-12-15 22:42:18,551 [mzn_2] not in stock
+I2021-12-15 22:42:24,480 [mzn_3] not in stock
+I2021-12-15 22:42:30,798 [mzn_4] not in stock
+W2021-12-15 22:42:34,328 [mzn_5] missing title: https://www.amazon.com/NVIDIA-GeForce-Graphics-DisplayPort-Bearings/dp/B08NQ78BCN
+I2021-12-15 22:42:34,331 [mzn_5] not in stock
+I2021-12-15 22:42:40,314 [mzn_1] not in stock
+W2021-12-15 22:42:44,036 [mzn_2] missing title: https://www.amazon.com/GeForce-Gaming-Graphics-Technology-Backplate/dp/B08NWBG14N
+I2021-12-15 22:42:44,040 [mzn_2] not in stock
+I2021-12-15 22:42:49,920 [mzn_3] not in stock
+I2021-12-15 22:42:56,074 [mzn_4] not in stock
+W2021-12-15 22:43:00,763 [mzn_5] missing title: https://www.amazon.com/NVIDIA-GeForce-Graphics-DisplayPort-Bearings/dp/B08NQ78BCN
+I2021-12-15 22:43:00,765 [mzn_5] not in stock
+I2021-12-15 22:57:17,638 [root] starting v0.0.1 with args: ./src/run.py -a email -c ./config/ps5.yaml -q ./config/alerters.yaml -l ./log.txt
+I2021-12-15 22:57:18,044 [root] discord alerter initialized with kwargs: webhook_url=https://discord.com/api/webhooks/XXXXXXXXXXXX... mentions=['XXXXXXXXXXXXXXX', 'XXXXXXXXXXXXXXX']
+I2021-12-15 22:57:18,044 [root] telegram alerter initialized with kwargs: webhook_url=https://api.telegram.org/botXXXXXXXXXXXXXXXXXXXX/sendMessage chat_id=XXXXXXXX
+I2021-12-15 22:57:18,044 [root] email alerter initialized with kwargs: sender=xiao.ming.track@gmail.com recipients=['xiao.ming.track@gmail.com', 'yubenoit@email.com'] relay=127.0.0.1 password=callmexiaoming!
+I2021-12-15 22:57:18,044 [root] slack alerter initialized with kwargs: webhook_url=https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX mentions=['XXXXXXXXXXXXXXX', 'XXXXXXXXXXXXXXX']
+I2021-12-15 22:57:18,052 [mzn_fr_1] scraper initialized for https://www.amazon.fr/PlayStation-%C3%89dition-Standard-DualSense-Couleur/dp/B08H93ZRK9
+I2021-12-15 22:57:18,052 [mzn_fr_2] scraper initialized for https://www.amazon.fr/PlayStation-Digital-Manette-DualSense-Couleur/dp/B08H98GVK8
+I2021-12-15 22:57:28,405 [mzn_fr_1] not in stock
+I2021-12-15 22:57:33,753 [mzn_fr_2] not in stock
+I2021-12-15 22:57:39,326 [mzn_fr_1] not in stock
+I2021-12-15 22:57:44,704 [mzn_fr_2] not in stock
+I2021-12-15 22:57:50,430 [mzn_fr_1] not in stock
+I2021-12-15 22:57:55,917 [mzn_fr_2] not in stock
+I2021-12-15 22:58:01,604 [mzn_fr_1] not in stock
+I2021-12-15 22:58:07,018 [mzn_fr_2] not in stock
+I2021-12-15 22:58:12,445 [mzn_fr_1] not in stock
+I2021-12-15 22:58:18,158 [mzn_fr_2] not in stock
+I2021-12-15 22:58:23,549 [mzn_fr_1] not in stock
+I2021-12-15 22:58:28,942 [mzn_fr_2] not in stock
+I2021-12-15 22:58:34,549 [mzn_fr_1] not in stock
+I2021-12-15 22:58:40,159 [mzn_fr_2] not in stock
+I2021-12-15 22:58:45,425 [mzn_fr_1] not in stock
+I2021-12-15 22:58:50,944 [mzn_fr_2] not in stock
+I2021-12-15 22:58:56,281 [mzn_fr_1] not in stock
+I2021-12-15 22:59:01,611 [mzn_fr_2] not in stock
+I2021-12-15 22:59:07,098 [mzn_fr_1] not in stock
+I2021-12-15 22:59:12,574 [mzn_fr_2] not in stock
+I2021-12-15 22:59:18,343 [mzn_fr_1] not in stock
+I2021-12-15 22:59:23,952 [mzn_fr_2] not in stock
+I2021-12-15 22:59:29,507 [mzn_fr_1] not in stock
+I2021-12-15 22:59:35,074 [mzn_fr_2] not in stock
+I2021-12-15 23:01:08,977 [root] starting v0.0.1 with args: ./src/run.py -a email -c ./config/ps5.yaml -q ./config/alerters.yaml -l ./log.txt
+I2021-12-15 23:01:09,429 [root] discord alerter initialized with kwargs: webhook_url=https://discord.com/api/webhooks/XXXXXXXXXXXX... mentions=['XXXXXXXXXXXXXXX', 'XXXXXXXXXXXXXXX']
+I2021-12-15 23:01:09,430 [root] telegram alerter initialized with kwargs: webhook_url=https://api.telegram.org/botXXXXXXXXXXXXXXXXXXXX/sendMessage chat_id=XXXXXXXX
+I2021-12-15 23:01:09,430 [root] email alerter initialized with kwargs: sender=xiao.ming.track@gmail.com recipients=['xiao.ming.track@gmail.com', 'yubenoit@email.com'] relay=127.0.0.1 password=callmexiaoming!
+I2021-12-15 23:01:09,430 [root] slack alerter initialized with kwargs: webhook_url=https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX mentions=['XXXXXXXXXXXXXXX', 'XXXXXXXXXXXXXXX']
+I2021-12-15 23:01:09,433 [mzn_fr_1] scraper initialized for https://www.amazon.fr/Orzly-Duocharger-PS5-Manette-Chargeur/dp/B08MCJ5YQY
+I2021-12-15 23:01:09,433 [mzn_fr_2] scraper initialized for https://www.amazon.fr/PlayStation-%C3%89dition-Standard-DualSense-Couleur/dp/B08H93ZRK9
+I2021-12-15 23:01:09,433 [mzn_fr_3] scraper initialized for https://www.amazon.fr/PlayStation-Digital-Manette-DualSense-Couleur/dp/B08H98GVK8
+I2021-12-15 23:01:17,917 [mzn_fr_1] now in stock!
+E2021-12-15 23:01:18,057 [root] There was an issue sending to discord due to an invalid status code back -> 405
+E2021-12-15 23:01:18,150 [root] There was an issue sending to Telegram due to an invalid request: 404 -> {"ok":false,"error_code":404,"description":"Not Found"}
+E2021-12-15 23:01:20,207 [root] email alerter failed to alert
+Traceback (most recent call last):
+  File "D:\GitProjects\inventoryhunter\src\alerter\common.py", line 56, in __call__
+    alerter(**kwargs)
+  File "D:\GitProjects\inventoryhunter\src\alerter\emailer.py", line 58, in __call__
+    with smtplib.SMTP(self.relay) as s:
+  File "D:\Programs\MiniConda\lib\smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+  File "D:\Programs\MiniConda\lib\smtplib.py", line 341, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+  File "D:\Programs\MiniConda\lib\smtplib.py", line 312, in _get_socket
+    return socket.create_connection((host, port), timeout,
+  File "D:\Programs\MiniConda\lib\socket.py", line 843, in create_connection
+    raise err
+  File "D:\Programs\MiniConda\lib\socket.py", line 831, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+E2021-12-15 23:01:20,445 [root] There was an issue sending to slack due to an invalid request: 404 -> no_team
+I2021-12-15 23:01:26,073 [mzn_fr_2] not in stock
+I2021-12-15 23:01:31,571 [mzn_fr_3] not in stock
+I2021-12-15 23:01:37,694 [mzn_fr_1] still in stock
+I2021-12-15 23:01:43,027 [mzn_fr_2] not in stock
+I2021-12-15 23:01:48,760 [mzn_fr_3] not in stock
+I2021-12-15 23:01:54,854 [mzn_fr_1] still in stock
+I2021-12-15 23:02:00,089 [mzn_fr_2] not in stock
+I2021-12-15 23:02:05,715 [mzn_fr_3] not in stock
+I2021-12-16 00:04:28,397 [root] starting v0.0.1 with args: ./src/run.py -a email -c ./config/ps5.yaml -q ./config/alerters.yaml -l ./log.txt
+I2021-12-16 00:04:28,818 [root] discord alerter initialized with kwargs: webhook_url=https://discord.com/api/webhooks/XXXXXXXXXXXX... mentions=['XXXXXXXXXXXXXXX', 'XXXXXXXXXXXXXXX']
+I2021-12-16 00:04:28,819 [root] telegram alerter initialized with kwargs: webhook_url=https://api.telegram.org/botXXXXXXXXXXXXXXXXXXXX/sendMessage chat_id=XXXXXXXX
+I2021-12-16 00:04:28,819 [root] email alerter initialized with kwargs: sender=xiao.ming.track@gmail.com recipients=['xiao.ming.track@gmail.com', 'yubenoit@email.com'] relay=127.0.0.1 password=callmexiaoming!
+I2021-12-16 00:04:28,820 [root] slack alerter initialized with kwargs: webhook_url=https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX mentions=['XXXXXXXXXXXXXXX', 'XXXXXXXXXXXXXXX']
+I2021-12-16 00:04:28,822 [mzn_fr_1] scraper initialized for https://www.amazon.fr/Orzly-Duocharger-PS5-Manette-Chargeur/dp/B08MCJ5YQY
+I2021-12-16 00:04:28,822 [mzn_fr_2] scraper initialized for https://www.amazon.fr/PlayStation-%C3%89dition-Standard-DualSense-Couleur/dp/B08H93ZRK9
+I2021-12-16 00:04:28,823 [mzn_fr_3] scraper initialized for https://www.amazon.fr/PlayStation-Digital-Manette-DualSense-Couleur/dp/B08H98GVK8
+I2021-12-16 00:04:39,497 [mzn_fr_1] now in stock!
+E2021-12-16 00:04:39,655 [root] There was an issue sending to discord due to an invalid status code back -> 405
+E2021-12-16 00:04:39,732 [root] There was an issue sending to Telegram due to an invalid request: 404 -> {"ok":false,"error_code":404,"description":"Not Found"}
+E2021-12-16 00:04:41,772 [root] email alerter failed to alert
+Traceback (most recent call last):
+  File "D:\GitProjects\inventoryhunter\src\alerter\common.py", line 56, in __call__
+    alerter(**kwargs)
+  File "D:\GitProjects\inventoryhunter\src\alerter\emailer.py", line 58, in __call__
+    with smtplib.SMTP(self.relay) as s:
+  File "D:\Programs\MiniConda\lib\smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+  File "D:\Programs\MiniConda\lib\smtplib.py", line 341, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+  File "D:\Programs\MiniConda\lib\smtplib.py", line 312, in _get_socket
+    return socket.create_connection((host, port), timeout,
+  File "D:\Programs\MiniConda\lib\socket.py", line 843, in create_connection
+    raise err
+  File "D:\Programs\MiniConda\lib\socket.py", line 831, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+E2021-12-16 00:04:41,925 [root] There was an issue sending to slack due to an invalid request: 404 -> no_team
+I2021-12-16 00:04:47,444 [mzn_fr_2] not in stock
+I2021-12-16 00:04:52,988 [mzn_fr_3] not in stock
+I2021-12-16 00:04:58,635 [mzn_fr_1] still in stock
+I2021-12-16 00:05:03,876 [mzn_fr_2] not in stock
+I2021-12-16 00:05:09,322 [mzn_fr_3] not in stock
+I2021-12-16 00:05:14,825 [mzn_fr_1] still in stock
+I2021-12-16 00:05:20,243 [mzn_fr_2] not in stock
+I2021-12-16 00:05:25,733 [mzn_fr_3] not in stock
+I2021-12-16 00:05:31,717 [mzn_fr_1] still in stock
+I2021-12-16 00:05:37,018 [mzn_fr_2] not in stock
+I2021-12-16 00:05:42,246 [mzn_fr_3] not in stock
+I2021-12-16 00:05:48,078 [mzn_fr_1] still in stock
+I2021-12-16 00:05:53,319 [mzn_fr_2] not in stock
+I2021-12-16 00:05:58,735 [mzn_fr_3] not in stock
+I2021-12-16 00:06:04,539 [mzn_fr_1] still in stock
+I2021-12-16 00:06:09,782 [mzn_fr_2] not in stock
+I2021-12-16 00:06:15,043 [mzn_fr_3] not in stock
+I2021-12-16 00:06:21,039 [mzn_fr_1] still in stock
+I2021-12-16 00:06:26,345 [mzn_fr_2] not in stock
+I2021-12-16 00:06:31,807 [mzn_fr_3] not in stock
+I2021-12-16 00:06:37,645 [mzn_fr_1] still in stock
+I2021-12-16 00:06:42,918 [mzn_fr_2] not in stock
+I2021-12-16 00:06:48,239 [mzn_fr_3] not in stock
+I2021-12-16 00:06:54,138 [mzn_fr_1] still in stock
+I2021-12-16 00:06:59,631 [mzn_fr_2] not in stock
+I2021-12-16 00:07:05,015 [mzn_fr_3] not in stock
+I2021-12-16 00:07:10,804 [mzn_fr_1] still in stock
+I2021-12-16 00:07:16,045 [mzn_fr_2] not in stock
+I2021-12-16 00:07:21,350 [mzn_fr_3] not in stock
+I2021-12-16 00:07:27,330 [mzn_fr_1] still in stock
+I2021-12-16 00:07:32,601 [mzn_fr_2] not in stock
+I2021-12-16 00:07:38,135 [mzn_fr_3] not in stock
+I2021-12-16 00:07:44,245 [mzn_fr_1] still in stock
+I2021-12-16 00:07:49,650 [mzn_fr_2] not in stock
+I2021-12-16 00:07:55,115 [mzn_fr_3] not in stock
+I2021-12-16 00:08:00,620 [mzn_fr_1] still in stock
+I2021-12-16 00:08:05,872 [mzn_fr_2] not in stock
+I2021-12-16 00:08:11,464 [mzn_fr_3] not in stock
+I2021-12-16 00:08:17,407 [mzn_fr_1] still in stock
+I2021-12-16 00:08:22,867 [mzn_fr_2] not in stock
+I2021-12-16 00:08:28,366 [mzn_fr_3] not in stock
+I2021-12-16 00:08:34,255 [mzn_fr_1] still in stock
+I2021-12-16 00:08:39,595 [mzn_fr_2] not in stock
+I2021-12-16 00:08:44,891 [mzn_fr_3] not in stock
+I2021-12-16 00:08:50,551 [mzn_fr_1] still in stock
+I2021-12-16 00:08:55,858 [mzn_fr_2] not in stock
+I2021-12-16 00:09:01,058 [mzn_fr_3] not in stock
+I2021-12-16 00:09:07,004 [mzn_fr_1] still in stock
+I2021-12-16 00:09:12,369 [mzn_fr_2] not in stock
+I2021-12-16 00:09:17,676 [mzn_fr_3] not in stock
+I2021-12-16 00:09:23,525 [mzn_fr_1] still in stock
+I2021-12-16 00:09:28,926 [mzn_fr_2] 18 successful scrapes in the last 300 seconds (100% success rate)
+I2021-12-16 00:09:28,926 [mzn_fr_2] not in stock
+I2021-12-16 00:09:34,167 [mzn_fr_3] 18 successful scrapes in the last 305 seconds (100% success rate)
+I2021-12-16 00:09:34,167 [mzn_fr_3] not in stock
+I2021-12-16 00:09:40,096 [mzn_fr_1] 19 successful scrapes in the last 311 seconds (100% success rate)
+I2021-12-16 00:09:40,096 [mzn_fr_1] still in stock
+I2021-12-16 00:09:45,495 [mzn_fr_2] not in stock
+I2021-12-16 00:09:50,705 [mzn_fr_3] not in stock
+I2021-12-16 00:09:56,372 [mzn_fr_1] still in stock
+I2021-12-16 00:10:01,950 [mzn_fr_2] not in stock
+I2021-12-16 00:10:07,289 [mzn_fr_3] not in stock
+I2021-12-16 00:10:13,001 [mzn_fr_1] still in stock
+I2021-12-16 00:10:18,258 [mzn_fr_2] not in stock
+I2021-12-16 00:10:23,516 [mzn_fr_3] not in stock
+I2021-12-16 00:10:29,301 [mzn_fr_1] still in stock
+I2021-12-16 00:10:34,574 [mzn_fr_2] not in stock
+I2021-12-16 00:10:39,804 [mzn_fr_3] not in stock
+I2021-12-16 00:10:45,933 [mzn_fr_1] still in stock
+I2021-12-16 00:10:51,411 [mzn_fr_2] not in stock
+I2021-12-16 00:10:56,901 [mzn_fr_3] not in stock
+I2021-12-16 00:11:02,619 [mzn_fr_1] still in stock
+I2021-12-16 00:11:07,902 [mzn_fr_2] not in stock
+I2021-12-16 00:11:13,231 [mzn_fr_3] not in stock
+I2021-12-16 00:11:18,997 [mzn_fr_1] still in stock
+I2021-12-16 00:11:24,320 [mzn_fr_2] not in stock
+I2021-12-16 00:11:29,686 [mzn_fr_3] not in stock
+I2021-12-16 00:11:35,454 [mzn_fr_1] still in stock
+I2021-12-16 00:11:40,769 [mzn_fr_2] not in stock
+I2021-12-16 00:11:46,225 [mzn_fr_3] not in stock
+I2021-12-16 00:11:51,969 [mzn_fr_1] still in stock
+I2021-12-16 00:11:57,209 [mzn_fr_2] not in stock
+I2021-12-16 00:12:02,452 [mzn_fr_3] not in stock
+I2021-12-16 00:12:08,349 [mzn_fr_1] still in stock
+I2021-12-16 00:12:13,637 [mzn_fr_2] not in stock
+I2021-12-16 00:12:18,849 [mzn_fr_3] not in stock
+I2021-12-16 00:12:24,591 [mzn_fr_1] still in stock
+I2021-12-16 00:12:29,931 [mzn_fr_2] not in stock
+I2021-12-16 00:12:35,155 [mzn_fr_3] not in stock
+I2021-12-16 00:12:40,971 [mzn_fr_1] still in stock
+I2021-12-16 00:12:46,483 [mzn_fr_2] not in stock
+I2021-12-16 00:12:51,738 [mzn_fr_3] not in stock
+I2021-12-16 00:12:57,497 [mzn_fr_1] still in stock
+I2021-12-16 00:13:02,723 [mzn_fr_2] not in stock
+I2021-12-16 00:13:08,007 [mzn_fr_3] not in stock
+I2021-12-16 00:13:13,674 [mzn_fr_1] still in stock
+I2021-12-16 00:13:18,990 [mzn_fr_2] not in stock
+I2021-12-16 00:13:24,214 [mzn_fr_3] not in stock
+I2021-12-16 00:13:30,087 [mzn_fr_1] still in stock
+I2021-12-16 00:13:35,466 [mzn_fr_2] not in stock
+I2021-12-16 00:13:40,836 [mzn_fr_3] not in stock
+I2021-12-16 00:13:46,802 [mzn_fr_1] still in stock
+I2021-12-16 00:13:52,130 [mzn_fr_2] not in stock
+I2021-12-16 00:13:57,484 [mzn_fr_3] not in stock
+I2021-12-16 00:14:03,207 [mzn_fr_1] still in stock
+I2021-12-16 00:14:08,575 [mzn_fr_2] not in stock
+I2021-12-16 00:14:13,819 [mzn_fr_3] not in stock
+I2021-12-16 00:14:19,462 [mzn_fr_1] still in stock
+I2021-12-16 00:14:24,709 [mzn_fr_2] not in stock
+I2021-12-16 00:14:30,137 [mzn_fr_3] not in stock
+I2021-12-16 00:14:35,645 [mzn_fr_1] still in stock
+I2021-12-16 00:14:40,954 [mzn_fr_2] 19 successful scrapes in the last 312 seconds (100% success rate)
+I2021-12-16 00:14:40,954 [mzn_fr_2] not in stock
+I2021-12-16 00:14:46,289 [mzn_fr_3] 19 successful scrapes in the last 312 seconds (100% success rate)
+I2021-12-16 00:14:46,289 [mzn_fr_3] not in stock
+I2021-12-16 00:14:52,084 [mzn_fr_1] 19 successful scrapes in the last 312 seconds (100% success rate)
+I2021-12-16 00:14:52,084 [mzn_fr_1] still in stock
+I2021-12-16 00:14:57,254 [mzn_fr_2] not in stock
+I2021-12-16 00:15:02,470 [mzn_fr_3] not in stock
+I2021-12-16 00:15:08,019 [mzn_fr_1] still in stock
+I2021-12-16 00:15:13,554 [mzn_fr_2] not in stock
+I2021-12-16 00:15:18,891 [mzn_fr_3] not in stock
+I2021-12-16 00:15:24,523 [mzn_fr_1] still in stock
+I2021-12-16 00:15:29,748 [mzn_fr_2] not in stock
+I2021-12-16 00:15:35,082 [mzn_fr_3] not in stock
+I2021-12-16 00:15:40,636 [mzn_fr_1] still in stock
+I2021-12-16 00:15:45,973 [mzn_fr_2] not in stock
+I2021-12-16 00:15:51,200 [mzn_fr_3] not in stock
+I2021-12-16 00:15:56,828 [mzn_fr_1] still in stock
+I2021-12-16 00:16:01,991 [mzn_fr_2] not in stock
+I2021-12-16 00:16:07,311 [mzn_fr_3] not in stock
+I2021-12-16 00:16:13,095 [mzn_fr_1] still in stock
+I2021-12-16 00:16:18,298 [mzn_fr_2] not in stock
+I2021-12-16 00:16:23,853 [mzn_fr_3] not in stock
+I2021-12-16 00:16:29,546 [mzn_fr_1] still in stock
+I2021-12-16 00:16:34,854 [mzn_fr_2] not in stock
+I2021-12-16 00:16:40,470 [mzn_fr_3] not in stock
+I2021-12-16 00:16:46,353 [mzn_fr_1] still in stock
+I2021-12-16 00:16:51,611 [mzn_fr_2] not in stock
+I2021-12-16 00:16:56,981 [mzn_fr_3] not in stock
+I2021-12-16 00:17:02,635 [mzn_fr_1] still in stock
+I2021-12-16 00:17:08,146 [mzn_fr_2] not in stock
+I2021-12-16 00:17:13,744 [mzn_fr_3] not in stock
+I2021-12-16 00:17:19,424 [mzn_fr_1] still in stock
+I2021-12-16 00:17:25,668 [mzn_fr_2] not in stock
+I2021-12-16 00:17:30,983 [mzn_fr_3] not in stock
+I2021-12-16 00:17:36,731 [mzn_fr_1] still in stock
+I2021-12-16 00:17:42,054 [mzn_fr_2] not in stock
+I2021-12-16 00:17:47,281 [mzn_fr_3] not in stock
+I2021-12-16 00:17:52,720 [mzn_fr_1] still in stock
+I2021-12-16 00:17:57,830 [mzn_fr_2] not in stock
+I2021-12-16 00:18:03,166 [mzn_fr_3] not in stock
+I2021-12-16 00:18:08,717 [mzn_fr_1] still in stock
+I2021-12-16 00:18:14,024 [mzn_fr_2] not in stock
+I2021-12-16 00:18:19,294 [mzn_fr_3] not in stock
+I2021-12-16 00:18:24,898 [mzn_fr_1] still in stock
+I2021-12-16 00:18:30,127 [mzn_fr_2] not in stock
+I2021-12-16 00:18:35,463 [mzn_fr_3] not in stock
+I2021-12-16 00:18:41,022 [mzn_fr_1] still in stock
+I2021-12-16 00:18:46,310 [mzn_fr_2] not in stock
+I2021-12-16 00:18:51,600 [mzn_fr_3] not in stock
+I2021-12-16 00:18:57,288 [mzn_fr_1] still in stock
+I2021-12-16 00:19:02,481 [mzn_fr_2] not in stock
+I2021-12-16 00:19:07,703 [mzn_fr_3] not in stock
+I2021-12-16 00:19:13,348 [mzn_fr_1] still in stock
+I2021-12-16 00:19:18,798 [mzn_fr_2] not in stock
+I2021-12-16 00:19:24,139 [mzn_fr_3] not in stock
+I2021-12-16 00:19:29,770 [mzn_fr_1] still in stock
+I2021-12-16 00:19:34,947 [mzn_fr_2] not in stock
+I2021-12-16 00:19:40,305 [mzn_fr_3] not in stock
+I2021-12-16 00:19:45,851 [mzn_fr_1] still in stock
+I2021-12-16 00:19:51,135 [mzn_fr_2] 19 successful scrapes in the last 310 seconds (100% success rate)
+I2021-12-16 00:19:51,136 [mzn_fr_2] not in stock
+I2021-12-16 00:19:56,470 [mzn_fr_3] 19 successful scrapes in the last 310 seconds (100% success rate)
+I2021-12-16 00:19:56,471 [mzn_fr_3] not in stock
+I2021-12-16 00:20:02,347 [mzn_fr_1] 19 successful scrapes in the last 310 seconds (100% success rate)
+I2021-12-16 00:20:02,348 [mzn_fr_1] still in stock
+I2021-12-16 00:20:07,780 [mzn_fr_2] not in stock
+I2021-12-16 00:20:13,161 [mzn_fr_3] not in stock
+I2021-12-16 00:20:18,777 [mzn_fr_1] still in stock
+I2021-12-16 00:20:24,208 [mzn_fr_2] not in stock
+I2021-12-16 00:20:29,825 [mzn_fr_3] not in stock
+I2021-12-16 00:20:35,325 [mzn_fr_1] still in stock
+I2021-12-16 00:20:40,532 [mzn_fr_2] not in stock
+I2021-12-16 00:20:45,793 [mzn_fr_3] not in stock
+I2021-12-16 00:20:51,474 [mzn_fr_1] still in stock
+I2021-12-16 00:20:56,776 [mzn_fr_2] not in stock
+I2021-12-16 00:21:02,187 [mzn_fr_3] not in stock
+I2021-12-16 00:21:07,821 [mzn_fr_1] still in stock
+I2021-12-16 00:21:13,038 [mzn_fr_2] not in stock
+I2021-12-16 00:21:18,273 [mzn_fr_3] not in stock
+I2021-12-16 00:21:23,880 [mzn_fr_1] still in stock
+I2021-12-16 00:21:29,059 [mzn_fr_2] not in stock
+I2021-12-16 00:21:34,371 [mzn_fr_3] not in stock
+I2021-12-16 00:21:40,034 [mzn_fr_1] still in stock
+I2021-12-16 00:21:45,178 [mzn_fr_2] not in stock
+I2021-12-16 00:21:50,447 [mzn_fr_3] not in stock
+I2021-12-16 00:21:56,114 [mzn_fr_1] still in stock
+I2021-12-16 00:22:01,267 [mzn_fr_2] not in stock
+I2021-12-16 00:22:06,564 [mzn_fr_3] not in stock
+I2021-12-16 00:22:12,244 [mzn_fr_1] still in stock
+I2021-12-16 00:22:17,527 [mzn_fr_2] not in stock
+I2021-12-16 00:22:22,856 [mzn_fr_3] not in stock
+I2021-12-16 00:22:28,762 [mzn_fr_1] still in stock
+I2021-12-16 00:22:33,971 [mzn_fr_2] not in stock
+I2021-12-16 00:22:39,274 [mzn_fr_3] not in stock
+I2021-12-16 00:22:44,726 [mzn_fr_1] still in stock
+I2021-12-16 00:22:50,114 [mzn_fr_2] not in stock
+I2021-12-16 00:22:55,716 [mzn_fr_3] not in stock
+I2021-12-16 00:23:01,712 [mzn_fr_1] still in stock
+I2021-12-16 00:23:07,025 [mzn_fr_2] not in stock
+I2021-12-16 00:23:12,283 [mzn_fr_3] not in stock
+I2021-12-16 00:23:18,012 [mzn_fr_1] still in stock
+I2021-12-16 00:23:23,187 [mzn_fr_2] not in stock
+I2021-12-16 00:23:28,489 [mzn_fr_3] not in stock
+I2021-12-16 00:23:34,396 [mzn_fr_1] still in stock
+I2021-12-16 00:23:39,920 [mzn_fr_2] not in stock
+I2021-12-16 00:23:45,261 [mzn_fr_3] not in stock
+I2021-12-16 00:23:50,929 [mzn_fr_1] still in stock
+I2021-12-16 00:23:56,181 [mzn_fr_2] not in stock
+I2021-12-16 00:24:01,417 [mzn_fr_3] not in stock
+I2021-12-16 00:24:07,000 [mzn_fr_1] still in stock
+I2021-12-16 00:24:12,186 [mzn_fr_2] not in stock
+I2021-12-16 00:24:17,542 [mzn_fr_3] not in stock
+I2021-12-16 00:24:23,156 [mzn_fr_1] still in stock
+I2021-12-16 00:24:28,374 [mzn_fr_2] not in stock
+I2021-12-16 00:24:33,576 [mzn_fr_3] not in stock
+I2021-12-16 00:24:39,126 [mzn_fr_1] still in stock
+I2021-12-16 00:24:44,362 [mzn_fr_2] not in stock
+I2021-12-16 00:24:49,622 [mzn_fr_3] not in stock
+I2021-12-16 00:24:55,518 [mzn_fr_1] still in stock
+I2021-12-16 00:25:00,949 [mzn_fr_2] 19 successful scrapes in the last 310 seconds (100% success rate)
+I2021-12-16 00:25:00,950 [mzn_fr_2] not in stock
+I2021-12-16 00:25:06,248 [mzn_fr_3] 19 successful scrapes in the last 310 seconds (100% success rate)
+I2021-12-16 00:25:06,248 [mzn_fr_3] not in stock
+I2021-12-16 00:25:11,949 [mzn_fr_1] 19 successful scrapes in the last 310 seconds (100% success rate)
+I2021-12-16 00:25:11,949 [mzn_fr_1] still in stock
+I2021-12-16 00:25:17,190 [mzn_fr_2] not in stock
+I2021-12-16 00:25:22,532 [mzn_fr_3] not in stock
+I2021-12-16 00:25:28,094 [mzn_fr_1] still in stock
+I2021-12-16 00:25:33,513 [mzn_fr_2] not in stock
+I2021-12-16 00:25:38,765 [mzn_fr_3] not in stock
+I2021-12-16 00:25:44,429 [mzn_fr_1] still in stock
+I2021-12-16 00:25:49,890 [mzn_fr_2] not in stock
+I2021-12-16 00:25:55,300 [mzn_fr_3] not in stock
+I2021-12-16 00:26:00,813 [mzn_fr_1] still in stock
+I2021-12-16 00:26:06,362 [mzn_fr_2] not in stock
+I2021-12-16 00:26:11,622 [mzn_fr_3] not in stock
+I2021-12-16 00:26:17,606 [mzn_fr_1] still in stock
+I2021-12-16 00:26:22,909 [mzn_fr_2] not in stock
+I2021-12-16 00:26:28,173 [mzn_fr_3] not in stock
+I2021-12-16 00:26:33,990 [mzn_fr_1] still in stock
+I2021-12-16 00:26:39,243 [mzn_fr_2] not in stock
+I2021-12-16 00:26:44,882 [mzn_fr_3] not in stock
+I2021-12-16 00:26:50,692 [mzn_fr_1] still in stock
+I2021-12-16 00:26:56,055 [mzn_fr_2] not in stock
+I2021-12-16 00:27:01,511 [mzn_fr_3] not in stock
+I2021-12-16 00:27:07,066 [mzn_fr_1] still in stock
+I2021-12-16 00:27:12,440 [mzn_fr_2] not in stock
+I2021-12-16 00:27:17,770 [mzn_fr_3] not in stock
+I2021-12-16 00:27:23,371 [mzn_fr_1] still in stock
+I2021-12-16 00:27:28,689 [mzn_fr_2] not in stock
+I2021-12-16 00:27:33,889 [mzn_fr_3] not in stock
+I2021-12-16 00:27:39,534 [mzn_fr_1] still in stock
+I2021-12-16 00:27:44,820 [mzn_fr_2] not in stock
+I2021-12-16 00:27:50,057 [mzn_fr_3] not in stock
+I2021-12-16 00:27:55,665 [mzn_fr_1] still in stock
+I2021-12-16 00:28:00,888 [mzn_fr_2] not in stock
+I2021-12-16 00:28:06,232 [mzn_fr_3] not in stock
+I2021-12-16 00:28:11,780 [mzn_fr_1] still in stock
+I2021-12-16 00:28:17,067 [mzn_fr_2] not in stock
+I2021-12-16 00:28:22,468 [mzn_fr_3] not in stock
+I2021-12-16 00:28:28,168 [mzn_fr_1] still in stock
+I2021-12-16 00:28:33,406 [mzn_fr_2] not in stock
+I2021-12-16 00:28:38,747 [mzn_fr_3] not in stock
+I2021-12-16 00:28:44,348 [mzn_fr_1] still in stock
+I2021-12-16 00:28:49,723 [mzn_fr_2] not in stock
+I2021-12-16 00:28:54,756 [mzn_fr_3] not in stock
+I2021-12-16 00:29:00,453 [mzn_fr_1] still in stock
+I2021-12-16 00:29:05,681 [mzn_fr_2] not in stock
+I2021-12-16 00:29:11,008 [mzn_fr_3] not in stock
+I2021-12-16 00:29:16,681 [mzn_fr_1] still in stock
+I2021-12-16 00:29:22,059 [mzn_fr_2] not in stock
+I2021-12-16 00:29:27,196 [mzn_fr_3] not in stock
+I2021-12-16 00:29:33,060 [mzn_fr_1] still in stock
+I2021-12-16 00:29:38,427 [mzn_fr_2] not in stock
+I2021-12-16 00:29:43,936 [mzn_fr_3] not in stock
+I2021-12-16 00:29:49,756 [mzn_fr_1] still in stock
+I2021-12-16 00:29:55,077 [mzn_fr_2] not in stock
+I2021-12-16 00:30:00,436 [mzn_fr_3] not in stock
+I2021-12-16 00:30:06,170 [mzn_fr_1] still in stock
+I2021-12-16 00:30:11,663 [mzn_fr_2] 19 successful scrapes in the last 311 seconds (100% success rate)
+I2021-12-16 00:30:11,664 [mzn_fr_2] not in stock
+I2021-12-16 00:30:16,946 [mzn_fr_3] 19 successful scrapes in the last 311 seconds (100% success rate)
+I2021-12-16 00:30:16,947 [mzn_fr_3] not in stock
+I2021-12-16 00:30:22,500 [mzn_fr_1] 19 successful scrapes in the last 311 seconds (100% success rate)
+I2021-12-16 00:30:22,501 [mzn_fr_1] still in stock
+I2021-12-16 00:30:27,882 [mzn_fr_2] not in stock
+I2021-12-16 00:30:33,152 [mzn_fr_3] not in stock
+I2021-12-16 00:30:38,721 [mzn_fr_1] still in stock
+I2021-12-16 00:30:44,135 [mzn_fr_2] not in stock
+I2021-12-16 00:30:49,462 [mzn_fr_3] not in stock
+I2021-12-16 00:30:55,079 [mzn_fr_1] still in stock
+I2021-12-16 00:31:00,333 [mzn_fr_2] not in stock
+I2021-12-16 00:31:05,709 [mzn_fr_3] not in stock
+I2021-12-16 00:31:11,207 [mzn_fr_1] still in stock
+I2021-12-16 00:31:16,559 [mzn_fr_2] not in stock
+I2021-12-16 00:31:21,825 [mzn_fr_3] not in stock
+I2021-12-16 00:31:27,452 [mzn_fr_1] still in stock
+I2021-12-16 00:31:32,728 [mzn_fr_2] not in stock
+I2021-12-16 00:31:37,935 [mzn_fr_3] not in stock
+I2021-12-16 00:31:43,608 [mzn_fr_1] still in stock
+I2021-12-16 00:31:48,872 [mzn_fr_2] not in stock
+I2021-12-16 00:31:54,135 [mzn_fr_3] not in stock
+I2021-12-16 00:31:59,726 [mzn_fr_1] still in stock
+I2021-12-16 00:32:04,910 [mzn_fr_2] not in stock
+I2021-12-16 00:32:10,221 [mzn_fr_3] not in stock
+I2021-12-16 00:32:15,903 [mzn_fr_1] still in stock
+I2021-12-16 00:32:21,386 [mzn_fr_2] not in stock
+I2021-12-16 00:32:26,611 [mzn_fr_3] not in stock
+I2021-12-16 00:32:32,335 [mzn_fr_1] still in stock
+I2021-12-16 00:32:37,774 [mzn_fr_2] not in stock
+I2021-12-16 00:32:42,959 [mzn_fr_3] not in stock
+I2021-12-16 00:32:48,699 [mzn_fr_1] still in stock
+I2021-12-16 00:32:54,077 [mzn_fr_2] not in stock
+I2021-12-16 00:32:59,400 [mzn_fr_3] not in stock
+I2021-12-16 00:33:05,121 [mzn_fr_1] still in stock
+I2021-12-16 00:33:10,421 [mzn_fr_2] not in stock
+I2021-12-16 00:33:15,689 [mzn_fr_3] not in stock
+I2021-12-16 00:33:21,427 [mzn_fr_1] still in stock
+I2021-12-16 00:33:26,718 [mzn_fr_2] not in stock
+I2021-12-16 00:33:31,952 [mzn_fr_3] not in stock
+I2021-12-16 00:33:37,678 [mzn_fr_1] still in stock
+I2021-12-16 00:33:42,964 [mzn_fr_2] not in stock
+I2021-12-16 00:33:48,237 [mzn_fr_3] not in stock
+I2021-12-16 00:33:53,848 [mzn_fr_1] still in stock
+I2021-12-16 00:33:59,040 [mzn_fr_2] not in stock
+I2021-12-16 00:34:04,199 [mzn_fr_3] not in stock
+I2021-12-16 00:34:09,886 [mzn_fr_1] still in stock
+I2021-12-16 00:34:15,026 [mzn_fr_2] not in stock
+I2021-12-16 00:34:20,328 [mzn_fr_3] not in stock
+I2021-12-16 00:34:26,417 [mzn_fr_1] still in stock
+I2021-12-16 00:34:31,683 [mzn_fr_2] not in stock
+I2021-12-16 00:34:36,885 [mzn_fr_3] not in stock
+I2021-12-16 00:34:42,598 [mzn_fr_1] still in stock
+I2021-12-16 00:34:47,830 [mzn_fr_2] not in stock
+I2021-12-16 00:34:53,106 [mzn_fr_3] not in stock
+I2021-12-16 00:34:59,011 [mzn_fr_1] still in stock
+I2021-12-16 00:35:04,353 [mzn_fr_2] not in stock
+I2021-12-16 00:35:09,726 [mzn_fr_3] not in stock
+I2021-12-16 00:35:15,383 [mzn_fr_1] still in stock
+I2021-12-16 00:35:20,725 [mzn_fr_2] 19 successful scrapes in the last 309 seconds (100% success rate)
+I2021-12-16 00:35:20,725 [mzn_fr_2] not in stock
+I2021-12-16 00:35:26,048 [mzn_fr_3] 19 successful scrapes in the last 309 seconds (100% success rate)
+I2021-12-16 00:35:26,049 [mzn_fr_3] not in stock
+I2021-12-16 00:35:31,918 [mzn_fr_1] 19 successful scrapes in the last 309 seconds (100% success rate)
+I2021-12-16 00:35:31,918 [mzn_fr_1] still in stock
+I2021-12-16 00:35:37,384 [mzn_fr_2] not in stock
+I2021-12-16 00:35:42,631 [mzn_fr_3] not in stock
+I2021-12-16 00:35:48,471 [mzn_fr_1] still in stock
+I2021-12-16 00:35:53,952 [mzn_fr_2] not in stock
+I2021-12-16 00:35:59,439 [mzn_fr_3] not in stock
+I2021-12-16 00:36:05,132 [mzn_fr_1] still in stock
+I2021-12-16 00:36:10,419 [mzn_fr_2] not in stock
+I2021-12-16 00:36:15,845 [mzn_fr_3] not in stock
+I2021-12-16 00:36:21,450 [mzn_fr_1] still in stock
+I2021-12-16 00:36:26,822 [mzn_fr_2] not in stock
+I2021-12-16 00:36:31,995 [mzn_fr_3] not in stock
+I2021-12-16 00:36:37,634 [mzn_fr_1] still in stock
+I2021-12-16 00:36:43,023 [mzn_fr_2] not in stock
+I2021-12-16 00:36:48,260 [mzn_fr_3] not in stock
+I2021-12-16 00:36:53,842 [mzn_fr_1] still in stock
+I2021-12-16 00:36:59,094 [mzn_fr_2] not in stock
+I2021-12-16 00:37:04,284 [mzn_fr_3] not in stock
+I2021-12-16 00:37:09,995 [mzn_fr_1] still in stock
+I2021-12-16 00:37:15,296 [mzn_fr_2] not in stock
+I2021-12-16 00:37:20,620 [mzn_fr_3] not in stock
+I2021-12-16 00:37:26,224 [mzn_fr_1] still in stock
+I2021-12-16 00:37:31,672 [mzn_fr_2] not in stock
+I2021-12-16 00:37:36,858 [mzn_fr_3] not in stock
+I2021-12-16 00:37:42,504 [mzn_fr_1] still in stock
+I2021-12-16 00:37:47,716 [mzn_fr_2] not in stock
+I2021-12-16 00:37:52,997 [mzn_fr_3] not in stock
+I2021-12-16 00:37:58,703 [mzn_fr_1] still in stock
+I2021-12-16 00:38:03,932 [mzn_fr_2] not in stock
+I2021-12-16 00:38:09,314 [mzn_fr_3] not in stock
+I2021-12-16 00:38:15,011 [mzn_fr_1] still in stock
+I2021-12-16 00:38:20,452 [mzn_fr_2] not in stock
+I2021-12-16 00:38:25,720 [mzn_fr_3] not in stock
+I2021-12-16 00:38:31,367 [mzn_fr_1] still in stock
+I2021-12-16 00:38:36,681 [mzn_fr_2] not in stock
+I2021-12-16 00:38:42,079 [mzn_fr_3] not in stock
+I2021-12-16 00:38:48,026 [mzn_fr_1] still in stock
+I2021-12-16 00:38:53,231 [mzn_fr_2] not in stock
+I2021-12-16 00:38:58,509 [mzn_fr_3] not in stock
+I2021-12-16 00:39:04,260 [mzn_fr_1] still in stock
+I2021-12-16 00:39:09,427 [mzn_fr_2] not in stock
+I2021-12-16 00:39:14,829 [mzn_fr_3] not in stock
+I2021-12-16 00:39:20,718 [mzn_fr_1] still in stock
+I2021-12-16 00:39:26,242 [mzn_fr_2] not in stock
+I2021-12-16 00:39:31,760 [mzn_fr_3] not in stock
+I2021-12-16 00:39:37,421 [mzn_fr_1] still in stock
+I2021-12-16 00:39:42,650 [mzn_fr_2] not in stock
+I2021-12-16 00:39:47,882 [mzn_fr_3] not in stock
+I2021-12-16 00:39:53,428 [mzn_fr_1] still in stock
+I2021-12-16 00:39:58,748 [mzn_fr_2] not in stock
+I2021-12-16 00:40:04,007 [mzn_fr_3] not in stock
+I2021-12-16 00:40:09,658 [mzn_fr_1] still in stock
+I2021-12-16 00:40:14,950 [mzn_fr_2] not in stock
+I2021-12-16 00:40:20,351 [mzn_fr_3] not in stock
+I2021-12-16 00:40:25,897 [mzn_fr_1] still in stock
+I2021-12-16 00:40:31,292 [mzn_fr_2] 19 successful scrapes in the last 311 seconds (100% success rate)
+I2021-12-16 00:40:31,293 [mzn_fr_2] not in stock
+I2021-12-16 00:40:36,598 [mzn_fr_3] 19 successful scrapes in the last 311 seconds (100% success rate)
+I2021-12-16 00:40:36,598 [mzn_fr_3] not in stock
+I2021-12-16 00:40:42,246 [mzn_fr_1] 19 successful scrapes in the last 310 seconds (100% success rate)
+I2021-12-16 00:40:42,247 [mzn_fr_1] still in stock
+I2021-12-16 00:40:47,494 [mzn_fr_2] not in stock
+I2021-12-16 00:40:52,930 [mzn_fr_3] not in stock
+I2021-12-16 00:40:58,595 [mzn_fr_1] still in stock
+I2021-12-16 00:41:04,204 [mzn_fr_2] not in stock
+I2021-12-16 00:41:09,775 [mzn_fr_3] not in stock
+I2021-12-16 00:41:15,350 [mzn_fr_1] still in stock
+I2021-12-16 00:41:20,659 [mzn_fr_2] not in stock
+I2021-12-16 00:41:26,056 [mzn_fr_3] not in stock
+I2021-12-16 00:41:31,713 [mzn_fr_1] still in stock
+I2021-12-16 00:41:37,063 [mzn_fr_2] not in stock
+I2021-12-16 00:41:42,362 [mzn_fr_3] not in stock
+I2021-12-16 00:41:48,245 [mzn_fr_1] still in stock
+I2021-12-16 00:41:53,665 [mzn_fr_2] not in stock
+I2021-12-16 00:41:59,114 [mzn_fr_3] not in stock
+I2021-12-16 00:42:05,002 [mzn_fr_1] still in stock
+I2021-12-16 00:42:10,299 [mzn_fr_2] not in stock
+I2021-12-16 00:42:15,779 [mzn_fr_3] not in stock
+I2021-12-16 00:42:21,767 [mzn_fr_1] still in stock
+I2021-12-16 00:42:27,138 [mzn_fr_2] not in stock
+I2021-12-16 00:42:33,315 [mzn_fr_3] not in stock
+I2021-12-16 00:42:39,062 [mzn_fr_1] still in stock
+I2021-12-16 00:42:44,559 [mzn_fr_2] not in stock
+I2021-12-16 00:42:49,998 [mzn_fr_3] not in stock
+I2021-12-16 00:42:55,863 [mzn_fr_1] still in stock
+I2021-12-16 00:43:01,365 [mzn_fr_2] not in stock
+I2021-12-16 00:43:06,726 [mzn_fr_3] not in stock
+I2021-12-16 00:43:12,587 [mzn_fr_1] still in stock
+I2021-12-16 00:43:18,040 [mzn_fr_2] not in stock
+I2021-12-16 00:43:23,518 [mzn_fr_3] not in stock
+I2021-12-16 00:43:29,295 [mzn_fr_1] still in stock
+I2021-12-16 00:43:34,544 [mzn_fr_2] not in stock
+I2021-12-16 00:43:39,960 [mzn_fr_3] not in stock
+I2021-12-16 00:43:45,814 [mzn_fr_1] still in stock
+I2021-12-16 00:43:51,059 [mzn_fr_2] not in stock
+I2021-12-16 00:43:56,418 [mzn_fr_3] not in stock
+I2021-12-16 00:44:02,036 [mzn_fr_1] still in stock
+I2021-12-16 00:44:07,216 [mzn_fr_2] not in stock
+I2021-12-16 00:44:12,633 [mzn_fr_3] not in stock
+I2021-12-16 00:44:18,377 [mzn_fr_1] still in stock
+I2021-12-16 00:44:23,709 [mzn_fr_2] not in stock
+I2021-12-16 00:44:29,087 [mzn_fr_3] not in stock
+I2021-12-16 00:44:34,709 [mzn_fr_1] still in stock
+I2021-12-16 00:44:40,101 [mzn_fr_2] not in stock
+I2021-12-16 00:44:45,524 [mzn_fr_3] not in stock
+I2021-12-16 00:44:51,245 [mzn_fr_1] still in stock
+I2021-12-16 00:44:56,605 [mzn_fr_2] not in stock
+I2021-12-16 00:45:02,007 [mzn_fr_3] not in stock
+I2021-12-16 00:45:08,024 [mzn_fr_1] still in stock
+I2021-12-16 00:45:13,443 [mzn_fr_2] not in stock
+I2021-12-16 00:45:18,915 [mzn_fr_3] not in stock
+I2021-12-16 00:45:24,880 [mzn_fr_1] still in stock
+I2021-12-16 00:45:30,368 [mzn_fr_2] not in stock
+I2021-12-16 00:45:35,717 [mzn_fr_3] not in stock
+I2021-12-16 00:45:41,322 [mzn_fr_1] still in stock
+I2021-12-16 00:45:46,878 [mzn_fr_2] 19 successful scrapes in the last 316 seconds (100% success rate)
+I2021-12-16 00:45:46,880 [mzn_fr_2] not in stock
+I2021-12-16 00:45:52,329 [mzn_fr_3] 19 successful scrapes in the last 316 seconds (100% success rate)
+I2021-12-16 00:45:52,330 [mzn_fr_3] not in stock
+I2021-12-16 00:45:58,131 [mzn_fr_1] 19 successful scrapes in the last 316 seconds (100% success rate)
+I2021-12-16 00:45:58,132 [mzn_fr_1] still in stock
+I2021-12-16 00:46:03,523 [mzn_fr_2] not in stock
+I2021-12-16 00:46:09,027 [mzn_fr_3] not in stock
+I2021-12-16 00:46:14,663 [mzn_fr_1] still in stock
+I2021-12-16 00:46:20,236 [mzn_fr_2] not in stock
+I2021-12-16 00:46:25,618 [mzn_fr_3] not in stock
+I2021-12-16 00:46:31,668 [mzn_fr_1] still in stock
+I2021-12-16 00:46:37,050 [mzn_fr_2] not in stock
+I2021-12-16 00:46:42,387 [mzn_fr_3] not in stock
+I2021-12-16 00:46:47,971 [mzn_fr_1] still in stock
+I2021-12-16 00:46:53,349 [mzn_fr_2] not in stock
+I2021-12-16 00:46:58,740 [mzn_fr_3] not in stock
+I2021-12-16 00:47:04,389 [mzn_fr_1] still in stock
+I2021-12-16 00:47:09,756 [mzn_fr_2] not in stock
+I2021-12-16 00:47:15,358 [mzn_fr_3] not in stock
+I2021-12-16 00:47:21,029 [mzn_fr_1] still in stock
+I2021-12-16 00:47:26,336 [mzn_fr_2] not in stock
+I2021-12-16 00:47:31,789 [mzn_fr_3] not in stock
+I2021-12-16 00:47:37,530 [mzn_fr_1] still in stock
+I2021-12-16 00:47:42,751 [mzn_fr_2] not in stock
+I2021-12-16 00:47:48,176 [mzn_fr_3] not in stock
+I2021-12-16 00:47:53,968 [mzn_fr_1] still in stock
+I2021-12-16 00:47:59,336 [mzn_fr_2] not in stock
+I2021-12-16 00:48:04,825 [mzn_fr_3] not in stock
+I2021-12-16 00:48:10,824 [mzn_fr_1] still in stock
+I2021-12-16 00:48:16,043 [mzn_fr_2] not in stock
+I2021-12-16 00:48:21,628 [mzn_fr_3] not in stock
+I2021-12-16 00:48:27,294 [mzn_fr_1] still in stock
+I2021-12-16 00:48:32,642 [mzn_fr_2] not in stock
+I2021-12-16 00:48:38,265 [mzn_fr_3] not in stock
+I2021-12-16 00:48:43,947 [mzn_fr_1] still in stock
+I2021-12-16 00:48:49,377 [mzn_fr_2] not in stock
+I2021-12-16 00:48:54,805 [mzn_fr_3] not in stock
+I2021-12-16 00:49:00,533 [mzn_fr_1] still in stock
+I2021-12-16 00:49:06,111 [mzn_fr_2] not in stock
+I2021-12-16 00:49:11,722 [mzn_fr_3] not in stock
+I2021-12-16 00:49:17,356 [mzn_fr_1] still in stock
+I2021-12-16 00:49:22,722 [mzn_fr_2] not in stock
+I2021-12-16 00:49:28,070 [mzn_fr_3] not in stock
+I2021-12-16 00:49:33,690 [mzn_fr_1] still in stock
+I2021-12-16 00:49:39,048 [mzn_fr_2] not in stock
+I2021-12-16 00:49:44,574 [mzn_fr_3] not in stock
+I2021-12-16 00:49:50,210 [mzn_fr_1] still in stock
+I2021-12-16 00:49:55,454 [mzn_fr_2] not in stock
+I2021-12-16 00:50:00,812 [mzn_fr_3] not in stock
+I2021-12-16 00:50:06,499 [mzn_fr_1] still in stock
+I2021-12-16 00:50:11,845 [mzn_fr_2] not in stock
+I2021-12-16 00:50:17,245 [mzn_fr_3] not in stock
+I2021-12-16 00:50:22,801 [mzn_fr_1] still in stock
+I2021-12-16 00:50:28,127 [mzn_fr_2] not in stock
+I2021-12-16 00:50:33,634 [mzn_fr_3] not in stock
+I2021-12-16 00:50:39,402 [mzn_fr_1] still in stock
+I2021-12-16 00:50:44,737 [mzn_fr_2] not in stock
+I2021-12-16 00:50:50,225 [mzn_fr_3] not in stock
+I2021-12-16 00:50:55,997 [mzn_fr_1] still in stock
+I2021-12-16 00:51:01,217 [mzn_fr_2] 19 successful scrapes in the last 314 seconds (100% success rate)
+I2021-12-16 00:51:01,217 [mzn_fr_2] not in stock
+I2021-12-16 00:51:06,557 [mzn_fr_3] 19 successful scrapes in the last 314 seconds (100% success rate)
+I2021-12-16 00:51:06,558 [mzn_fr_3] not in stock
+I2021-12-16 00:51:12,612 [mzn_fr_1] 19 successful scrapes in the last 314 seconds (100% success rate)
+I2021-12-16 00:51:12,612 [mzn_fr_1] still in stock
+I2021-12-16 00:51:18,068 [mzn_fr_2] not in stock
+I2021-12-16 00:51:23,479 [mzn_fr_3] not in stock
+I2021-12-16 00:51:29,267 [mzn_fr_1] still in stock
+I2021-12-16 00:51:34,909 [mzn_fr_2] not in stock
+I2021-12-16 00:51:40,342 [mzn_fr_3] not in stock
+I2021-12-16 00:51:46,036 [mzn_fr_1] still in stock
+I2021-12-16 00:51:51,564 [mzn_fr_2] not in stock
+I2021-12-16 00:51:56,837 [mzn_fr_3] not in stock
+I2021-12-16 00:52:02,487 [mzn_fr_1] still in stock
+I2021-12-16 00:52:07,889 [mzn_fr_2] not in stock
+I2021-12-16 00:52:13,182 [mzn_fr_3] not in stock
+I2021-12-16 00:52:18,840 [mzn_fr_1] still in stock
+I2021-12-16 00:52:24,181 [mzn_fr_2] not in stock
+I2021-12-16 00:52:29,667 [mzn_fr_3] not in stock
+I2021-12-16 00:52:35,340 [mzn_fr_1] still in stock
+I2021-12-16 00:52:40,676 [mzn_fr_2] not in stock
+I2021-12-16 00:52:46,104 [mzn_fr_3] not in stock
+I2021-12-16 00:52:51,815 [mzn_fr_1] still in stock
+I2021-12-16 00:52:57,185 [mzn_fr_2] not in stock
+I2021-12-16 00:53:02,536 [mzn_fr_3] not in stock
+I2021-12-16 00:53:08,302 [mzn_fr_1] still in stock
+I2021-12-16 00:53:13,581 [mzn_fr_2] not in stock
+I2021-12-16 00:53:19,114 [mzn_fr_3] not in stock
+I2021-12-16 00:53:24,802 [mzn_fr_1] still in stock
+I2021-12-16 00:53:30,104 [mzn_fr_2] not in stock
+I2021-12-16 00:53:35,656 [mzn_fr_3] not in stock
+I2021-12-16 00:53:41,288 [mzn_fr_1] still in stock
+I2021-12-16 00:53:46,679 [mzn_fr_2] not in stock
+I2021-12-16 00:53:51,879 [mzn_fr_3] not in stock
+I2021-12-16 00:53:57,614 [mzn_fr_1] still in stock
+I2021-12-16 00:54:02,969 [mzn_fr_2] not in stock
+I2021-12-16 00:54:08,422 [mzn_fr_3] not in stock
+I2021-12-16 00:54:14,250 [mzn_fr_1] still in stock
+I2021-12-16 00:54:19,548 [mzn_fr_2] not in stock
+I2021-12-16 00:54:24,968 [mzn_fr_3] not in stock
+I2021-12-16 00:54:30,777 [mzn_fr_1] still in stock
+I2021-12-16 00:54:36,151 [mzn_fr_2] not in stock
+I2021-12-16 00:54:41,643 [mzn_fr_3] not in stock
+I2021-12-16 00:54:47,407 [mzn_fr_1] still in stock
+I2021-12-16 00:54:52,863 [mzn_fr_2] not in stock
+I2021-12-16 00:54:58,222 [mzn_fr_3] not in stock
+I2021-12-16 00:55:03,990 [mzn_fr_1] still in stock
+I2021-12-16 00:55:09,359 [mzn_fr_2] not in stock
+I2021-12-16 00:55:14,748 [mzn_fr_3] not in stock
+I2021-12-16 00:55:20,437 [mzn_fr_1] still in stock
+I2021-12-16 00:55:25,907 [mzn_fr_2] not in stock
+I2021-12-16 00:55:31,436 [mzn_fr_3] not in stock
+I2021-12-16 00:55:37,201 [mzn_fr_1] still in stock
+I2021-12-16 00:55:42,441 [mzn_fr_2] not in stock
+I2021-12-16 00:55:47,673 [mzn_fr_3] not in stock
+I2021-12-16 00:55:53,413 [mzn_fr_1] still in stock
+I2021-12-16 00:55:58,977 [mzn_fr_2] not in stock
+I2021-12-16 00:56:04,339 [mzn_fr_3] not in stock
+I2021-12-16 00:56:10,084 [mzn_fr_1] still in stock
+I2021-12-16 00:56:15,493 [mzn_fr_2] 19 successful scrapes in the last 314 seconds (100% success rate)
+I2021-12-16 00:56:15,494 [mzn_fr_2] not in stock
+I2021-12-16 00:56:20,772 [mzn_fr_3] 19 successful scrapes in the last 314 seconds (100% success rate)
+I2021-12-16 00:56:20,773 [mzn_fr_3] not in stock
+I2021-12-16 00:56:26,552 [mzn_fr_1] 19 successful scrapes in the last 314 seconds (100% success rate)
+I2021-12-16 00:56:26,552 [mzn_fr_1] still in stock
+I2021-12-16 00:56:32,036 [mzn_fr_2] not in stock
+I2021-12-16 00:56:37,409 [mzn_fr_3] not in stock
+I2021-12-16 00:56:43,098 [mzn_fr_1] still in stock
+I2021-12-16 00:56:48,670 [mzn_fr_2] not in stock
+I2021-12-16 00:56:54,190 [mzn_fr_3] not in stock
+I2021-12-16 00:56:59,978 [mzn_fr_1] still in stock
+I2021-12-16 00:57:05,311 [mzn_fr_2] not in stock
+I2021-12-16 00:57:10,630 [mzn_fr_3] not in stock
+I2021-12-16 00:57:16,444 [mzn_fr_1] still in stock
+I2021-12-16 00:57:21,691 [mzn_fr_2] not in stock
+I2021-12-16 00:57:27,183 [mzn_fr_3] not in stock
+I2021-12-16 00:57:33,003 [mzn_fr_1] still in stock
+I2021-12-16 00:57:38,385 [mzn_fr_2] not in stock
+I2021-12-16 00:57:43,910 [mzn_fr_3] not in stock
+I2021-12-16 00:57:49,570 [mzn_fr_1] still in stock
+I2021-12-16 00:57:54,920 [mzn_fr_2] not in stock
+I2021-12-16 00:58:00,309 [mzn_fr_3] not in stock
+I2021-12-16 00:58:06,032 [mzn_fr_1] still in stock
+I2021-12-16 00:58:11,413 [mzn_fr_2] not in stock
+I2021-12-16 00:58:16,720 [mzn_fr_3] not in stock
+I2021-12-16 00:58:22,292 [mzn_fr_1] still in stock
+I2021-12-16 00:58:27,514 [mzn_fr_2] not in stock
+I2021-12-16 00:58:32,907 [mzn_fr_3] not in stock
+I2021-12-16 00:58:38,490 [mzn_fr_1] still in stock
+I2021-12-16 00:58:43,795 [mzn_fr_2] not in stock
+I2021-12-16 00:58:49,124 [mzn_fr_3] not in stock
+I2021-12-16 00:58:54,842 [mzn_fr_1] still in stock
+I2021-12-16 00:59:00,209 [mzn_fr_2] not in stock
+I2021-12-16 00:59:05,612 [mzn_fr_3] not in stock
+I2021-12-16 00:59:11,289 [mzn_fr_1] still in stock
+I2021-12-16 00:59:16,625 [mzn_fr_2] not in stock
+I2021-12-16 00:59:21,980 [mzn_fr_3] not in stock
+I2021-12-16 00:59:27,631 [mzn_fr_1] still in stock
+I2021-12-16 00:59:32,942 [mzn_fr_2] not in stock
+I2021-12-16 00:59:38,381 [mzn_fr_3] not in stock
+I2021-12-16 00:59:44,089 [mzn_fr_1] still in stock
+I2021-12-16 00:59:49,449 [mzn_fr_2] not in stock
+I2021-12-16 00:59:54,883 [mzn_fr_3] not in stock
+I2021-12-16 01:00:00,658 [mzn_fr_1] still in stock
+I2021-12-16 01:00:05,896 [mzn_fr_2] not in stock
+I2021-12-16 01:00:11,287 [mzn_fr_3] not in stock
+I2021-12-16 01:00:17,147 [mzn_fr_1] still in stock
+I2021-12-16 01:00:22,426 [mzn_fr_2] not in stock
+I2021-12-16 01:00:27,864 [mzn_fr_3] not in stock
+I2021-12-16 01:00:33,723 [mzn_fr_1] still in stock
+I2021-12-16 01:00:39,273 [mzn_fr_2] not in stock
+I2021-12-16 01:00:44,603 [mzn_fr_3] not in stock
+I2021-12-16 01:00:50,249 [mzn_fr_1] still in stock
+I2021-12-16 01:00:55,836 [mzn_fr_2] not in stock
+I2021-12-16 01:01:01,154 [mzn_fr_3] not in stock
+I2021-12-16 01:01:06,982 [mzn_fr_1] still in stock
+I2021-12-16 01:01:12,436 [mzn_fr_2] not in stock
+I2021-12-16 01:01:17,677 [mzn_fr_3] not in stock
+I2021-12-16 01:01:23,252 [mzn_fr_1] still in stock
+I2021-12-16 01:01:28,553 [mzn_fr_2] 19 successful scrapes in the last 313 seconds (100% success rate)
+I2021-12-16 01:01:28,553 [mzn_fr_2] not in stock
+I2021-12-16 01:01:34,066 [mzn_fr_3] 19 successful scrapes in the last 313 seconds (100% success rate)
+I2021-12-16 01:01:34,067 [mzn_fr_3] not in stock
+I2021-12-16 01:01:39,915 [mzn_fr_1] 19 successful scrapes in the last 313 seconds (100% success rate)
+I2021-12-16 01:01:39,916 [mzn_fr_1] still in stock
+I2021-12-16 01:01:45,311 [mzn_fr_2] not in stock
+I2021-12-16 01:01:50,693 [mzn_fr_3] not in stock
+I2021-12-16 01:01:56,478 [mzn_fr_1] still in stock
+I2021-12-16 01:02:01,949 [mzn_fr_2] not in stock
+I2021-12-16 01:02:07,527 [mzn_fr_3] not in stock
+I2021-12-16 01:02:13,377 [mzn_fr_1] still in stock
+I2021-12-16 01:02:18,702 [mzn_fr_2] not in stock
+I2021-12-16 01:02:24,015 [mzn_fr_3] not in stock
+I2021-12-16 01:02:29,690 [mzn_fr_1] still in stock
+I2021-12-16 01:02:34,992 [mzn_fr_2] not in stock
+I2021-12-16 01:02:40,433 [mzn_fr_3] not in stock
+I2021-12-16 01:02:46,024 [mzn_fr_1] still in stock
+I2021-12-16 01:02:51,443 [mzn_fr_2] not in stock
+I2021-12-16 01:02:56,956 [mzn_fr_3] not in stock
+I2021-12-16 01:03:02,735 [mzn_fr_1] still in stock
+I2021-12-16 01:03:08,163 [mzn_fr_2] not in stock
+I2021-12-16 01:03:13,421 [mzn_fr_3] not in stock
+I2021-12-16 01:03:19,232 [mzn_fr_1] still in stock
+I2021-12-16 01:03:24,684 [mzn_fr_2] not in stock
+I2021-12-16 01:03:30,107 [mzn_fr_3] not in stock
+I2021-12-16 01:03:35,865 [mzn_fr_1] still in stock
+I2021-12-16 01:03:41,261 [mzn_fr_2] not in stock
+I2021-12-16 01:03:46,765 [mzn_fr_3] not in stock
+I2021-12-16 01:03:52,345 [mzn_fr_1] still in stock
+I2021-12-16 01:03:57,851 [mzn_fr_2] not in stock
+I2021-12-16 01:04:03,322 [mzn_fr_3] not in stock
+I2021-12-16 01:04:09,135 [mzn_fr_1] still in stock
+I2021-12-16 01:04:14,486 [mzn_fr_2] not in stock
+I2021-12-16 01:04:19,862 [mzn_fr_3] not in stock
+I2021-12-16 01:04:25,542 [mzn_fr_1] still in stock
+I2021-12-16 01:04:30,941 [mzn_fr_2] not in stock
+I2021-12-16 01:04:36,239 [mzn_fr_3] not in stock
+I2021-12-16 01:04:41,860 [mzn_fr_1] still in stock
+I2021-12-16 01:04:47,237 [mzn_fr_2] not in stock
+I2021-12-16 01:04:52,689 [mzn_fr_3] not in stock
+I2021-12-16 01:04:58,518 [mzn_fr_1] still in stock
+I2021-12-16 01:05:03,960 [mzn_fr_2] not in stock
+I2021-12-16 01:05:09,421 [mzn_fr_3] not in stock
+I2021-12-16 01:05:14,975 [mzn_fr_1] still in stock
+I2021-12-16 01:05:20,367 [mzn_fr_2] not in stock
+I2021-12-16 01:05:25,848 [mzn_fr_3] not in stock
+I2021-12-16 01:05:31,597 [mzn_fr_1] still in stock
+I2021-12-16 01:05:36,876 [mzn_fr_2] not in stock
+I2021-12-16 01:05:42,323 [mzn_fr_3] not in stock
+I2021-12-16 01:05:47,842 [mzn_fr_1] still in stock
+I2021-12-16 01:05:53,130 [mzn_fr_2] not in stock
+I2021-12-16 01:05:58,699 [mzn_fr_3] not in stock
+I2021-12-16 01:06:04,219 [mzn_fr_1] still in stock
+I2021-12-16 01:06:09,563 [mzn_fr_2] not in stock
+I2021-12-16 01:06:14,884 [mzn_fr_3] not in stock
+I2021-12-16 01:06:20,711 [mzn_fr_1] still in stock
+I2021-12-16 01:06:25,894 [mzn_fr_2] not in stock
+I2021-12-16 01:06:31,322 [mzn_fr_3] not in stock
+I2021-12-16 01:06:37,211 [mzn_fr_1] still in stock
+I2021-12-16 01:06:42,402 [mzn_fr_2] 19 successful scrapes in the last 314 seconds (100% success rate)
+I2021-12-16 01:06:42,402 [mzn_fr_2] not in stock
+I2021-12-16 01:06:47,976 [mzn_fr_3] 19 successful scrapes in the last 314 seconds (100% success rate)
+I2021-12-16 01:06:47,977 [mzn_fr_3] not in stock
+I2021-12-16 01:06:53,690 [mzn_fr_1] 19 successful scrapes in the last 314 seconds (100% success rate)
+I2021-12-16 01:06:53,691 [mzn_fr_1] still in stock
+I2021-12-16 01:06:58,990 [mzn_fr_2] not in stock
+I2021-12-16 01:07:04,357 [mzn_fr_3] not in stock
+I2021-12-16 01:07:10,004 [mzn_fr_1] still in stock
+I2021-12-16 01:07:15,667 [mzn_fr_2] not in stock
+I2021-12-16 01:07:21,096 [mzn_fr_3] not in stock
+I2021-12-16 01:07:26,753 [mzn_fr_1] still in stock
+I2021-12-16 01:07:31,948 [mzn_fr_2] not in stock
+I2021-12-16 01:07:37,332 [mzn_fr_3] not in stock
+I2021-12-16 01:07:42,805 [mzn_fr_1] still in stock
+I2021-12-16 01:07:48,106 [mzn_fr_2] not in stock
+I2021-12-16 01:07:53,371 [mzn_fr_3] not in stock
+I2021-12-16 01:07:59,047 [mzn_fr_1] still in stock
+I2021-12-16 01:08:04,439 [mzn_fr_2] not in stock
+I2021-12-16 01:08:09,739 [mzn_fr_3] not in stock
+I2021-12-16 01:08:15,402 [mzn_fr_1] still in stock
+I2021-12-16 01:08:20,830 [mzn_fr_2] not in stock
+I2021-12-16 01:08:26,144 [mzn_fr_3] not in stock
+I2021-12-16 01:08:31,980 [mzn_fr_1] still in stock
+I2021-12-16 01:08:37,204 [mzn_fr_2] not in stock
+I2021-12-16 01:08:42,574 [mzn_fr_3] not in stock
+I2021-12-16 01:08:48,308 [mzn_fr_1] still in stock
+I2021-12-16 01:08:53,601 [mzn_fr_2] not in stock
+I2021-12-16 01:08:59,006 [mzn_fr_3] not in stock
+I2021-12-16 01:09:04,722 [mzn_fr_1] still in stock
+I2021-12-16 01:09:09,890 [mzn_fr_2] not in stock
+I2021-12-16 01:09:15,117 [mzn_fr_3] not in stock
+I2021-12-16 01:09:20,890 [mzn_fr_1] still in stock
+I2021-12-16 01:09:26,161 [mzn_fr_2] not in stock
+I2021-12-16 01:09:31,665 [mzn_fr_3] not in stock
+I2021-12-16 01:09:37,812 [mzn_fr_1] still in stock
+I2021-12-16 01:09:43,133 [mzn_fr_2] not in stock
+I2021-12-16 01:09:48,422 [mzn_fr_3] not in stock
+I2021-12-16 01:09:54,097 [mzn_fr_1] still in stock
+I2021-12-16 01:09:59,335 [mzn_fr_2] not in stock
+I2021-12-16 01:10:04,567 [mzn_fr_3] not in stock
+I2021-12-16 01:10:10,115 [mzn_fr_1] still in stock
+I2021-12-16 01:10:15,601 [mzn_fr_2] not in stock
+I2021-12-16 01:10:20,815 [mzn_fr_3] not in stock
+I2021-12-16 01:10:26,648 [mzn_fr_1] still in stock
+I2021-12-16 01:10:31,834 [mzn_fr_2] not in stock
+I2021-12-16 01:10:37,201 [mzn_fr_3] not in stock
+I2021-12-16 01:10:42,887 [mzn_fr_1] still in stock
+I2021-12-16 01:10:48,287 [mzn_fr_2] not in stock
+I2021-12-16 01:10:53,538 [mzn_fr_3] not in stock
+I2021-12-16 01:10:59,222 [mzn_fr_1] still in stock
+I2021-12-16 01:11:04,571 [mzn_fr_2] not in stock
+I2021-12-16 01:11:09,952 [mzn_fr_3] not in stock
+I2021-12-16 01:11:15,559 [mzn_fr_1] still in stock
+I2021-12-16 01:11:20,773 [mzn_fr_2] not in stock
+I2021-12-16 01:11:26,094 [mzn_fr_3] not in stock
+I2021-12-16 01:11:31,725 [mzn_fr_1] still in stock
+I2021-12-16 01:11:36,967 [mzn_fr_2] not in stock
+I2021-12-16 01:11:42,235 [mzn_fr_3] not in stock
+I2021-12-16 01:11:47,963 [mzn_fr_1] still in stock
+I2021-12-16 01:11:53,477 [mzn_fr_2] 19 successful scrapes in the last 311 seconds (100% success rate)
+I2021-12-16 01:11:53,477 [mzn_fr_2] not in stock
+I2021-12-16 01:11:58,813 [mzn_fr_3] 19 successful scrapes in the last 311 seconds (100% success rate)
+I2021-12-16 01:11:58,814 [mzn_fr_3] not in stock
+I2021-12-16 01:12:04,581 [mzn_fr_1] 19 successful scrapes in the last 311 seconds (100% success rate)
+I2021-12-16 01:12:04,582 [mzn_fr_1] still in stock
+I2021-12-16 01:12:09,769 [mzn_fr_2] not in stock
+I2021-12-16 01:12:15,098 [mzn_fr_3] not in stock
+I2021-12-16 01:12:20,839 [mzn_fr_1] still in stock
+I2021-12-16 01:12:27,392 [mzn_fr_2] not in stock
+I2021-12-16 01:12:32,638 [mzn_fr_3] not in stock
+I2021-12-16 01:12:38,469 [mzn_fr_1] still in stock
+I2021-12-16 01:12:43,769 [mzn_fr_2] not in stock
+I2021-12-16 01:12:49,257 [mzn_fr_3] not in stock
+I2021-12-16 01:12:54,853 [mzn_fr_1] still in stock
+I2021-12-16 01:13:00,357 [mzn_fr_2] not in stock
+I2021-12-16 01:13:05,617 [mzn_fr_3] not in stock
+I2021-12-16 01:13:11,220 [mzn_fr_1] still in stock
+I2021-12-16 01:13:16,812 [mzn_fr_2] not in stock
+I2021-12-16 01:13:22,046 [mzn_fr_3] not in stock
+I2021-12-16 01:13:27,767 [mzn_fr_1] still in stock
+I2021-12-16 01:13:33,201 [mzn_fr_2] not in stock
+I2021-12-16 01:13:38,463 [mzn_fr_3] not in stock
+I2021-12-16 01:13:44,069 [mzn_fr_1] still in stock
+I2021-12-16 01:13:49,389 [mzn_fr_2] not in stock
+I2021-12-16 01:13:54,741 [mzn_fr_3] not in stock
+I2021-12-16 01:14:00,458 [mzn_fr_1] still in stock
+I2021-12-16 01:14:05,698 [mzn_fr_2] not in stock
+I2021-12-16 01:14:11,052 [mzn_fr_3] not in stock
+I2021-12-16 01:14:16,661 [mzn_fr_1] still in stock
+I2021-12-16 01:14:22,023 [mzn_fr_2] not in stock
+I2021-12-16 01:14:27,365 [mzn_fr_3] not in stock
+I2021-12-16 01:14:33,111 [mzn_fr_1] still in stock
+I2021-12-16 01:14:38,387 [mzn_fr_2] not in stock
+I2021-12-16 01:14:43,727 [mzn_fr_3] not in stock
+I2021-12-16 01:14:49,165 [mzn_fr_1] still in stock
+I2021-12-16 01:14:54,420 [mzn_fr_2] not in stock
+I2021-12-16 01:14:59,629 [mzn_fr_3] not in stock
+I2021-12-16 01:15:05,296 [mzn_fr_1] still in stock
+I2021-12-16 01:15:10,485 [mzn_fr_2] not in stock
+I2021-12-16 01:15:15,897 [mzn_fr_3] not in stock
+I2021-12-16 01:15:21,670 [mzn_fr_1] still in stock
+I2021-12-16 01:15:26,992 [mzn_fr_2] not in stock
+I2021-12-16 01:15:32,273 [mzn_fr_3] not in stock
+I2021-12-16 01:15:37,925 [mzn_fr_1] still in stock
+I2021-12-16 01:15:43,155 [mzn_fr_2] not in stock
+I2021-12-16 01:15:48,657 [mzn_fr_3] not in stock
+I2021-12-16 01:15:54,550 [mzn_fr_1] still in stock
+I2021-12-16 01:15:59,890 [mzn_fr_2] not in stock
+I2021-12-16 01:16:05,432 [mzn_fr_3] not in stock
+I2021-12-16 01:16:11,117 [mzn_fr_1] still in stock
+I2021-12-16 01:16:16,491 [mzn_fr_2] not in stock
+I2021-12-16 01:16:21,803 [mzn_fr_3] not in stock
+I2021-12-16 01:16:27,505 [mzn_fr_1] still in stock
+I2021-12-16 01:16:32,992 [mzn_fr_2] not in stock
+I2021-12-16 01:16:38,278 [mzn_fr_3] not in stock
+I2021-12-16 01:16:43,876 [mzn_fr_1] still in stock
+I2021-12-16 01:16:49,105 [mzn_fr_2] not in stock
+I2021-12-16 01:16:54,350 [mzn_fr_3] not in stock
+I2021-12-16 01:16:59,986 [mzn_fr_1] still in stock
+I2021-12-16 01:17:05,412 [mzn_fr_2] 19 successful scrapes in the last 312 seconds (100% success rate)
+I2021-12-16 01:17:05,413 [mzn_fr_2] not in stock
+I2021-12-16 01:17:10,990 [mzn_fr_3] 19 successful scrapes in the last 312 seconds (100% success rate)
+I2021-12-16 01:17:10,991 [mzn_fr_3] not in stock
+I2021-12-16 01:17:16,732 [mzn_fr_1] 19 successful scrapes in the last 312 seconds (100% success rate)
+I2021-12-16 01:17:16,743 [mzn_fr_1] still in stock
+I2021-12-16 01:17:22,090 [mzn_fr_2] not in stock
+I2021-12-16 01:17:27,564 [mzn_fr_3] not in stock
+I2021-12-16 01:17:33,061 [mzn_fr_1] still in stock
+I2021-12-16 01:17:38,606 [mzn_fr_2] not in stock
+I2021-12-16 01:17:43,903 [mzn_fr_3] not in stock
+I2021-12-16 01:17:49,788 [mzn_fr_1] still in stock
+I2021-12-16 01:17:55,076 [mzn_fr_2] not in stock
+I2021-12-16 01:18:00,394 [mzn_fr_3] not in stock
+I2021-12-16 01:18:06,113 [mzn_fr_1] still in stock
+I2021-12-16 01:18:11,341 [mzn_fr_2] not in stock
+I2021-12-16 01:18:16,808 [mzn_fr_3] not in stock
+I2021-12-16 01:18:22,499 [mzn_fr_1] still in stock
+I2021-12-16 01:18:27,629 [mzn_fr_2] not in stock
+I2021-12-16 01:18:32,950 [mzn_fr_3] not in stock
+I2021-12-16 01:18:38,648 [mzn_fr_1] still in stock
+I2021-12-16 01:18:43,892 [mzn_fr_2] not in stock
+I2021-12-16 01:18:49,464 [mzn_fr_3] not in stock
+I2021-12-16 01:18:55,295 [mzn_fr_1] still in stock
+I2021-12-16 01:19:00,740 [mzn_fr_2] not in stock
+I2021-12-16 01:19:06,394 [mzn_fr_3] not in stock
+I2021-12-16 01:19:12,058 [mzn_fr_1] still in stock
+I2021-12-16 01:19:17,547 [mzn_fr_2] not in stock
+I2021-12-16 01:19:22,866 [mzn_fr_3] not in stock
+I2021-12-16 01:19:28,527 [mzn_fr_1] still in stock
+I2021-12-16 01:19:33,780 [mzn_fr_2] not in stock
+I2021-12-16 01:19:38,927 [mzn_fr_3] not in stock
+I2021-12-16 01:19:44,525 [mzn_fr_1] still in stock
+I2021-12-16 01:19:49,757 [mzn_fr_2] not in stock
+I2021-12-16 01:19:54,967 [mzn_fr_3] not in stock
+I2021-12-16 01:20:00,600 [mzn_fr_1] still in stock
+I2021-12-16 01:20:05,723 [mzn_fr_2] not in stock
+E2021-12-16 09:11:21,770 [mzn_fr_3] caught exception during request: Message: chrome not reachable
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x009A6903+2517251]
+	Ordinal0 [0x0093F8E1+2095329]
+	Ordinal0 [0x00842710+1058576]
+	Ordinal0 [0x008375CE+1013198]
+	Ordinal0 [0x0086056E+1181038]
+	Ordinal0 [0x0085CA60+1165920]
+	Ordinal0 [0x0085A2CF+1155791]
+	Ordinal0 [0x0088AAAF+1354415]
+	Ordinal0 [0x0088A71A+1353498]
+	Ordinal0 [0x0088639B+1336219]
+	Ordinal0 [0x008627A7+1189799]
+	Ordinal0 [0x00863609+1193481]
+	GetHandleVerifier [0x00B35904+1577972]
+	GetHandleVerifier [0x00BE0B97+2279047]
+	GetHandleVerifier [0x00A36D09+534521]
+	GetHandleVerifier [0x00A35DB9+530601]
+	Ordinal0 [0x00944FF9+2117625]
+	Ordinal0 [0x009498A8+2136232]
+	Ordinal0 [0x009499E2+2136546]
+	Ordinal0 [0x00953541+2176321]
+	BaseThreadInitThunk [0x75DEFA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77947A9E+286]
+	RtlGetAppContainerNamedObjectPath [0x77947A6E+238]
+
+W2021-12-16 09:11:22,235 [mzn_fr_3] 10 successful scrapes in the last 28451 seconds (83% success rate)
+E2021-12-16 09:11:22,237 [mzn_fr_3] scrape failed
+I2021-12-16 09:11:30,147 [mzn_fr_1] 11 successful scrapes in the last 28453 seconds (100% success rate)
+I2021-12-16 09:11:30,148 [mzn_fr_1] still in stock
+I2021-12-16 09:11:36,074 [mzn_fr_2] 12 successful scrapes in the last 28471 seconds (100% success rate)
+I2021-12-16 09:11:36,075 [mzn_fr_2] not in stock
+I2021-12-16 09:11:41,478 [mzn_fr_3] not in stock
+I2021-12-16 09:11:47,126 [mzn_fr_1] still in stock
+I2021-12-16 09:11:52,233 [mzn_fr_2] not in stock
+I2021-12-16 09:11:57,293 [mzn_fr_3] not in stock
+I2021-12-16 09:12:02,866 [mzn_fr_1] still in stock
+I2021-12-16 09:12:08,016 [mzn_fr_2] not in stock
+I2021-12-16 09:12:13,143 [mzn_fr_3] not in stock
+I2021-12-16 09:12:18,809 [mzn_fr_1] still in stock

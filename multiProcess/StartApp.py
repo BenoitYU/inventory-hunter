@@ -17,7 +17,7 @@ def main():
     cmdCommande1='python ./src/run_worker.py lean_and_mean'
     #./multiProcess/ThreadTest2.py
     cmdCommande2='python ./src/run.py -a email -c ./config/ps5.yaml -q ./config/alerters.yaml -l ./log.txt'
-
+ 
     process1 = multiprocessing.Process(target=execCmd,args=(cmdCommande1,))
     processes.append(process1)
     process1.start()
