@@ -13,8 +13,11 @@ from abc import ABC, abstractmethod
 from selenium import webdriver
 import worker
 
-
-user_agent = 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4427.0 Safari/537.36'
+from fake_useragent import UserAgent
+ua=UserAgent()
+user_agent=ua.random
+print(pathlib.Path('selenium').resolve())
+# user_agent = 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36'
 
 
 class HttpGetResponse:
@@ -71,17 +74,43 @@ class SeleniumDriver(Driver):
         if not self.driver_path.is_file():
             raise Exception(f'Selenium Chrome driver not found at {" or ".join(driver_paths)}')
 
+        # 具体的chromedriver配置信息 可以参考 https://blog.csdn.net/qq254271304/article/details/105766653 或者 https://www.yesdotnet.com/archive/post/1633772293.html
         self.options = webdriver.ChromeOptions()
+
+         # 提升网页加载速度
         self.options.page_load_strategy = 'eager'
-        if getpass.getuser() == 'root':
-            self.options.add_argument('--no-sandbox')  # required if root
-        self.options.add_argument('--headless')
+        # if getpass.getuser() == 'root':
+        #     self.options.add_argument('--no-sandbox')  # required if root
+
+        # 在无头模式下如果不加入以下两条 则会报错
+        self.options.add_argument('--no-sandbox') # 需要验证一下此条是否需要管理员权限
+        self.options.add_argument('--disable-dev-shm-usage')# 大量渲染时候写入/tmp而非/dev/shm
+
+        self.options.add_argument('--headless')# 浏览器不提供可视化界面 linux下如果系统不支持可视化 不加这条会启动失败
+        self.options.add_argument('disable-gpu')# 无头模式下禁用GPU加速 规避一些bug 仅在windows下执行
+        
+        self.options.add_argument('--disable-images')
+        self.options.add_argument("-no-first-run")
+        # 以下两条用于防止服务器检测到是使用selenium+chromedriver启动chrome
         self.options.add_argument('--disable-blink-features=AutomationControlled')
-        self.options.add_argument('--disable-dev-shm-usage')
+        self.options.add_experimental_option('excludeSwitches', ['enable-automation'])
+
+        # 使用上面生成的随即代理
         self.options.add_argument(f'--user-agent="{user_agent}"')
+        # 添加数据缓存路径 selenium_path='C:\Users\yubin001\Desktop\DevTest\GitProjects\inventory-hunter\selenium'
         self.options.add_argument(f'--user-data-dir={self.selenium_path}')
+        # 设置窗口位置 
         self.options.add_argument('--window-position=0,0')
         self.options.add_argument('--window-size=1920,1080')
+        #限制图片和JAVAscript
+        prefs = {
+              'profile.default_content_setting_values': {
+                    'images': 2,
+                    'javascript': 2,
+                    'permissions.default.stylesheet':2
+                }
+                }
+        self.options.add_experimental_option('prefs', prefs)
 
     #返回网站的信息并保存一个截屏
     def get(self, url) -> HttpGetResponse:
@@ -91,6 +120,7 @@ class SeleniumDriver(Driver):
             driver.get(str(url))
 
             try:
+                # 因为是无头模式 所有只有截屏才可以查看效果
                 filename = self.data_dir / f'{url.nickname}.png'
                 driver.save_screenshot(str(filename))
             except Exception as e:

@@ -22,6 +22,7 @@ class ScrapeResult(ABC):
         self.price_pattern = re.compile('[0-9,.]+')
         self.price_comma_pattern = re.compile('^.*\\,\\d{2}$')
         self.last_price = last_result.price if last_result is not None else None
+        # 具体参考 https://cuiqingcai.com/1319.html
         self.soup = BeautifulSoup(r.text, 'lxml')
         self.content = self.soup.body.text.lower()  # lower for case-insensitive searches
         self.url = r.url
@@ -38,6 +39,7 @@ class ScrapeResult(ABC):
     #如果有价格且成功从网页中提取出来并转换为float 则self.price不为空 其余情况全部为Non
     def set_price(self, tag):
         #如果tage的内容为空 则直接退出 self.price保持Non
+        self.logger.warning(f'这个是传入的价格Tag内容{tag}')
         if not tag:
             return
 
@@ -57,6 +59,7 @@ class ScrapeResult(ABC):
                 re_match_str = f'{re_match_str[:comma_index].replace(".", ",")}.{re_match_str[comma_index+1:]}'
 
         try:
+            self.logger.warning(locale.atof(re_match_str))
             self.price = locale.atof(re_match_str)
         except Exception as e:
             self.logger.warning(f'unable to convert "{price_str}" to float... caught exception: {e}')
